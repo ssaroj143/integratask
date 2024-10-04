@@ -1,0 +1,20 @@
+.#{$app-namespace}-fade-in-out{
+  opacity: 0;
+    &.no-anim{
+      opacity:1
+    }
+    &.fade-in{
+    animation: fadeIn 1.5s linear;
+    }
+    &.fade-out{
+    animation: fadeOut 1.5s linear;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0 }
+      100% { opacity: 1 }
+    }
+    @keyframes fadeOut {
+      0% { opacity: 1 }
+      100% { opacity: 0 }
+    }
+}

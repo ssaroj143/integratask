@@ -1,0 +1,147 @@
+&.small {
+    &.landscape{
+        .#{$app-namespace}-activity {
+            .#{$app-namespace}-scalable-wrapper-container {
+                .chart-container {
+                  
+                  min-width: 600px
+                }
+              }
+          .flow-chart-container {
+            .left-section {
+              .chart-container {
+                .node {
+                  .node-container {
+                      .startend{
+                        padding: 3px 12px;
+                        width: 85px;
+                        p{
+                            font-size: 15px;
+                        }
+                      }
+                  }
+                }
+                #chart-start {
+                    .node-container {
+                        .text {
+                            width: 420px;
+                        }
+                    }
+                }
+                #exam1 {
+                    .node-container {
+                        .text {
+                            width: 240px;
+                        }
+                        .arrow-text {
+                            width: 120px;
+                            p{
+                                font-size: 12px;
+                                line-height: 18px;
+                            }
+                        }
+                    }
+                }
+
+                .condition1{
+                    .decision-box{
+                        .decision{
+                            width: 120px;
+                            height: 120px;
+                            p{
+                                font-size: 11px !important;
+                                line-height: 16px !important;
+                            }
+                        }
+                    }
+                    button{
+                        font-size: 12px !important;
+                        line-height: 14px !important;
+                    }
+                    .bottom-arrow-container{
+                        margin-top: 102px;
+                    }
+
+                    .node-container{
+                        width: 65px;
+                        .decision-arrow{
+                            width: 95px;
+    margin-top: 31px;
+                        }
+
+                        .right-tailed-child,.left-tailed-child{
+                            .arrow{
+                                height: 260px;
+                            }
+                        }
+
+                        .right-tailed-child{
+                            .process-container{
+                                left: 11px;
+                            }
+                        }
+
+                        .left-tailed-child{
+                            .process-container{
+                                left: -46px;
+                            }
+                        }
+                    }
+                }
+
+                .condition2{
+                    top: 142px;
+                    p{
+                        font-size: 9px !important;
+                        line-height: 12px !important;
+                    }
+                    .decision-box{
+                        margin:0px 10px 0px 11px !important;
+                        .decision{
+                            width: 130px !important;
+                            height: 130px !important;
+                            p{
+                                font-size: 11px !important;
+                                line-height: 16px !important;
+                            }
+                        }
+                    }
+
+                    .node-container{
+                        margin-top: 44px !important;
+    width: 18px !important;
+    .decision-arrow{
+        width: 18px !important;
+    }
+                    }
+                }
+
+                .process-container{
+                    .process{
+                        width: 102px !important;
+    height: 56px !important;
+
+    p{
+        font-size: 9px !important;
+                        line-height: 12px !important;
+    }
+                    }
+                }
+
+                .drawing{
+                    padding: 0;
+
+                    span{
+                        font-size: 8px;
+                    }
+                }
+              }
+            }
+
+            
+          }
+        }
+
+    }
+  }
+  

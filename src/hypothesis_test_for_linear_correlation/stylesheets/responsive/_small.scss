@@ -1,0 +1,82 @@
+&.small {
+    &.landscape{
+        .#{$app-namespace}-activity-container {
+            header {
+                padding: 0px 12px;
+            }
+        }
+        
+        .#{$app-namespace}-activity {
+          .flow-chart-container {
+            .left-section {
+                .node{
+                    .node-container{
+                        .process{
+                            padding: 8px;
+                            p{
+                                font-size: 14px;
+                                line-height: 20px;
+                            }
+                        }
+                    }
+                    &#condition1{
+                        .child-node{
+                            .node-container{
+                                .text{
+                                    .heading{
+                                        font-size: 14px;
+                                        line-height: 20px;   
+                                    }
+                                    &.condition-node{
+                                        &.first-child{
+                                            .heading{
+                                                font-size: 14px;
+                                                line-height: 20px;
+                                                right: 99px;
+                                            }
+                                        }
+    
+                                        &.last-child{
+                                            .heading{
+                                                font-size: 14px;
+                                                line-height: 20px;
+                                                left: 94px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .root{
+                        margin-top: -3px;
+                    }
+
+                    &#exceedsthevalue,&#isrejected{
+                        .node-container{
+                            .text{
+                                max-width: 248px;
+                            }
+                        }
+                    }
+
+                    #retrospective-child,#cross-sectional-child{
+                        .node-container{
+                            .text{
+                                max-width: 187px;
+                            }
+                        }
+                    }
+                }
+               
+             
+            }
+
+            
+          }
+        }
+
+    }
+  }
+  

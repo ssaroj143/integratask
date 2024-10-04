@@ -1,0 +1,78 @@
+&.large {
+	&.landscape {
+		.#{$app-namespace}-activity {
+			.left-section {
+				.node {
+					.node-container {
+						max-width: 201px;
+					}
+				}
+				.chart-container .node {
+					.node-container .process {
+						min-width: 446px;
+						max-width: 446px;
+					}
+					#wholenumber-yes #whole-number-yes-child .text {
+						min-width: 179px !important;
+						max-width: 179px !important;
+						height: 180px;
+						font-size: 16px;
+						line-height: 22px;
+					}
+					#wholenumber-child-left-yes .arrow {
+						max-width: 117px;
+						margin-left: 22px;
+					}
+					#wholenumber-child-left-yes .text span.bottom {
+						padding: 24px 0px !important;
+					}
+					.decision-box .decision {
+						max-width: 200px;
+						max-height: 200px;
+						p {
+							font-size: 19px !important;
+							line-height: 22px !important;
+						}
+					}
+				}
+				.#{$app-namespace}-scalable-wrapper-container {
+					.chart-container {
+						min-height: 1300px;
+						&.toggleHeight {
+							height: 100%;
+							margin-bottom: 0px;
+						}
+						.node#condition1 .decision-box .decision {
+							max-width: 200px;
+							max-height: 200px;
+							p {
+								font-size: 15px;
+								line-height: 20px;
+							}
+						}
+						.node#condition1 #wholenumber-yes #whole-number-yes-child .text {
+							max-width: 110px;
+							min-width: 230px;
+							margin-left: 29px;
+						}
+						.node#condition1 #wholenumber-child-left-yes .arrow {
+							width: 104px;
+							margin-left: 40px;
+						}
+						.node#condition1 #wholenumber-child-left-yes {
+							width: 100px;
+						}
+						.node#condition1 #wholenumber-child-left-yes .text span.bottom {
+							padding: 35px 0px !important;
+						}
+						.node {
+							.node-container {
+								max-width: 221px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

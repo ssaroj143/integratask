@@ -1,0 +1,97 @@
+&.medium {
+  &.landscape {
+    .#{$app-namespace}-activity {
+      .flow-chart-container {
+        .left-section {
+            #condition1{
+
+                .child-node{
+                    &.first-child{
+                      margin-right: 5px;
+                    }
+                    &.last-child{
+                      margin-left: 5px;
+                    }
+                    .node-container{
+                        .text{
+                            &.condition-node{
+                                &.first-child{
+                                 
+                                    .heading{
+                                        font-size: 18px;
+                                        right: 99px;
+                                    }
+                                }
+
+                                &.last-child{
+                                 
+                                    .heading{
+                                        font-size: 18px;
+                                        left: 135px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .node{
+              &#exceedsthevalue,&#isrejected{
+                .node-container{
+                    .text{
+                        max-width: 285px;
+                    }
+                }
+            }
+
+            #retrospective-child,#cross-sectional-child{
+                .node-container{
+                    .text{
+                        max-width: 225px;
+                    }
+                }
+            }
+            }
+        }
+
+        
+      }
+    }
+    
+  }
+  &.portrait {
+    .#{$app-namespace}-activity {
+      .left-section {
+        .chart-container {
+          .node {
+            &#condition1 {
+              .child-node {
+                .node-container {
+                  .text {
+                    &.condition-node {
+                      &.last-child {
+                        &::after {
+                          content: "";
+                          //left: calc(100% - 238px);
+                        }
+                        .heading {
+                          left: 171px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+
+.#{$app-namespace}.medium.landscape .#{$app-namespace}-activity .flow-chart-container .left-section #condition1 .child-node .node-container .text.condition-node.last-child .heading{
+ left: 119px;
+}
+}

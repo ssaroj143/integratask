@@ -1,0 +1,266 @@
+.#{$app-namespace}-activity-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .#{$app-namespace}-activity {
+    .left-section {
+       .scalable-wrapper-inner{
+        .toggleHeight{
+          height: calc(100% - 22px);
+        }
+      }
+      .chart-container {
+
+         .graph_data{
+                  background-image: url("../assets/images/graph_data.png");
+                  height: 228px;
+                  width: 360px;
+                  position: relative;
+                  left: 0;
+                  right: 0;
+                  margin: 20px auto 0;
+                }
+        .node{
+          // height:50%;
+        }
+       
+        .selected {
+          opacity: 0;
+          animation: fadein 0.8s linear 200ms forwards;
+        }
+        .main-screen-text{
+          margin-top: 20px;
+          opacity: 0;
+          padding: 0px 0px 0px 35px;
+          position: relative;
+          animation: fadein 1.2s linear forwards;
+          li,p{
+            
+            font-size: 24px;
+            line-height: 28px;
+            // left: 21px;
+            position: relative;
+            left: 0;
+            top: 0;
+            text-align: left;
+            
+          }
+          &.ost39,&.ost40{
+              // opacity: 1;
+              position: absolute;
+              top: 50%;
+              transform: translate(-50%,-50%);
+              max-width: 500px;
+              left: 50%;
+              // right: 0;
+              // margin: 0 auto;
+          }
+          
+          .outliers-img{
+              background-image: url("../assets/images/out.png");
+              height: 228px;
+              width: 360px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 64px;
+              background-repeat: no-repeat;
+              background-size: contain;
+            }
+            .bell-shaped-img{
+              background-image: url("../assets/images/bell.png");
+              height: 330px;
+              width: 512px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 84px;
+              background-repeat: no-repeat;
+              background-size: contain;
+            }
+        }
+        .node {
+          // height: 50%;
+         
+          .node-container {
+            width: 100%;
+            // height: 100%;
+            .text {
+              width: 100%;
+              // height: 100%;
+              padding: 8px;
+              color: #252525;
+              font-family: inherit;
+              font-size: 22px;
+              letter-spacing: 0;
+              line-height: 28px;
+              max-width: 800px;
+              &:focus {
+                box-shadow: inset 0 0 0 1px #ffffff, inset 0 0 0 3px #006a7c;
+              }
+
+              .heading {
+                font-size: 22px;
+                font-weight: bold;
+                line-height: 28px;
+              }
+
+
+              ol > li {
+                opacity: 0;
+                font-weight: 600;
+                
+                &.visible {
+                  animation: fadein 1.2s linear forwards;
+                }
+              }
+               ul > li {
+                 
+               
+
+
+                &.visible {
+                  // animation: fadein 1.2s linear forwards;
+                }
+              }
+            }
+
+            .no-visited {
+              visibility: hidden;
+            }
+
+            .arrow {
+              margin-bottom: 5px;
+              border: 0;
+              
+
+              &::after {
+                border-left: 11px solid transparent;
+                border-right:11px solid transparent;
+                border-top: 11px solid #000;
+                transform: translateX(-47%);
+              }
+
+              &.selected-text {
+                display: block;
+              }
+
+              &.end-child {
+                display: none;
+              }
+            }
+          }
+
+          &#context-div{
+            ol > li {
+              &:focus {
+                //  box-shadow: inset 0 0 0 1px #ffffff, inset 0 0 0 3px #006a7c;
+              }
+            }
+          }
+          &#exploredata-div{
+            ol > li {
+              &:focus {
+                //  box-shadow: inset 0 0 0 1px #ffffff, inset 0 0 0 3px #de9707;
+              }
+            }
+          }
+          &#conclude-div{
+            ol > li {
+              &:focus {
+                // box-shadow: inset 0 0 0 1px #ffffff, inset 0 0 0 3px #397f3c;
+              }
+            }
+          }
+          &.no-visited {
+            display: none;
+          }
+
+          &.visible {
+            //animation: fadein 1.2s linear 200ms forwards;
+          }
+
+          &.visited {
+            // opacity: 1;
+            // animation: none !important;
+          }
+
+          &.selected-text{
+            // height: 50%;
+            // .node-container{
+            //   height: 100%;
+            //   .text{
+            //     height:100%;
+            //   }
+            // }
+            .arrow{
+              display: none;
+            }
+
+          }
+
+          &.selected{
+            display: block;
+          }
+           
+        }
+
+        @keyframes fadein {
+          to {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .pehtmlflowcharts-overlay-container {
+    .question-marker {
+      .quiz-section {
+        position: absolute;
+        left: calc(7.6846% - 5px);
+        bottom: -7px;
+
+        span {
+          left: 52px;
+          position: relative;
+          top: 15px;
+        }
+
+        .arrow {
+          position: relative;
+          left: -6px;
+        }
+
+        .icon {
+          svg {
+            path {
+              fill: #fff;
+              &:first-of-type {
+                fill: #000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.#{$app-namespace}{
+  .right-section{
+    .container{
+      .body{
+        h2{
+          font-size: 22px;
+          }
+      }
+    }
+  }
+}

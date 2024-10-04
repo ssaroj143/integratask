@@ -1,0 +1,275 @@
+&.medium {
+  &.landscape {
+    .#{$app-namespace}-activity {
+      .flow-chart-container {
+        .left-section {
+          .chart-container {
+            .node {
+              .node-container {
+                min-width: 180px;
+                max-width: 180px;
+
+                .text {
+                  &.startend {
+                    p {
+                      font-size: 14px;
+                      line-height: 20px;
+                    }
+                  }
+                }
+
+                .process {
+                  font-size: 14px;
+                  line-height: 20px;
+                  padding: 8px;
+
+                  .text-container {
+                    padding: 8px;
+                  }
+                }
+
+                .decision-box {
+                  .decision {
+                    width: 130px !important;
+                    height: 130px !important;
+
+                    p {
+                      font-size: 14px !important;
+                      line-height: 20px !important;
+                    }
+                  }
+                }
+              }
+
+              #right-section .equation-container .node-container {
+                min-width: 192px
+              }
+
+              #right-section {
+                &.node {
+                  margin-left: 58px;
+                  margin-top: 155px;
+                }
+              }
+
+              .from-box1 {
+                left: -139px;
+                transform: rotate(335deg);
+                top: -105px;
+
+                .arrow {
+                  height: 152px;
+                }
+
+                .node-container {
+                  .text {
+                    left: 95px;
+                    top: 58px;
+                    transform: rotate(77deg);
+                  }
+                }
+              }
+
+              .from-box2 {
+                left: -132px;
+                transform: rotate(-90deg);
+                top: 23px;
+
+                .arrow {
+                  height: 70px;
+                }
+
+                .node-container {
+                  .text {
+                    left: 96px;
+                    top: 17px;
+                    transform: rotate(89deg);
+                  }
+                }
+              }
+
+              .from-box3 {
+                left: -136px;
+                transform: rotate(207deg);
+                top: 72px;
+
+                .arrow {
+                  height: 152px;
+                }
+
+                .node-container {
+                  .text {
+                    left: 70px;
+                    top: 68px;
+                    transform: rotate(88deg);
+                  }
+                }
+              }
+              .selected-text,.selected{
+                .back{
+                    transform: rotate(
+90deg
+);
+left: 118px;
+top: 18px;
+.arrow{
+height: 54px;
+}
+                }
+            }
+            }
+          }
+        }
+
+
+      }
+    }
+
+  }
+
+  &.portrait {
+    .#{$app-namespace}-activity {
+      .left-section {
+
+        // .#{$app-namespace}-scalable-wrapper-container {
+        // background-color: red;
+        .chart-container {
+
+          // background-color: red;
+          .main-text {
+            height: 60px;
+          }
+
+          .toggleHeight {
+            height: calc(100% - 83px);
+          }
+
+          // min-height: 1190px;
+          .node {
+
+            .selected,
+            .selected-text {
+              .back {
+                transform: rotate(90deg);
+                left: 185px;
+                top: 5px;
+
+                .arrow {
+                  height: 109px;
+                }
+              }
+            }
+
+            .node-container {
+              max-width: 250px;
+              min-width: 250px;
+              width: 100%;
+            }
+
+          }
+
+          #right-section {
+            &.node {
+              margin-left: 115px;
+
+              .from-box1 {
+                left: -213px;
+                top: -175px;
+                transform: rotate(-32deg);
+
+                .arrow {
+                  height: 226px;
+                }
+
+                .node-container {
+                  .text {
+                    left: 156px;
+                    top: 115px;
+                    transform: rotate(30deg);
+                    color: #397f3c;
+                    font-size: 20px;
+                  }
+                }
+
+                &.safari {
+                  left: -213px;
+                  top: -160px;
+                  transform: rotate(-30deg);
+                }
+              }
+
+              .from-box2 {
+                left: -210px;
+                transform: rotate(-90deg);
+                top: -1px;
+
+                .arrow {
+                  height: 118px
+                }
+
+                .node-container {
+                  .text {
+                    left: 150px;
+                    top: 45px;
+                    transform: rotate(90deg);
+                    color: #397f3c;
+                    font-size: 20px;
+                  }
+                }
+
+                &.safari {
+                  left: -185px;
+                  top: 23px;
+
+                  .arrow {
+                    height: 118px
+                  }
+                }
+              }
+
+              .from-box3 {
+
+                left: -213px;
+                transform: rotate(-148deg);
+                top: 68px;
+
+                .arrow {
+                  height: 222px;
+                }
+
+                .node-container {
+                  .text {
+                    left: 106px;
+                    top: 112px;
+                    transform: rotate(150deg);
+                    color: #941e61;
+                    font-size: 20px;
+                  }
+                }
+
+                &.safari {
+                  left: -169px;
+                  top: 77px;
+                  transform: rotate(-150deg);
+                }
+              }
+
+            }
+
+            .equation-container {
+              .node-container {
+                min-width: 300px;
+
+                .process {
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+        }
+
+        // }
+      }
+    }
+  }
+}

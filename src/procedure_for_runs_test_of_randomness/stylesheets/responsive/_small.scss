@@ -1,0 +1,138 @@
+&.small {
+    &.landscape {
+        .#{$app-namespace}-activity {
+            .flow-chart-container {
+                .left-section {
+                    .chart-container {
+                        .node {
+                            .node-container {
+                                min-width: 180px;
+                                max-width: 180px;
+
+                                .text {
+                                    &.startend {
+                                        p {
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                        }
+                                    }
+                                }
+
+                                .process {
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    padding: 8px;
+
+                                    .text-container {
+                                        padding: 8px;
+                                    }
+                                }
+
+                                .decision-box {
+                                    .decision {
+                                        width: 130px !important;
+                                        height: 130px !important;
+
+                                        p {
+                                            font-size: 14px !important;
+                                            line-height: 20px !important;
+                                        }
+                                    }
+                                }
+                            }
+
+                            #right-section .equation-container .node-container {
+                                min-width: 182px
+                            }
+
+                            #right-section {
+                                &.node {
+                                    margin-left: 58px;
+                                    margin-top: 155px;
+                                }
+                            }
+
+                            .from-box1 {
+                                left: -139px;
+                                transform: rotate(335deg);
+                                top: -105px;
+
+                                .arrow {
+                                    height: 152px;
+                                }
+
+                                .node-container{
+                                    .text{
+                                        left: 95px;
+                                        top: 58px;
+                                        transform: rotate(
+                                    77deg
+                                    );
+                                    }
+                                }
+                            }
+
+                            .from-box2 {
+                                left: -132px;
+                                transform: rotate(-90deg);
+                                top: 23px;
+
+                                .arrow {
+                                    height: 70px;
+                                }
+
+                                .node-container {
+                                    .text {
+                                        left: 96px;
+                                        top: 17px;
+                                        transform: rotate(89deg);
+                                    }
+                                }
+                            }
+
+                            .from-box3{
+                                left: -136px;
+    transform: rotate(
+207deg
+);
+    top: 72px;
+
+    .arrow{
+        height: 152px;
+    }
+
+    .node-container{
+        .text{
+            left: 65px;
+            top: 68px;
+            transform: rotate(
+        88deg
+        );
+        }
+    }
+                            }
+
+                            .selected-text,.selected{
+                                .back{
+                                    transform: rotate(
+90deg
+);
+    left: 118px;
+    top: 18px;
+    .arrow{
+        height: 76px;
+    margin-bottom: 30px
+        //height: 54px;
+    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+    }
+}

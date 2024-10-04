@@ -1,0 +1,53 @@
+This flowchart summarizes key elements to be used for statistical thinking and critical thinking. It’s important to constantly use common sense and to not become blinded by mindlessly jumping into an application of some statistical method. Common sense is an absolutely indispensable tool required for the correct use of statistical analyses.
+Let’s begin with the PREPARATION that should be done in the beginning of a study.
+First, we consider the Context of the data.
+Identify what the data represent.
+Are the data the result of responses to a survey?
+Are the data the result of measurements of weights of manufactured truck tires?
+Were the data measured or were they reported by survey respondents?
+All of these questions are typical of this general and important question:
+What are we dealing with here?
+Also, identify the GOAL of the study. Are you trying to establish that a new drug for lower blood pressure is effective?
+Are you trying to establish that “most” adults text while they are driving?
+Are you trying to establish that there is a correlation between drinking alcohol and the ability to text on a smartphone?
+The goal of the study can have a dramatic effect on the sample data to be collected and the statistical methods that are to be used.
+The next step in our preparation is to identify the source from which the data were obtained. Use critical thinking to determine whether the source is reliable so that the data are likely to lead to meaningful conclusions.
+Be very critical of data obtained from a source that could somehow benefit from the results. For example, be wary of data from a study of the beneficial health effects of candy when the study was sponsored by a manufacturer of candy.
+As another example, several examples in your textbook will involve cases in which data are obtained in a procedure through which people decide themselves to participate in the study.
+This relates to the next item of sampling method.
+We conclude our preparation by considering the sampling method.
+Your textbook includes information on different sampling methods including random samples, convenience samples and systematic samples.
+Many effective and meaningful statistical studies involve the method of random sampling.
+For example, conduct a random sample of students attending your college by compiling a list of the names of all students, then using a method of randomly selecting 300 of them.
+The method of actually making the selection random must be carefully planned.
+The random sampling must be equivalent to flipping a coin or rolling a die.
+Also, it is essential to recognize that when respondents volunteer to participate, there could easily be a tendency to get results that are biased, and such volunteered data might well be totally worthless for any sound statistical analysis.
+Examples of such voluntary participation include a survey published on a website with a request that readers respond online, or a survey mailed to potential respondents with a request to mail back their completed responses.
+Now, it is time to test your knowledge.
+After completing our preparation, we begin to Analyze the data.
+Analysis begins with exploration of the data including creating appropriate graphs.
+Your textbook describes a variety of different graphs, and it will be important to select graphs that are relevant for the sample data. 
+But it is always wise to create a suitable graph that could be helpful in letting you see characteristics of the sample data.
+Graphs may reveal that it might not be appropriate to use some statistical methods that you had been planning to use.
+Much time can be saved by looking at the data before we leap into statistical analysis.
+Plot the data!
+Next, we explore the data.
+A suitable graph might be helpful in letting you see that there are some data values that are far from almost all of the other data values. Such “outliers” can have a dramatic effect on results, so it is important to identify them at the outset.
+What important statistics summarize the data? The mean? The standard deviation?
+Explore the distribution of the data by using suitable graphs.
+Is the distribution bell-shaped or does it have some other shape?
+Are many data values missing?
+Are there many survey respondents who refused to cooperate?
+After exploring the data, we move to applying statistical methods in our analysis The selection of a particular statistical method should definitely follow the preceding considerations --- it should not be the first step in a statistical study. 
+In many cases, there could be a few different statistical methods that could be applied, and it would be wise to use all of those different methods instead of relying solely on one of them. 
+Use technology for the actual application of the statistical method.
+Now, it is time to test your knowledge.
+After analyzing the data, the final step in our statistical process involves conclusions. 
+In reaching conclusions, it is important to understand the difference between statistical significance and practical significance. 
+For example, it might be that a large study shows that a diet pill has statistical significance, but if that treatment results in an average weight loss of only one pound after one year, it doesn’t have practical significance. 
+Again, common sense and critical thinking are essential tools for the effective use of statistical methods. 
+Now, it is time to test your knowledge. 
+In summary, this flowchart presents the key elements to be used for statistical thinking and critical thinking.
+Remember, it’s important to constantly use common sense and to not become blinded by mindlessly jumping into an application of some statistical method.
+Congratulations, you have mastered an important concept of Statistics!
+Use critical and statistical thinking, but please do not be critical of my statistical thinking.

@@ -1,0 +1,19 @@
+.question-marker-seekbar {
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  bottom: 48px;
+  position: absolute;
+
+  .#{$app-namespace}-seekbar,
+  .#{$app-namespace}-question-marker {
+    height: 8px;
+  }
+
+  .#{$app-namespace}-question-marker {
+    top: 0;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+}

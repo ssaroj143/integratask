@@ -1,0 +1,13 @@
+.#{$app-namespace}-scalable-wrapper-container {
+	.chart-container {
+		min-height: 950px !important;
+		min-width: 950px;
+		// &.toggleHeight {
+		// 	height: 100% !important;
+		// 	margin-bottom: 0px !important;
+		// }
+		&.mac-os {
+			min-height: 1000px !important;
+		}
+	}
+}

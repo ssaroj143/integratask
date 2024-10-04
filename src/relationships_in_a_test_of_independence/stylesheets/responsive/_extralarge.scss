@@ -1,0 +1,13 @@
+&.extralarge {
+  .#{$app-namespace}-activity {
+    .flow-chart-container {
+      .left-section {
+        .chart-container {
+          .flow-chart{
+            min-width: 900px;
+          }
+        }
+      }
+    }
+  }
+}

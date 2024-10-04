@@ -1,0 +1,97 @@
+&.medium {
+  &.landscape {
+    .#{$app-namespace}-activity {
+      .flow-chart-container {
+        .left-section {
+          .chart-container {
+            p{
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            .text{
+                &.process{
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+            .node {
+                .node-container {
+                    max-width: 180px;
+                } 
+
+                &#condition1{
+                    #wholenumber{
+                        &.decision-box{
+                            .decision{
+                                width: 140px;
+                                height: 140px;
+                                p{
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    width: 57%;
+                                }
+                            }
+                        }
+
+                        .end-child{
+                            min-width: 180px;
+                        }
+                    }
+
+                    #whole-number-yes{
+                        margin-top: -50px;
+                        left: -7px;
+                    }
+                }
+
+                &#comp{
+                    .node{
+                        &.selected-text,&.visited{
+                            .node-container{
+                                min-width: 180px;
+                            }
+                        }
+                    }
+                }
+               
+            }
+
+              .main-text {
+                  margin-top: 20px;
+              }
+          }
+        }
+        .right-section {
+          .container {
+              .body {
+                  padding: 0px 8px;
+                  font-size: 16px;
+
+                  table {
+                      caption {
+                          font-size: 16px;
+                      }
+
+                      td {
+                          font-size: 15px;
+                      }
+                  }
+              }
+          }
+      }
+      }
+    }
+  }
+  &.portrait {
+    .#{$app-namespace}-activity {
+      .left-section {
+        .#{$app-namespace}-scalable-wrapper-container {
+          .chart-container {
+            min-height: 1190px;
+          }
+        }
+      }
+    }
+  }
+}

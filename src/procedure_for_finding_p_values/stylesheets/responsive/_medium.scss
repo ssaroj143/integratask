@@ -1,0 +1,162 @@
+&.medium {
+  &.landscape {
+    .#{$app-namespace}-activity {
+      .flow-chart-container {
+        .left-section {
+          .#{$app-namespace}-scalable-wrapper-container{
+            .scalable-wrapper-inner {
+              .chart-container {
+                .condition1 {
+                  .node-container {
+                    width: 155px !important;
+                    top: -7px;
+        
+                    .decision-arrow {
+                      &.left {
+                        left: 11px;
+                        &::before {
+                          width: 115%;
+                          left: -11px;
+                        }
+                      }
+                      &.right {
+                        left: -12px;
+                        &::before {
+                          width: 115%;
+                          left: -11px;
+                        }
+                      }
+                    }
+                    .left-tailed-child,
+                    .right-tailed-child {
+                      .arrow {
+                        height: 295px;;
+                      }
+                    }
+                    .left-tailed-child {
+                      .process-container {
+                        left: -56px !important;
+                      }
+                    }
+        
+                    .right-tailed-child {
+                      .process-container {
+                        left: 60px !important;
+                      }
+                    }
+        
+                  }
+                }
+              }
+            }
+          }
+        }
+        .decision {
+          p {
+            font-size: 14px !important;
+            line-height: 20px !important;
+          }
+        }
+
+        .process-container {
+          p {
+            font-size: 15px !important;
+          }
+        }
+
+        .condition1 {
+          .decision-box {
+            .decision {
+              width: 140px;
+              height: 140px;
+            }
+          }
+
+          .bottom-arrow-container {
+            margin-top: 123px !important;
+          }
+
+          .node-container {
+            width: 100px !important;
+            top: -7px;
+
+            .decision-arrow {
+              width: 156px;
+              margin-top: 40px;
+
+              &.left {
+                left: -11px;
+                &::before {
+                  width: 80%;
+                  left: 11px;
+                }
+              }
+              &.right {
+                left: 12px;
+                &::before {
+                  width: 80%;
+                  left: 19px;
+                }
+              }
+            }
+            .left-tailed-child,
+            .right-tailed-child {
+              .arrow {
+                height: 295px;;
+              }
+            }
+            .left-tailed-child {
+              .process-container {
+                left: -26px !important;
+              }
+            }
+
+            .right-tailed-child {
+              .process-container {
+                left: -30px !important;
+              }
+            }
+          }
+        }
+
+        .condition2 {
+          top: 165px !important;
+          .decision-box {
+            .decision {
+              width: 165px !important;
+              height: 165px !important;
+            }
+          }
+
+          .two-tailed-child{
+            &.node{
+              .process-container{
+                &.left{
+                  left: -20px !important;
+                }
+                &.right{
+                  right: -20px !important;
+                }
+              }
+            }
+          }
+
+          .node-container {
+            margin-top: 52px !important;
+
+            .decision-arrow {
+              width: 34px !important;
+            }
+          }
+        }
+        .left-section {
+          .chart-container {
+            .main-screen-text {
+              bottom: 100px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

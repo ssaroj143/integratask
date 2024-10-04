@@ -1,0 +1,192 @@
+&.medium {
+  &.landscape{
+    .#{$app-namespace}-activity {
+      .flow-chart-container {
+        .left-section {
+          .chart-container{
+              .node{
+                  .node-container{
+                      max-width: 180px;
+                      .process{
+                          font-size: 14px;
+                          line-height: 20px;
+                          padding: 8px;
+                          width: 90%;
+                      }
+                      .text{
+                          &.startend{
+                              p{
+                                font-size: 14px;
+                                line-height: 20px;
+                               
+                              }
+                          }
+                      }
+
+                      .decision-box{
+                          .decision{
+                            width: 150px;
+                            height: 150px;
+                            p{
+                                font-size: 14px;
+                                line-height: 20px;
+                            }
+                          }
+                      }
+                  }
+              }
+
+              button{
+                  font-size: 14px;
+                  line-height: 20px;
+              }
+
+              .down-arrow{
+                  font-size: 14px;
+              }
+
+              .wrapper{
+                  #decision-one-yes-arrow{
+                      top: 42px;
+                      left: 6px;
+                  }
+                  .top-to-bottom-line{
+                      &.text{
+                        
+                        top: 62px;
+                       
+                       
+                        width: 33px;
+                      }
+                  }
+
+                  .left-line{
+                      &.text{
+                          top: 66px;
+                          height:calc(100% - 149px)
+                      }
+                  }
+              }
+
+              #can-assumed-no,#condition2{
+                  top: -21px;
+              }
+
+              #is-greater-then25-arrow-no{
+                top: -11px;
+                left: 17px;
+                .arrow{
+                    height: 65px !important;
+                }
+              }
+
+              #convert-test-statistic{
+                  .process{
+                      width: 83%;
+                  }
+              }
+
+              #condition22,#row3{
+                  top: -42px;
+              }
+
+              #condition2{
+                #is-greater-then25{
+                  flex: none;
+                }
+              }
+              #row3{
+                  min-height: unset;
+              }
+
+              #row4{
+                  min-height: unset;
+                  .critical-value-arrow{
+                      flex: 0 0 225px;
+                  }
+
+                  .critical-value-child{
+                      &.text{
+                          width: 136px;
+                          left: -88px;
+                      }
+                  }
+              }
+
+              #convert-test-statistic .convert-test-statistic-child.text{
+                position: absolute;
+                height: 177px;
+                border-left: 5px solid #000000;
+                bottom: -167px;
+                left: 131px;
+                transform: translateX(-50%);
+                box-sizing: border-box;
+              }
+
+              #row5{
+                  #condition4{
+                      top: 34px;
+                  }
+              }
+
+              #decision-arrow-3{
+                  top: 16px;
+              }
+              #row6{
+                  top: 16px;
+                  #reject-the-null{
+                      left: 219px;
+
+                      .arrow-tip{
+                          &.text{
+                            height: 112px;
+                            right: -132px;
+                            top: -59px;
+                          }
+                      }
+
+                      .reject-the-hypothesis-child{
+                        top: -59px;
+                        left: -1px;
+                          &.text{
+                              width: 131px;  
+                              top: -59px;
+      left: -2px; 
+
+                          }
+                      }
+                  }
+
+                  #reject-the-hypothesis-child-text{
+
+                    .reject-the-hypothesis-child-text{
+                      &.text{
+                        left: 351px;
+                      }
+                    }
+                  }
+              }
+
+              .reject-null{
+                width: 83% !important;
+              }
+          }
+        }
+
+        
+      }
+    }
+
+}
+  &.portrait {
+    .#{$app-namespace}-activity {
+      .left-section {
+        .#{$app-namespace}-scalable-wrapper-container {
+          .chart-container {
+            min-height: 1690px;
+          }
+        }
+      }
+    }
+  }
+}

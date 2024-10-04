@@ -1,0 +1,93 @@
+&.small {
+    &.landscape {
+        .#{$app-namespace}-activity {
+            .flow-chart-container {
+                .left-section {
+                    .scalable-wrapper-inner {
+                        .flow-chart {
+                            //width: 85%;
+                        }
+                      }
+                    .flow-chart {
+                        //width: 85%;
+                        #exam1 {
+                            .node {
+                                .side_content {
+                                    position: absolute;
+                                    left: 163px;
+                                    top: -100px;
+                                    width: 72px;
+                                }
+                                #not_good_model_arrow,
+                                #not_model_content,
+                                #not_good_model_arrow2,
+                                #not_model_content2,
+                                #not_good_model_arrow3,
+                                #not_model_content3 {
+                    
+                                  &.selected-text {
+                                    .node-container {
+                                      left: 50px;
+                                    }
+                                  }
+                                }
+                            }
+                        }
+                    }
+
+                    .node-container {
+                        .process {
+                            &.blue {
+
+                                width: 260px;
+                            }
+
+                            &.green,
+                            &.pink {
+                                width: 160px;
+                            }
+
+                            .gr-graph,
+                            .pn-graph {
+                                width: 150px;
+                            }
+
+                            p {
+                                &.graph-text {
+                                    &.gr-text {
+                                        top: -66px;
+                                        left: 5px;
+                                    }
+
+                                    &.pn-text {
+                                        top: -66px;
+                                        left: 40px;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+
+                    // .chart-container {
+                    //     .node {
+                    //         justify-content: flex-start;
+
+                    //         .node-container {
+                    //             .startend {
+                    //                 padding: 3px 12px;
+                    //                 width: 85px;
+
+                    //                 p {
+                    //                     font-size: 15px;
+                    //                 }
+                    //             }
+                    //         }
+                    //     }
+                    // }
+                }
+            }
+        }
+
+    }
+}

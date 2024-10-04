@@ -1,0 +1,175 @@
+@mixin smallFont {
+    font-size: 12px;
+    line-height: 18px;
+  }
+&.extraSmall {
+    &.landscape{
+        .#{$app-namespace}-activity-container {
+            header {
+                padding: 0px 12px;
+            }
+        }
+        
+        .#{$app-namespace}-activity {
+          .flow-chart-container {
+            .left-section { 
+                .chart-container{
+                    #convert-test-statistic {
+                        .process {
+                            width: 70%;
+                            left: 25px;
+                        }
+                    }
+                    #bottom-row-wrapper {
+                        top: -168px;
+                    }
+                }
+                .decision-box {
+                    .decision {
+                        height: 140px;
+                        width: 140px;
+                        left: 9px;
+                    }
+                }               
+                .node{
+                    .node-container{
+                        p{
+                            @include smallFont();
+                        }
+        
+                        .text{
+                            &.process{
+                                @include smallFont();
+                                padding: 5px;
+                            }
+                            &.startend{                                
+                                p{
+                                    @include smallFont();
+                                }
+                            }
+                        }   
+                                             
+                    }
+                    &#can-assumed-no {
+                        #can-assumed-no-arrow2 {
+                            .node-container{
+                                right: 40px;
+                                top: -20px;
+                            }
+                        }
+                    }
+                    &#condition2{
+                        top: -20px;
+
+                        #is-greater-then25-arrow-no {
+                            .arrow {
+                                height: 64px;
+                                left: 50px;
+                            }
+                        }
+                        #convert-test-statistic {
+                           .convert-test-statistic-child  {
+                               .node-container{
+                                   .text {
+                                       height: 127px;
+                                       bottom: -110px;
+                                       left: 150px;
+                                   }
+                               }
+                           }
+                        }
+                    }
+                    &#row1 {
+                        #decision-one-yes-arrow {
+                           top: 30px;
+                        }
+                    }
+                    &#line-wrapper {
+                        top: -30px;
+                        height: 94%;
+                    }
+                    &#condition22 {
+                        top: -40px;
+                    }
+                    &#row3 {
+                        top: -38px;
+                    }
+                    &#row4 {
+                        top: -93px;
+                        left: -43px;
+
+                        .critical-value-child {
+                            &.text {
+                                width: 203px;
+                            }
+                        }
+                    }
+                    &#bottom-row-wrapper {
+                        #decision-arrow-3 {
+                            #can-assumed-no-arrow1 {
+                                .node-container{
+                                    left: -41px;
+                                    top: -20px;
+                                }
+                            }
+                        }
+                        #row6 {
+                            left: -50px;
+
+                            .fail-to-reject-arrow {
+                                top: -18px;
+                                left: 40px;
+                                .arrow {
+                                    height: 47px;
+                                }
+                            }
+                            #reject-the-null {
+                                .node-container {
+                                   left: -90px;
+                                }
+                                .arrow-tip {
+                                    &.text {
+                                        height: 104px;
+                                        right: -220px;
+                                        top: -42px;
+                                    }
+                                }
+                            }
+                            #fail-to-reject , #reject-the-null{
+                                .node-container {
+                                    top: -20px;
+                                    .text {
+                                        width: 57% !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .root{
+                        margin-top: -3px;
+                    }
+
+                   
+                }
+               
+             
+            }
+            .right-section {
+                .container {
+                    .body {
+                        padding: 0px 8px;
+                        font-size: 15px;
+                        
+                    }
+                }
+            }
+            
+          }
+        }
+
+    }
+  }
+  
+
+  

@@ -1,0 +1,14 @@
+.#{$app-namespace}-scalable-wrapper-container {
+  .chart-container {
+    min-height: 930px;
+
+    #condition1{
+      .condition-node.top.no{
+        .down-arrow::after{
+          //width: calc(50% - 70px) !important;
+        }
+      } 
+    } 
+    
+  }
+}

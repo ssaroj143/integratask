@@ -1,0 +1,33 @@
+.#{$app-namespace}-question-marker {
+  width: 100%;
+  height: 10px;
+  position: relative;
+  font-family: inherit;
+  background: transparent;
+
+  .marker {
+    top: -2px;
+    margin: 0;
+    padding: 0;
+    width: 12px;
+    height: 12px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    pointer-events: auto;
+    background: url(../../app/assets/images/questionicon.svg);
+    background-size: contain;
+
+    &.visited {
+      background-image: url(../../app/assets/images/questionicon-visited.svg);
+    }
+
+    &.active {
+      background-image: url(../../app/assets/images/questionicon-active.svg);
+    }
+
+    &:disabled {
+      cursor: default;
+    }
+  }
+}

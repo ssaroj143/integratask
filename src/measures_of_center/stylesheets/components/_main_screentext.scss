@@ -1,0 +1,95 @@
+.#{$app-namespace}-activity-container {
+	.#{$app-namespace}-activity {
+		.right-section {
+			.ost1 {
+				.ie-sz {
+					margin-left: 6px;
+				}
+			}
+		}
+		.left-section {
+			.main-screen-text {
+				margin-top: 20px;
+				font-size: 24px;
+				line-height: 28px;
+				text-align: left;
+				ul {
+					padding-left: 30px;
+				}
+				//seprate spacing
+
+				.option {
+					position: relative;
+					text-align: left;
+					padding: 0px 35px;
+					opacity: 0;
+					animation: fadeIn 1.2s linear forwards;
+				}
+
+				&.ost1,
+				&.ost13 {
+					.wrapper {
+						display: inline-flex;
+						line-height: 12px;
+						flex-direction: row;
+						align-items: center;
+						
+						justify-content: space-between;
+						.maths-exp {
+							display: inline-flex;
+							flex-direction: row;
+							align-items: center;
+
+							.parenthesis {
+								line-height: 42px;
+								font-size: 47px;
+								font-weight: 300;
+							}
+
+							.division-block {
+								display: flex;
+								text-align: center;
+								flex-direction: column;
+								.numerator {
+									width: 100%;
+									border: none;
+									margin: 0 auto;
+									display: block;
+									line-height: 16px;
+									border-bottom: 2px solid black;
+								}
+
+								span {
+									padding: 6px 0px;
+								}
+							}
+
+							& + em {
+								margin-left: -2px;
+							}
+						}
+					}
+				}
+
+				&.ost35 {
+					.numerator {
+						width: 100% !important;
+					}
+				}
+				
+				&.ost19 {
+					text-align: left;
+				}
+
+				@keyframes fadeIn {
+					from {
+						opacity: 0;
+					}
+					to {
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}

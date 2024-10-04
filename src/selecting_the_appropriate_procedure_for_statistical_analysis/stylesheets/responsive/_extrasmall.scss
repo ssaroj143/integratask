@@ -1,0 +1,82 @@
+// @mixin smallFont {
+//     font-size: 12px;
+//     line-height: 18px;
+// }
+
+&.extraSmall {
+    &.landscape{
+        .#{$app-namespace}-activity-container {
+           .#{$app-namespace}-question-marker {
+               .marker{
+                   top: 0px;
+                   width: 8px;
+                   height: 8px;
+               }
+           }
+        }
+        
+//         .#{$app-namespace}-activity {
+//           .flow-chart-container {
+//             .left-section {                
+//                 .node{
+//                     .node-container{
+//                         p{
+//                             @include smallFont();
+//                         }
+        
+//                         .text{
+//                             &.process{
+//                                 @include smallFont();
+//                                 padding: 5px;
+
+//                                 &.pink,&.green{
+//                                     width: 150px;
+//                                     height: 200px;
+//                                 }                            }
+//                             &.startend{                                
+//                                 p{
+//                                     @include smallFont();
+//                                 }
+//                             }
+//                         }   
+                                             
+//                     }
+
+//                     &#exam3 {
+//                         #good_model_arrow_8 {
+//                             .arrow {
+//                                 left: 35px;
+//                             }
+//                         }
+//                         #not_good_model_arrow_8 {
+//                             .arrow {
+//                                 right: 35px;
+//                             }
+//                         }
+//                     }
+
+//                     .root{
+//                         margin-top: -3px;
+//                     }
+//                 }
+               
+             
+//             }
+//             .right-section {
+//                 .container {
+//                     .body {
+//                         padding: 0px 8px;
+//                         font-size: 15px;
+                        
+//                     }
+//                 }
+//             }
+            
+//           }
+//         }
+
+    }
+  }
+  
+
+  

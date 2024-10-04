@@ -1,0 +1,22 @@
+.#{$app-namespace}-scalable-wrapper-container {
+  .chart-container {
+    //height: 105% !important;
+    //min-height: 1700px;
+    min-height: 1900px; 
+    min-width: 950px;
+    
+  }
+}
+
+&.large{
+  &.landscape{
+    .#{$app-namespace}-scalable-wrapper-container {
+      .chart-container {
+        min-height: 1650px !important; 
+      }
+    }   
+  }
+}
+
+
+

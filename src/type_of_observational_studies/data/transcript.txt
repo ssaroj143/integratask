@@ -1,0 +1,20 @@
+The goal of this activity is to use the flowchart shown to correctly classify observational studies as retrospective, cross-sectional, or prospective.
+In an observational study, subjects are observed and measured, but they are not modified in any way.
+In contrast, an experiment involves somehow modifying the subjects in order to study the effects of the modification.
+Now, it is time to test your knowledge.
+For an observational study, you need to consider WHEN the observations are made: a past period of time at one point in time or forward in time.
+If the observations focus on a past period of time, you will be conducting a retrospective (or case-control study) in which you will be going back in time to collect data over some past period.
+An example of a retrospective study is an analysis of car crash fatalities from the years 2000 to 2020.
+If the observations focus on one point in time, then you will be conducting a cross-sectional study.
+An example of a cross-sectional study is an opinion survey conducted this week.
+If the observations focus on a future period of time, then you will be conducting a prospective study, which is also called a longitudinal or cohort study.
+In this type of study, you observe groups sharing common factors, such as one group of smokers and another group of non-smokers.
+An example of a prospective study is one based on adverse reactions from a new COVID-19 vaccine that has just been approved. 
+The adverse reactions will be studied in the future after the vaccine has been in use.
+Now, it is time to test your knowledge.
+Let’s try another one.
+To summarize, in an observational study, subjects are observed and measured, but they are not modified in any way.
+Based on when the observations are made, the study is considered to be one of the following:
+A Retrospective  Study for data collected from a past period of time A Cross-Sectional Study for data collected at one point in time A Prospective Study for data to be collected in a future period of time.
+Congratulations, you have mastered an important concept of Statistics!
+There, wasn’t time travel fun?

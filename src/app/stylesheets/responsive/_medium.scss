@@ -1,0 +1,20 @@
+&.medium {
+  &.portrait {
+    .#{$app-namespace}-activity {
+      .flowchart-title {
+        margin: 0 120px;
+      }
+    }
+  }
+  &.landscape {
+    .#{$app-namespace}-activity {
+      .flowchart-title {
+        margin: 0 120px;
+      }
+      .caption-inner{
+        padding: 7px 70px;
+      }
+      
+    }
+  }
+}

@@ -1,0 +1,84 @@
+.#{$app-namespace}-end-screen-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-family: inherit;
+
+  &.hide {
+    display: none;
+  }
+
+  &.toggleHeight {
+    height: calc(100% - 78px);
+  }
+  .end-screen-inner-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .success-message {
+      h2 {
+        color: #002d64;
+        font-size: 34px;
+        font-weight: 500;
+        line-height: 44px;
+        text-align: center;
+      }
+
+      p {
+        color: #002d64;
+        font-size: 20px;
+        letter-spacing: 0.38px;
+        line-height: 28px;
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+
+    .restart {
+      margin-top: 60px;
+      position: relative;
+      height: 40px;
+      width: 148px;
+
+      button {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 20px;
+        background-color: #00749b;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: -0.08px;
+        line-height: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .icon {
+          position: relative;
+          height: 24px;
+          width: 24px;
+
+          background: url("../../app/assets/images/restart_again.svg") no-repeat
+            center center/contain;
+          background-size: contain;
+          position: relative;
+          display: inline-block;
+          margin-right: 8px;
+        }
+
+        &:focus{
+          box-shadow: 0 0 0 1px #ffffff, 0 0 0 3px #006a7c;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.question-container {
+  .question-wrapper {
+    .question-header {
+     
+        .question3-data-table {
+          width: 500px;
+          margin-top: 10px;
+          color: #002e60;
+          table {
+            border: 2px solid black;
+            border-collapse: collapse;
+            color: black;
+            td {
+              border: 2px solid black;
+              border-collapse: collapse;
+            }
+          }
+          tbody tr:nth-child(odd) td {
+            background-color: #4472c4;
+          }
+          
+          tbody tr:nth-child(even) td {
+            background-color: #cdd4ea;
+          }
+        }    
+    }
+  }
+}

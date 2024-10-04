@@ -1,0 +1,25 @@
+$app-namespace: "pehtmlflowcharts";
+$primary-color: #006a7c; // color for tab panel and polarity section
+$pressed-button-background: #d1dbde;
+$activity-background-color: #ffffff;
+
+@mixin button-outer-border($pcolor, $bradius, $bwidth) {
+  top: -5px;
+  left: -5px;
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  border-radius: $bradius;
+  width: calc(100%);
+  height: calc(100%);
+  border: $bwidth solid $pcolor;
+}
+
+@import "../../app/stylesheets/global";
+
+.#{$app-namespace} {
+  @import "../../app/stylesheets/main";
+  @import "./components/all";
+  @import "./responsive/all";
+  @import "./custom/custom";
+}

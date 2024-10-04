@@ -1,0 +1,135 @@
+&.medium {
+  &.landscape {
+    .#{$app-namespace}-activity {
+      .flow-chart-container {
+        .decision {
+          p {
+            font-size: 14px !important;
+            line-height: 20px !important;
+          }
+        }
+
+        .process-container {
+          p {
+            font-size: 15px !important;
+          }
+        }
+
+        .condition1 {
+          .decision-box {
+            .decision {
+              width: 140px;
+              height: 140px;
+            }
+          }
+
+          .bottom-arrow-container {
+            margin-top: 123px !important;
+          }
+
+          .node-container {
+            .decision-arrow {
+              width: 156px;
+              margin-top: 40px;
+            }
+            .left-tailed-child,
+            .right-tailed-child {
+              .arrow {
+                height: 289px;
+              }
+            }
+            .left-tailed-child {
+              .process-container {
+                left: -56px !important;
+              }
+            }
+
+            .right-tailed-child {
+              .process-container {
+                left: 46px !important;
+              }
+            }
+          }
+        }
+
+        .condition2 {
+          top: 165px !important;
+          .decision-box {
+            .decision {
+              width: 165px !important;
+              height: 165px !important;
+            }
+          }
+
+          .node-container {
+            margin-top: 52px !important;
+
+            .decision-arrow {
+              width: 34px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.portrait {
+    .#{$app-namespace}-activity {
+      .left-section {
+        .#{$app-namespace}-scalable-wrapper-container {
+          .chart-container {
+            margin-left: -9%;
+            min-height: 1661px;
+            min-width: 950px;
+          }
+        }
+
+        .ost13.main-screen-text{
+              font-size: 24px;
+              margin-top: 20px;
+              line-height: 28px;
+          }
+      }
+      .flow-chart {
+        .node-container {
+          .process {
+            padding: 12px !important;
+            &.blue {
+              width: calc(100% - 140px) !important;
+              
+            }
+            &.green,
+            &.pink {
+              font-size: 15px;
+              width: 410px;
+              max-width: 650px !important;
+              min-height: 161px;
+            }
+          }
+        }
+        #exam3{
+          justify-content: space-evenly;
+        }
+        #exam1{
+          justify-content:  space-evenly;
+
+          .node{
+            // margin-right: 20px;
+          }
+        }
+      }
+
+      .right-section {
+        .right-section-inner {
+          .body {
+            .button-group{
+              a{
+                padding: 10px 0px 10px;
+                width: 50%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

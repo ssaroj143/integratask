@@ -1,0 +1,157 @@
+&.medium {
+  &.landscape {
+    .#{$app-namespace}-activity-container {
+     
+        .#{$app-namespace}-activity {
+          .left-section {
+            .flowchart-view{
+              position: relative;
+              
+            }
+            .chart-container{
+              button{
+                font-size: 14px;
+                        line-height: 18px;
+              }
+              .node{
+                .node-container{
+                  .text{
+                    &.startend{
+                      width: 90px;
+                      p{
+                        font-size: 14px;
+                        line-height: 18px;
+                      }
+                    }
+                  }
+                }
+              }
+              p{
+                font-size: 14px;
+                line-height: 18px;
+              }
+  
+              .decision-box{
+                  .decision{
+                      width: 155px;
+                      height: 155px;
+
+                      &.sm{
+                          width: 100px;
+                          height: 100px;
+                      }
+                  }
+              }
+             
+              #condition1{
+                .order1{
+                  left: 74px;
+                }
+  
+                .order3{
+                  left: -74px;
+                 
+                }
+  
+                .condition-node{
+                  
+  
+                 
+                  &.top{
+                      top: 67px;
+                    .up-arrow{
+                      right: 19px;
+                      top: -19px;
+                    }
+                    .down-arrow{
+                        width: 117px;
+                        left: -32px;
+                      &::after{
+                        left: -8px;
+                        width:calc(50% - 45px)
+                      }
+                    }
+                  }
+  
+                  &.no{
+                    .down-arrow{
+                        left: 57px;
+                      &::after{
+                        left: unset;
+                        right: -8px;
+      width: calc(50% - 45px);
+                      }
+                    }
+  
+                    .up-arrow{
+                      left: 48px;
+                      top: -19px;
+                    }
+                  }
+                }
+              }
+              
+              #condition2,#condition3{
+                  top: 68px;
+                .order1{
+                  left: 99px;
+                  top: 21px;
+                  .condition-node{
+                    position: relative;
+                    left: 19px;
+                }
+
+                .up-arrow{
+                  left: 4px;
+                }
+                }
+                .order3{
+                  left: -99px;
+                  top: 21px;
+
+                  .condition-node{
+                      position: relative;
+                      left: -19px;
+                  }
+
+                  .up-arrow{
+                    right: 1px;
+                  }
+                }
+  
+                .down-arrow{
+                  p{
+                    width: 89px;
+                  }
+                  &::after{
+                    width: calc(100% - 71px);
+                  }
+                }
+               
+              }
+
+              #condition3{
+                  top: 68px;
+                 
+                 
+              }
+              
+  
+              .process,.process-bottom{
+                height: 195px !important;
+                width: 100px !important;
+              }
+  
+              
+             
+  
+             
+            }
+          }
+      
+        }
+      
+       
+      }
+  }
+}

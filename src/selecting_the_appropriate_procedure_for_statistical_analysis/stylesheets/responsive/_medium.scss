@@ -1,0 +1,1420 @@
+&.medium {
+	&.landscape {
+		@-moz-document url-prefix() {
+			.chart-container{
+				#chart-start{
+					.text{
+						p {
+							font-size: 12px !important; 
+						}
+					}
+				}
+				.node-container {
+					.text {
+						p {
+							font-size: 12px !important;
+						}
+					}
+				}
+				#main-thread1 .node .node-container .text {
+					width: 74px !important
+				}
+				
+
+				#chart-start,
+				#main-thread1, 
+				#main-thread2,
+				#main-thread3,
+				#main-thread4 {
+					.heading-child {
+						margin-left: 13px !important;
+					  }
+					&#main-thread2 .node .node-container .text {
+						width: 77px !important
+					}
+					&#main-thread3 .node .node-container .text {
+						width: 82px !important
+					}
+					&#main-thread4 .node .node-container .text {
+						width: 73px !important
+					}
+					.heading-child {
+						margin-left: 21px;
+						.text {
+							font-size: 12px ;
+						}
+					}
+					.node-container {
+						&::before {
+							width: 3px !important;
+						}
+
+						.text {
+							left: -27px !important;
+							&::before {
+								width: 3px !important;
+							}
+						}
+
+						.arrow {
+							&.down {
+								left: -22px !important 
+							}
+						}	
+						.process{
+							p {
+								font-size: 12px ;
+							}
+
+							&.box4{
+								height: 210px;
+							}
+							&.box5{
+								height: 50px;
+							}
+							&.box6{
+								height: 55px;
+							}
+							&.box7{
+								height: 110px;
+							}
+							&.box8{
+								height: 75px;
+							}
+							&.box8_1{
+								height: 60px;
+							}
+							&.box9{
+								height: 90px;
+							}
+							&.box9_1{
+								height: 80px;
+							}
+							&.box10{
+								height: 35px;
+							}
+							&.box15{
+								height: 37px;
+							}
+							&.box16{
+								height: 38px;
+							}
+							&.box17{
+								height: 60px;
+							}
+							&.box18{
+								height: 55px;
+							}
+							&.box19{
+								height: 85px;
+							}
+							&.box20{
+								height: 58px;
+							}
+							&.box21{
+								height: 65px;
+							}
+							&.box22{
+								height: 80px;
+							}
+							&.box23{
+								height: 130px;
+							}
+							&.box24{
+								height: 78px;
+							}
+							&.box25{
+								height: 61px;
+							}	
+							&.box26{
+								height: 121px;
+							}
+							&.box27{
+								height: 83px;
+							}
+							&.box28{
+								height: 122px;
+							}
+							&.box29{
+								height: 80px;
+							}
+							&.box30{
+								height: 143px;
+							}
+							&.box31{
+								height: 78px;
+							}
+						}
+					}
+
+					&#main-thread1 {	
+						left: -25px;
+
+						#top-child {
+							.node-container {
+								&::before {
+									top: calc(100% - 65.5px) !important;
+								}
+							}
+						}
+						#bottom-child {
+							.node-container {
+								&::before {
+									height: 200px !important;
+									top: calc(100% - 307.5px) !important;
+								}
+							}
+						}
+					}
+					&#main-thread2 {
+						left: -43px !important;
+
+						#top-child1 {
+							.node-container {
+								&::before {
+									top: calc(100% - 31.5px) !important;
+								}
+
+								.text {
+									&::after {
+										height: 10px !important;
+										left: 80px !important;
+										top: 19px !important;
+									}
+								}
+
+								.down {
+									height: 14px !important;
+									left: -14px !important;
+									bottom: 18px !important;
+									&::before {
+										bottom: 2px !important;
+										width: 3px !important;
+										height: 20px !important;
+										left: -11px !important;
+									}
+								}
+							}
+						}
+						#top-child2 {
+							.node-container {
+								.text {
+									&::after {
+										width: 3px ;
+										left: 88px ;
+										bottom: 17px ;
+										height: 15px ;
+									}
+								}
+
+								.text {
+									&::after {
+										height: 15px !important;
+										left: 81px !important;
+										top: 19px !important;
+									}
+								}
+
+								.down {
+									left: -11px !important;
+									top: 30.5px !important;
+									height: 13px !important;
+									&::before {
+										height: 31px !important;
+										right: -14px !important;
+										width: 3px !important;
+										bottom:  -4px !important;
+									}
+								}
+							}
+						}
+						#top-child3 {
+							.node-container {
+								&::before {
+									height: 80px !important;
+									top: calc(100% - 138px) !important ;
+								}
+							}
+						}
+
+						#middle-child1 {
+							.node-container {
+								&::before {
+									top: calc(100% - 45px) !important;
+								}
+							}
+						}
+
+						#middle-child3 {
+							.node-container {
+								&::before {
+									top: calc(100% - 123px) !important;
+								}
+							}
+						}
+
+						 #middle-child2 {
+							 .node-container {
+								 .down {
+									height: 25px !important;
+									left: -17px !important;
+								 }
+							 }
+						 }
+
+						#bottom-child1 {
+							.node-container {
+								&::before {
+									top: calc(100% - 45.5px) !important;				
+								}
+								.down {
+									height: 25px !important;
+									left: -17px !important;
+								}
+							}
+						}
+						#bottom-child2 {
+							.node-container {
+								&::before {
+									height: 80px !important;
+									top: calc(100% - 100px) !important;				
+								}
+
+								.down {
+									height: 25px !important;
+									left: -17px !important;
+								}
+							}
+						}
+					}
+					&#main-thread3 {
+						#top-child11 {
+							.node-container {
+								&::before {
+									height: 46px !important;
+									top: calc(100% - 24px) !important;
+								}
+								.text {
+									&::after {
+										width: 3px !important;
+										height: 17px !important;
+										left: 86px !important;
+										top: 4px !important;									}
+									}
+								.down {
+									left: -3.5px !important;
+									top: 80px !important;
+									&::before {
+										height: 88px !important;
+										right: -43px !important;
+										width: 3px !important;
+									}
+								}
+							}
+						}
+						#top-child12 {
+							.node-container {
+								&::before {
+									top: calc(100% - 44px) !important;
+								}
+								.text {
+									&::after {
+										width: 3px !important;
+										height: 10px !important;
+										left: 82px !important;
+										top: 4px !important;
+									}
+								}
+								.down {
+									height: 26px !important;
+									left: -7px !important;
+									top: 312px !important;
+									&::before {
+										height: 325px !important;
+										bottom: -138px !important;
+										right: -161.5px !important;
+										width: 3px !important;
+									}
+								}
+							}
+						}
+						#top-child2-1 {
+							.node-container {
+								&::before {
+									height: 140.5px !important;
+									top: calc(100% - 36px) !important;
+								}
+							}
+						}
+						#middle-child2-1 {
+							.node-container {
+								&::before {
+									height: 69.5px !important;
+									top: calc(100% - 34.5px) !important;
+								}
+							}
+						}
+
+						#bottom-child1-1 {
+							.node-container {
+								&::before {
+									height: 112.5px !important;
+									top: calc(100% - 45.5px) !important;	
+								}							}
+							}
+						}
+						#bottom-child2-content {
+							bottom: -60px !important;
+							#bottom-child2-1 {
+								.node-container {
+									&::before {
+										top: calc(100% - 45px) !important;
+									}
+								}
+							}
+							#bottom-child2-2 {
+								.node-container {
+									&::before {
+										height: 39px !important;
+										top: calc(100% - 72.5px) !important;
+									}
+									
+									.text {
+										&::after {
+											height: 15px !important;
+											width: 3px !important;
+											left: 85px !important;
+											top: 23px !important;
+										}
+									}
+									.down {
+										height: 23px !important;
+										left: -5px !important;
+										&::before {
+											height: 63px !important;
+											left: -31px !important;
+											bottom: -10px !important;
+											width: 3px !important;
+										}
+									}
+								}
+							}
+						}
+					&#main-thread4 {
+						left: -108px !important;
+
+						#top-child111 {
+							.node-container {
+								&::before {
+									height: 109.5px !important;
+									top: calc(100% - 66px) !important;
+								}
+							}
+						}
+
+						#holder2 {
+							bottom: 60px !important;
+						}
+						#top-child121 {
+							.node-container {
+								&::before {
+									height: 109.5px !important;
+									top: calc(100% - 67px) !important;
+								}
+							}
+						}
+						#bottom-child2-2-1 {
+							.node-container {
+								&::before {
+									height: 120.5px !important;
+									top: calc(100% - 77.5px) !important;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		@media screen and (-ms-high-contrast: active),
+		screen and (-ms-high-contrast: none) {
+			.#{$app-namespace}-activity-container {
+				.#{$app-namespace}-activity {
+					.left-section {
+						.#{$app-namespace}-scalable-wrapper-container {
+							.chart-container {
+								#chart-start{
+									max-width: 42px !important; 
+								}
+							}
+						}
+						.chart-container {
+							#chart-start{
+								max-width: 132px !important; 
+							}
+							.node {
+							.node-container {
+									.process{
+										&.box7{
+											height: 116px;
+										}
+										&.box26{
+											height: 116px;
+										}
+										&.box10{
+											height: 41px;
+										}
+										&.box19{
+											height: 90px;
+											padding-top: 5px !important;
+										}
+										&.box23{
+											height: 133px;
+										}
+										&.box30{
+											height: 135px;	
+										}
+										&.box17{
+											height: 61px;;
+										}
+										&.box21 {
+											height: 75px;
+										}
+									}
+								}
+								}
+								#main-thread3#main-thread3 #bottom-child2-2 .node-container .down {
+									bottom:61px;
+									left: 10px;
+									height: 30px;
+								}
+							#main-thread1,
+							#main-thread2,
+							#main-thread3,
+							#main-thread4 {
+								left: 65px;
+								.heading-child {
+									margin-left: -13px;
+								}
+							}
+							#main-thread1 {
+								#top-child {
+									> .node-container {
+										&::before {
+											top: calc(100% - 65px) !important;
+										}
+									}
+								}
+		
+								#bottom-child {
+									> .node-container {
+										&::before {
+											top: calc(100% - 313px) !important;
+										}
+									}
+								}
+							}
+							#main-thread2 {
+								left: 20px;
+
+								.node-container {
+									.text {
+										width: 85px;
+									}
+								}
+								#top-child-content {
+									#top-child1 {
+										>.node-container {
+											&::before {
+												top: calc(100% - 36px) !important;
+											}
+		
+											.text {
+												&::after {
+													height: 13px;
+													left: 89px;
+												}
+											}
+										}
+		
+										.down{
+											&::before{
+												height: 31px;
+												left: -15px;
+											}
+										}
+									}
+									#top-child2 {
+										>.node-container {
+											.text {
+												&::after {
+													left: 90px;
+												}
+											}
+										}
+									}
+									#top-child3 {
+										>.node-container {
+											&::before {
+												height: 70px;
+												top: calc(100% - 130px);
+											}
+										}
+									}
+								}
+								#middle-child-content {
+									#middle-child1 {
+										>.node-container {
+											&::before {
+												top: calc(100% - 47px);
+											}
+										}
+									}
+									#middle-child3 {
+										>.node-container {
+											&::before {
+												height: 80px;
+												top: calc(100% - 132px);
+											}
+										}
+									}
+								}
+								#bottom-child-content {
+									#bottom-child1 {
+										>.node-container {
+											&::before {
+												top: calc(100% - 46px);
+											}
+										}
+									}
+									#bottom-child2 {
+										>.node-container {
+											&::before {
+												height: 70px;
+												top: calc(100% - 93px);
+											}
+										}
+									}
+								}
+							}
+							#main-thread3 {
+								left: -23px;
+								
+								.node-container {
+									.text {
+										width: 90px;
+									}
+								}
+								#top-child1-content {
+									bottom: 30px;
+		
+									#top-child11 {
+										> .node-container {
+											&::before {
+												height: 45px;
+												top: 18px;
+											}
+		
+											.text {
+												&::after {
+													height: 24px;
+													left: 99px;
+												}
+											}
+										}
+									}
+									#top-child12 {
+										.node-container {
+											.down {
+												&::before {
+													height: 315px;
+													right: -156px;
+													bottom: -132px;									
+												}
+											}
+		
+											.text {
+												&::after {
+													height: 14px;
+													left: 93px;
+												}
+											}
+										}
+									}
+								}
+								#top-child2-content {
+									bottom: 65px;
+		
+									#top-child2-1 {
+										> .node-container {
+											&::before {
+												height: 145px;
+											}
+										}
+									}
+								}
+								#middle-child2-content {
+									bottom: -10px;
+									#middle-child2-1 {
+										> .node-container {
+											&::before {
+												height: 74px;
+												top: 29px;
+											}
+										}
+									}
+								}
+								#bottom-child1-content {
+									bottom: 0px;
+
+									
+									#bottom-child1-1 {
+										> .node-container {
+											&::before {
+												height: 115px;
+												top: 39px;
+											}
+										}
+									}
+								}
+		
+								#bottom-child2-content {
+									bottom: -50px;
+		
+									#bottom-child2-1 {
+										> .node-container {
+											&::before {
+												top: 39px;
+											}
+										}
+									}
+									#bottom-child2-2 {
+										> .node-container {
+											&::before {
+												top: calc(100% - 72px);
+											}
+		
+											.text {
+												&::after{
+													left: 95px;
+												}
+											}
+										}
+									}
+								}
+							}
+							#main-thread4 { 
+								left: -50px;
+
+								.heading-child {
+									margin-left: 5px !important;
+								}
+
+								#holder1 {
+									#top-child111 {
+										> .node-container {
+											&::before {
+												height: 107px;
+												top: calc(100% - 63px);
+											}
+										}
+									}
+								}
+								#holder2 {
+									#top-child121 {
+										> .node-container {
+											&::before {
+												height: 110px;
+												top: calc(100% - 67px);
+											}
+										}
+									}
+								}
+		
+								#holder3 {
+									#bottom-child2-2-1 {
+										> .node-container {
+											&::before {
+												height: 116px;
+												top: calc(100% - 73px);
+											}
+										}
+									}
+								}
+							}	
+						}
+						
+					}
+				}
+			}
+		}
+		.#{$app-namespace}-activity {
+			.left-section {
+				.#{$app-namespace}-scalable-wrapper-container {
+					.chart-container {
+						min-height: 960px !important;
+					}
+				}
+				.chart-container{
+					.node{
+					.node-container{
+						.arrow {	
+							width: 3px ;
+						}
+						.process{
+							p {
+								font-size: 12px ;
+							}
+
+							&.box1{
+								height: 110px;
+							}
+							&.box2{
+								height: 120px;
+							}
+							&.box3{
+								height: 115px;
+							}
+							&.box4{
+								height: 220px;
+							}
+							&.box5{
+								height: 61px;
+							}
+							&.box6{
+								height: 62px;
+							}
+							&.box7{
+								height: 120px;
+							}
+							&.box8{
+								height: 80px;
+							}
+							&.box8_1{
+								height: 62px;
+							}
+							&.box9{
+								height: 95px;
+							}
+							&.box9_1{
+								height: 80px;
+							}
+							&.box10{
+								height: 40px;
+							}
+							&.box15{
+								height: 37px;
+							}
+							&.box16{
+								height: 38px;
+							}
+							&.box17{
+								height: 61px;
+							}
+							&.box18{
+								height: 57px;
+							}
+							&.box19{
+								height: 95px;
+							}
+							&.box20{
+								height: 58px;
+							}
+							&.box21{
+								height: 78px;
+							}
+							&.box22{
+								height: 80px;
+							}
+							&.box23{
+								height: 140px;
+							}
+							&.box24{
+								height: 78px;
+							}
+							&.box25{
+								height: 61px;
+							}	
+							&.box26{
+								height: 121px;
+							}
+							&.box27{
+								height: 83px;
+							}
+							&.box28{
+								height: 122px;
+							}
+							&.box29{
+								height: 80px;
+							}
+							&.box30{
+								height: 143px;
+							}
+							&.box31{
+								height: 78px;
+							}
+						}
+					}
+					}
+					#chart-start {
+						.node-container {
+							.text {
+								left: 0px !important;
+								width: 90px !important;
+								min-width: 90px;
+							}
+							.down {
+								left: 3px !important;
+							}
+						}
+					}
+					#chart-start,
+					#main-thread1, 
+					#main-thread2,
+					#main-thread3,
+					#main-thread4 {
+						.heading-child {
+							margin-left: 21px;
+							.text {
+								font-size: 12px ;
+							}
+						}
+						.node-container {
+							&::before {
+								width: 3px ;
+							}
+
+							.text {
+								left: -33px;
+								&::before {
+									width: 3px ;
+								}
+							}
+
+							.arrow {	
+								height: 10px;
+								left: -0px;
+
+								&::after {
+									border-left: 7px solid transparent;
+    								border-right: 7px solid transparent;
+    								border-top: 7px solid #000;
+								}
+							}
+
+							.down {
+								left: -30px;
+							}
+						}
+						&#main-thread1 {	
+							left: -25px;
+							.node-container {
+								.text {
+									width: 80px ;
+								}
+							}	
+							#top-child {
+								bottom: 45px ;
+								.node-container {
+									&::before {
+										top: calc(100% - 65.5px);
+									}
+								}
+							}
+							#middle-child {
+								bottom: 10px;
+							}
+							#bottom-child {
+								bottom: 30px;
+								.node-container {
+									&::before {
+										height: 200px;
+										top: calc(100% - 312.5px);
+									}
+								}
+							}
+						}
+						&#main-thread2 {
+							left: -70px ;
+							.node-container {
+								.text {
+									width: 84px ;
+								}
+							}
+							#top-child-content {
+								justify-content: flex-start;
+								bottom: -40px;
+							}
+							#middle-child-content {
+								bottom: -20px;
+							}
+	
+							#top-child1 {
+								.node-container {
+									&::before {
+										top: calc(100% - 37.5px) ;
+									}
+	
+									.text {
+										&::after {
+											width: 3px ;
+											height: 15px ;
+											left: 88px ;
+											bottom: 21px ;
+										}
+									}
+	
+									.down {
+										height: 12px ;
+										left: -15px ;
+										bottom: 28px ;
+										&::before {
+											bottom: -4px ;
+											width: 3px ;
+											height: 30px ;
+											left: -15px ;
+										}
+									}
+								}
+							}
+							#top-child2 {
+								.node-container {
+									.text {
+										&::after {
+											width: 3px ;
+											left: 88px ;
+											   bottom: 17px ;
+											height: 15px ;
+										}
+									}
+	
+									.down {
+										left: -15px ;
+										top: 30.5px ;
+										&::before {
+											height: 30px ;
+											right: -14.5px ;
+											width: 3px ;
+											bottom:  -6px ;
+										}
+									}
+								}
+							}
+							#top-child3 {
+								.node-container {
+									&::before {
+										height: 80px ;
+										top: calc(100% - 142px) ;
+									}
+								}
+							}
+	
+							#middle-child-content {
+								justify-content: flex-start;
+							}
+	
+							#middle-child1 {
+								.node-container {
+									&::before {
+										top: calc(100% - 47px) ;
+									}
+								}
+							}
+	
+							#middle-child3 {
+								.node-container {
+									&::before {
+										top: calc(100% - 124.7px) ;
+									}
+								}
+							}
+	
+							 #middle-child2 {
+								 .node-container {
+									 .down {
+										height: 25px ;
+										left: -22px ;
+									 }
+								 }
+							 }
+	
+							#bottom-child-content {
+								bottom: 5px;
+							}
+	
+							#bottom-child1 {
+								.node-container {
+									&::before {
+										top: calc(100% - 45.5px) ;				
+									}
+									.down {
+										height: 25px ;
+										left: -22px ;
+									}
+								}
+							}
+							#bottom-child2 {
+								bottom: 20px;
+								.node-container {
+									&::before {
+										height: 80px ;
+										top: calc(100% - 102px) ;				
+									}
+	
+									.down {
+										height: 25px ;
+										left: -22px ;
+									}
+								}
+							}
+						}
+						&#main-thread3 {
+							left: -113px ;
+							.node-container {
+								.text {
+									width: 90px ;
+								}
+							}
+							#top-child11 {
+								.node-container {
+									&::before {
+										height: 46px ;
+										top: calc(100% - 24px) ;
+									}
+									.text {
+										&::after {
+											width: 3px ;
+											height: 24px ;
+											left: 98px ;
+											bottom: 7px ;
+										}
+									}
+									.down {
+										left: -3.5px ;
+										top: 80px ;
+										&::before {
+											right: -43px ;
+											width: 3px ;
+										}
+									}
+								}
+							}
+							#top-child12 {
+								.node-container {
+									.text {
+										&::after {
+											width: 3px ;
+											left: 94px ;
+										}
+									}
+									.down {
+										height: 26px ;
+										left: -7px ;
+										top: 312px ;
+										&::before {
+											height: 314px ;
+											bottom: -132px ;
+											right: -156.5px ;
+											width: 3px ;
+										}
+									}
+								}
+							}
+							#top-child2-1 {
+								.node-container {
+									&::before {
+										height: 148.5px ;
+										top: calc(100% - 36px) ;
+									}
+								}
+							}
+							#middle-child2-content {
+								bottom: -30px;
+							}
+							#middle-child2-1 {
+								.node-container {
+									&::before {
+										height: 76.5px ;
+										top: calc(100% - 34.5px) ;
+									}
+								}
+							}
+	
+							#bottom-child1-content {
+								bottom: -30px;
+							}
+							#bottom-child1-1 {
+								.node-container {
+									&::before {
+										height: 118.5px ;
+										top: calc(100% - 45.5px) ;	
+									}							}
+								}
+							}
+							#bottom-child2-content {
+								bottom: -30px ;
+								#bottom-child2-1 {
+									.node-container {
+										&::before {
+											top: calc(100% - 45px) ;
+										}
+									}
+								}
+								#bottom-child2-2 {
+									.node-container {
+										&::before {
+											height: 39px ;
+											top: calc(100% - 71.5px) ;
+										}
+										
+										.text {
+											&::after {
+												width: 3px ;
+												left: 96px ;
+												bottom: 18px ;
+											}
+										}
+										.down {
+											height: 23px ;
+											left: -5px ;
+											&::before {
+												height: 63px ;
+												left: -31px ;
+												bottom: -10px ;
+												width: 3px;
+											}
+										}
+									}
+								}
+							}
+						&#main-thread4 {
+							left: -140px ;
+	
+							#heading4 {
+								margin-top: 14.5px ;
+							}
+							.node-container {
+								.text {
+									width: 80px ;
+								}
+							}
+	
+							#top-child111 {
+								.node-container {
+									&::before {
+										height: 110.1px ;
+										top: calc(100% - 66px) ;
+									}
+								}
+							}
+	
+							#holder2 {
+								bottom: 60px;
+							}
+							#top-child121 {
+								.node-container {
+									&::before {
+										height: 110.2px ;
+										top: calc(100% - 67px) ;
+									}
+								}
+							}
+							#holder3 {
+								top: 60px ;
+							}
+							#bottom-child2-2-1 {
+								.node-container {
+									&::before {
+										height: 120.5px ;
+										top: calc(100% - 77px);
+									}
+								}
+							}
+						}
+					}
+					&.mac-os {
+					
+						#main-thread2{
+							top: 15px;
+							#top-child3 > .node-container::before {
+								top: calc(100% - 142.5px) !important;
+							}
+							#middle-child3 > .node-container::before {
+								top: calc(100% - 130px) !important;
+							}
+							#bottom-child2 > .node-container::before {
+								top: calc(100% - 102px) !important;
+							}
+						}
+						#main-thread3{
+							top: 18px;
+	
+							#top-child1-content {
+								top: -30px;
+							}
+							#top-child2-content {
+								top: -35px;
+							}
+	
+							#middle-child2-content {
+								bottom: 10px !important;
+							}
+							#bottom-child1-content {
+	
+								#bottom-child1-1{
+									top: -30px;
+	
+									.node-container::before {
+										height: 120px !important;
+									}
+								}
+							}
+							#bottom-child2-content {
+								bottom: -40px;
+							}
+							#top-child2-1 {
+								.node-container::before {
+									height: 153.5px !important;
+									top: calc(100% - 28px) !important;
+								}
+							}
+							#top-child2-2 {
+								top: -10px;
+							}
+							#top-child2-3 {
+								top: 10px;
+							}
+							#top-child3 > .node-container::before {
+								height: 80px !important;
+								top: calc(100% - 132.5px) !important;
+							}
+						}
+						#main-thread4{
+							top: 25px;
+	
+							.heading-child {
+								bottom: 8px;
+							}
+							#top-child3 > .node-container::before {
+								height: 80px !important;
+								top: calc(100% - 132.5px) !important;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.portrait {
+		.#{$app-namespace}-activity {
+			.left-section {
+				.#{$app-namespace}-scalable-wrapper-container {
+				}
+				.chart-container{
+				.node{
+				.node-container{
+				.process{
+						&.box1{
+							height: 118px;
+						}
+						&.box2{
+							height: 113px;
+						}
+						&.box3{
+							height: 112px;
+						}
+						&.box4{
+							height: 213px;
+						}
+						&.box5{
+							height: 50px;
+						}
+						&.box6{
+							height: 52px;
+						}
+						&.box7{
+							height: 112px;
+						}
+						&.box8{
+							height: 70px;
+						}
+						&.box8_1{
+							height: 52px;
+						}
+						&.box9{
+							height: 91px;
+						}
+						&.box9_1{
+							height: 72px;
+						}
+						&.box10{
+							height: 32px;
+						}
+						&.box15{
+							height: 31px;
+						}
+						&.box16{
+							height: 32px;
+						}
+						&.box17{
+							height: 52px;
+						}
+						&.box18{
+							height: 52px;
+						}
+						&.box19{
+							height: 92px;
+						}
+						&.box20{
+							height: 52px;
+						}
+						&.box21{
+							height: 72px;
+						}
+						&.box22{
+							height: 72px;
+						}
+						&.box23{
+							height: 132px;
+						}
+						&.box24{
+							height: 72px;
+						}
+						&.box25{
+							height: 52px;
+						}
+						&.box26{
+							height: 111px;
+						}
+						&.box27{
+							height: 73px;
+						}
+						&.box28{
+							height: 112px;
+						}
+						&.box29{
+							height: 70px;
+						}
+						&.box30{
+							height: 133px;
+						}
+						&.box31{
+							height: 68px;
+						}
+					}
+				}
+			}
+		}
+			}
+		}
+		 .pehtmlflowcharts-activity .left-section .chart-container #main-thread2#main-thread2 #top-child1 .node-container .down{
+		 height: 17px !important;
+		 &::before{
+			height: 35px !important;
+			bottom: 1px !important;
+			left: -16px !important;
+		}
+	}
+	}
+	
+}

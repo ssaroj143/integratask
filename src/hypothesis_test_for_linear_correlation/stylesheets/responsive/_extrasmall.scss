@@ -1,0 +1,105 @@
+@mixin smallFont {
+    font-size: 12px;
+    line-height: 18px;
+  }
+&.extraSmall {
+    &.landscape{
+        .#{$app-namespace}-activity-container {
+            header {
+                padding: 0px 12px;
+            }
+        }
+        
+        .#{$app-namespace}-activity {
+          .flow-chart-container {
+            .left-section {                
+                .node{
+                    .node-container{
+                        p{
+                            @include smallFont();
+                        }
+        
+                        .text{
+                            &.process{
+                                @include smallFont();
+                                padding: 5px;
+                            }
+                            &.startend{                                
+                                p{
+                                    @include smallFont();
+                                }
+                            }
+                        }   
+                                             
+                    }
+                    &#condition1{
+                        .child-node{
+                            .node-container{
+                                .text{
+                                    .heading{
+                                        font-size: 14px;
+                                        line-height: 20px;   
+                                    }
+                                    &.condition-node{
+                                        &.first-child{
+                                            .heading{
+                                                font-size: 14px;
+                                                line-height: 20px;
+                                                right: 99px;
+                                            }
+                                        }
+    
+                                        &.last-child{
+                                            .heading{
+                                                font-size: 14px;
+                                                line-height: 20px;
+                                                left: 94px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .root{
+                        margin-top: -3px;
+                    }
+
+                    &#exceedsthevalue,&#isrejected{
+                        .node-container{
+                            .text{
+                                //max-width: 248px;
+                            }
+                        }
+                    }
+
+                    #retrospective-child,#cross-sectional-child{
+                        .node-container{
+                            .text{
+                                //min-width: 250px;
+                            }
+                        }
+                    }
+                }
+               
+             
+            }
+            .right-section {
+                .container {
+                    .body {
+                        padding: 0px 8px;
+                        font-size: 15px;
+                        
+                    }
+                }
+            }
+            
+          }
+        }
+
+    }
+  }
+  
+
+  

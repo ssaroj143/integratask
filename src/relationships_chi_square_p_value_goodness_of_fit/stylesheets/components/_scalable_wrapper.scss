@@ -1,0 +1,18 @@
+.#{$app-namespace} {
+  .#{$app-namespace}-scalable-wrapper-container {
+    .scalable-wrapper-inner {
+      .chart-container {
+        min-height: 960px;
+        .node {
+          .node-container {
+            .text {
+              ol > li {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

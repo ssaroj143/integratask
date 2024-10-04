@@ -1,0 +1,89 @@
+&.medium {
+  &.landscape {
+    .#{$app-namespace}-activity {
+      .flow-chart-container {
+        .left-section {
+          .chart-container {
+            .node {
+              .node-container { 
+                .text {
+                  &.decision-box {
+                      .decision {
+                          height: 180px;
+                          width: 180px;
+
+                          p {
+                              font-size: 19px;
+                          }
+                      }
+                  }
+                }
+              }
+
+              &#condition1 {
+                top: 2px;
+                .child-node {
+                  .node-container {
+                    .text {
+                        font-size: 15px;
+                    }
+                  }
+                  &.first-child {
+                    .text {
+                      &::after {
+                        top: -102px;
+                        width: calc(100% - 86px);
+                      }
+
+                      &::before {
+                        height: 100px;
+                      }
+                    }
+                  }
+                  &.last-child {
+                    .text {
+                      &::after {
+                        top: -102px;
+                        width: calc(100% - 87px);
+                      }
+
+                      &::before {
+                        height: 100px;
+                      }
+                    }
+                  } 
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.portrait {
+    .#{$app-namespace}-activity {
+      .left-section {
+        .chart-container {
+          .node {
+            &#condition1 {
+              .child-node {
+                .node-container {
+                  .text {
+                    &.condition-node {
+                      &.last-child {
+                        &::after {
+                          content: "";
+                          //left: calc(100% - 238px);
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

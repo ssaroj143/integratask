@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="148px" height="48px" viewBox="0 0 148 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>9736AE41-E4FA-4EA1-BA6D-91CCAC6B607A</title>
+    <g id="v4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="assets" transform="translate(-614.000000, -70.000000)">
+            <g id="graph-01" transform="translate(614.000000, 71.000000)">
+                <path d="M74,0 C64.8546522,0 55.2718828,12.8072694 44.5566181,22.9271932 C34.4107175,32.5093868 22.0362812,36 10,36 L1.95541361e-11,36 L1.95541361e-11,44 L74,44 L74,0 Z M74,0 C83.1453478,0 92.7281172,12.8072694 103.443382,22.9271932 C113.589283,32.5093868 125.015226,36 138,36 L148,36 L148,44 L74,44 L74,0 Z" id="Combined-Shape" fill="#F5E67F"></path>
+                <path d="M-7.10542736e-15,14.5771927 C2.70169166,17.3563645 5.47036669,20.236749 8.31908593,22.9271932 C18.4649866,32.5093868 30.8757041,36 42.8757041,36 L52.8757041,36 L52.8757041,44 L-7.10542736e-15,44 L-7.10542736e-15,14.5771927 Z" id="Path" fill="#DDEBC8" transform="translate(26.437852, 29.288596) scale(-1, 1) translate(-26.437852, -29.288596) "></path>
+                <line x1="74" y1="47" x2="74" y2="0" id="Path" stroke="#000000" stroke-width="2"></line>
+                <path d="M52.8757041,47 L52.8757041,14.5771927" id="Path" stroke="#000000" stroke-width="2" transform="translate(52.875704, 30.788596) scale(-1, 1) translate(-52.875704, -30.788596) "></path>
+                <path d="M74,0 C64.8546522,0 55.2718828,12.8072694 44.5566181,22.9271932 C34.4107175,32.5093868 21,36 10,36 L1.90993887e-11,36 M74,0 C83.1453478,0 92.7281172,12.8072694 103.443382,22.9271932 C113.589283,32.5093868 126,36 138,36 L148,36" id="Combined-Shape" stroke="#6C0015" stroke-width="2"></path>
+                <path d="M1.90993887e-11,44 L74,44 M148,44 L74,44" id="Combined-Shape" stroke="#000000"></path>
+            </g>
+        </g>
+    </g>
+</svg>

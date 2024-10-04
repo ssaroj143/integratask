@@ -1,0 +1,95 @@
+@import "small";
+@import "medium";
+@import "large";
+@import "extralarge";
+
+// This is common code for portait view for all screen sizes.
+&.small,
+&.large,
+&.medium,
+&.extralarge {
+  &.portrait {
+    .pehtmlflowcharts-activity-container {
+      .pehtmlflowcharts-activity {
+        .flow-chart-container {
+          flex-direction: column;
+
+          &.toggleHeight {
+            height: calc(100% - 78px);
+          }
+          .left-section {
+            width: 100%;
+            height: 70%;
+
+            .pehtmlflowcharts-scalable-wrapper-container {
+              &.toggleHeight {
+                height: 100%;
+              }
+            }
+            .chart-container {
+              padding-right: 16px;
+              height: 100%;
+            }
+          }
+
+          .right-section {
+            // height: 0;
+            width: 100%;
+            height: 30%;
+            max-height: 360px; // this is to make sure that the interactive box doesn't appear too large on larger screen sizes.
+            transition: height 800ms;
+
+            // &.show {
+            // }
+
+            .right-section-inner {
+              padding-left: 0;
+              padding-bottom: 16px;
+              .container {
+                .body {
+                  .text-container {
+                    .message {
+                      display: inline-flex;
+                      width: auto;
+                    }
+                    .button-group {
+                      flex-direction: row;
+                      button {
+                        margin-right: 16px;
+                        margin-bottom: unset;
+
+                        &:last-of-type {
+                          margin-right: unset;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .pehtmlflowcharts-caption-container {
+          &.landscape {
+            display: none;
+          }
+        }
+        .pehtmlflowcharts-end-screen-container {
+          &.toggleHeight {
+            height: calc(100% - 78px);
+          }
+        }
+        .pehtmlflowcharts-caption-container {
+          &.portrait {
+            display: block;
+          }
+
+          &.hide {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

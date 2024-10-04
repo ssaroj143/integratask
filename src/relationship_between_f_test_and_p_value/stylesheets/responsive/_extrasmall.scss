@@ -1,0 +1,117 @@
+&.extraSmall {
+    &.landscape{
+        .#{$app-namespace}-activity {
+            .flow-chart-container {
+                .left-section {
+                    .chart-container {
+                        .node {
+                        
+
+                            &#condition1{
+                                #wholenumber{
+                                    &.decision-box{
+                                        .decision{
+                                            width: 115px;
+                                            height: 115px;
+                                            p{
+                                                font-size: 12px;
+                                                line-height: 18px;
+                                               
+                                            }
+                                        }
+
+                                        &.selected-text{
+                                            margin-left: 39px;
+                                        }
+                                    }
+                                    .end-child{
+                                        min-width: 130px;
+                                    }
+                                }
+
+                                #whole-number-yes{
+                                    margin-top: -62px;
+                                    left: -1px;
+
+                                    &.special-text{
+                                        margin-top: -48px;
+                                    }
+                                    #wholenumber-child-left-yes{
+                                        &.branch{
+                                            top: 12px;
+                                        }
+                                    }
+                                    .condition-node{
+                                        &.column{
+                                            .node-container{
+                                                .arrow{
+                                                    width: 35px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            &#comp{
+                                .node{
+                                    &.selected-text,&.visited{
+                                        .node-container{
+                                            min-width: 130px;
+                                        }
+                                    }
+                                }
+                            }
+                           
+                        } 
+                        .main-text {
+                            margin-top: 20px;
+                        }
+                    }
+                }
+                .right-section {
+                    .container {
+                        .body {
+                            padding: 0px 8px;
+                            font-size: 15px;
+
+                            table {
+                                caption {
+                                    font-size: 15px;
+                                }
+
+                                td {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // @media screen and (-ms-high-contrast: active),
+        // screen and (-ms-high-contrast: none) {
+        //     .#{$app-namespace}-activity-container {
+        //         .#{$app-namespace}-activity {
+        //             .left-section {
+        //                 .chart-container {
+        //                     .node{
+        //                         &.condition1 {
+        //                             left: 0px;
+        //                             #whole-number-yes {
+        //                                 left: -15px;
+        //                             }
+        //                         }
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     } 
+        // }
+    }
+}
+
+
+
+
+  

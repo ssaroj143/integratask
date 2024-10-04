@@ -1,0 +1,40 @@
+&.extraSmall {
+    &.landscape{
+        .#{$app-namespace}-activity {
+            .flow-chart-container {
+                .left-section {
+                    .chart-container {
+
+                        p{
+                            font-size: 12px;
+                            line-height: 18px;
+                        }
+
+                        .text{
+                            &.process{
+                                font-size: 12px;
+                                line-height: 18px;
+                                padding: 5px;
+                            }
+                        }                        
+                        .main-text {
+                            margin-top: 20px;
+                        }
+                    }
+                }                
+            }
+        }
+        .#{$app-namespace}-question-marker{
+            .marker{
+                width: 7px;
+                height: 7px;
+                top: 0px;
+            }
+        }
+    }
+}
+
+
+
+
+  

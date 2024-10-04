@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>D7C633AA-6EB1-4794-973F-5BD0FDB73C59</title>
+    <g id="v4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="assets" transform="translate(-248.000000, -360.000000)">
+            <g id="icon-correct" transform="translate(248.000000, 360.000000)">
+                <rect id="Container" x="0" y="0" width="24" height="24"></rect>
+                <rect id="Background" fill="#397F3C" x="1" y="1" width="22" height="22" rx="11"></rect>
+                <path d="M10.5,15 L16.5,9 M10.5,15 L7.5,12" id="Shape" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

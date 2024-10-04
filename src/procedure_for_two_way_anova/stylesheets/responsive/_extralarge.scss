@@ -1,0 +1,12 @@
+&.extralarge {
+	.#{$app-namespace}-activity {
+		.flow-chart-container {
+			.left-section {
+				.chart-container {
+					.node .node-container {
+					}
+				}
+			}
+		}
+	}
+}

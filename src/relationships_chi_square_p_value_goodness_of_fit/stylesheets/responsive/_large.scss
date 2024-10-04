@@ -1,0 +1,69 @@
+&.large {
+  .#{$app-namespace}-activity {
+    .flow-chart-container {
+      .left-section {
+        .flow-chart{
+          #exam1 {
+            .node {
+                .side_content {
+                  position: absolute;
+                  left: 285px;
+                  top: -90px;
+                  width: 76px;
+              
+                }
+            }
+        }
+        .node-container {
+          .process {
+
+              &.green,
+              &.pink {
+                  width: 280px;
+              }
+            }
+          }
+        }
+        .chart-container {
+          .node {
+            .node-container {
+              .node-container {
+                .process {
+                    &.blue {
+  
+                        width: 300px;
+                    }
+  
+                    &.green,
+                    &.pink {
+                        width: 200px;
+                    }
+  
+                    .gr-graph,
+                    .pn-graph {
+                        width: 150px;
+                    }
+  
+                    // p {
+                    //     &.graph-text {
+                    //         &.gr-text {
+                    //             top: -66px;
+                    //             left: 5px;
+                    //         }
+  
+                    //         &.pn-text {
+                    //             top: -66px;
+                    //             left: 40px;
+                    //         }
+                    //     }
+                    // }
+                }
+  
+            }
+            }
+          }
+        }
+      }
+    }
+  }
+}

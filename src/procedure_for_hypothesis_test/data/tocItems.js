@@ -1,0 +1,77 @@
+export default [
+  { id: "title", name: "Title", startTime: 0, endTime: 0 },
+  {
+    id: "goal",
+    name: "Flowchart Goals",
+    startTime: 0.1 + 0.250,
+    endTime: 73.586226,
+  },
+  {
+    id: "example",
+    name: "Example",
+    startTime: 74.601209,
+    endTime: 137.288457,
+  },
+  {
+    id: "identify_the_claim",
+    name: "Identify the Claim",
+    startTime: 137.608660,
+    endTime: 163.264275,
+  },
+  {
+    id: "give_symbolic_form",
+    name: "Give Symbolic Form",
+    startTime: 163.602602,
+    endTime: 181.482727,
+  },
+  {
+    id: "identify_null_and_alternative_hypothesis",
+    name: "Identify Null and Alternative Hypothesis",
+    startTime: 181.821054,
+    endTime: 221.381446,
+  },
+  {
+    id: "select_significance_level",
+    name: "Select Significance Level",
+    startTime: 221.876854,
+    endTime: 246.077854,
+  },
+  {
+    id: "identify_test_statistic",
+    name: "Identify Test Statistic",
+    startTime: 246.677854,
+    endTime: 303.017546,
+  },
+  {
+    id: "find_test_statistic_value",
+    name: "Find Test Statistic Value",
+    startTime: 303.361247,
+    endTime: 337.895296,
+  },
+  {
+    id: "pValue_method",
+    name: "<i>P</i>-Value Method",
+    label:"p value method",
+    startTime: 338.341554,
+    endTime: 439.304461,
+  },
+  {
+    id: "critical_value_method",
+    name: "Critical Value Method",
+    startTime: 440.359793,
+    endTime: 526.858394,
+  },
+  {
+    id: "summary",
+    name: "Summary",
+    startTime: 527.655539,
+    endTime: 551.285058,
+  },
+  {
+    id: "success",
+    name: "Success",
+    hidden: true,
+    startTime: 552.091485,
+    endTime: 563.25551,
+  },
+];

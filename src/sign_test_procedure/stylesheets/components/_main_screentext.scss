@@ -1,0 +1,85 @@
+.#{$app-namespace}-activity-container {
+  .#{$app-namespace}-activity {
+    .left-section {
+      .main-text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      .main-screen-text {
+        margin-top: 20px;
+        font-size: 24px;
+        line-height: 28px;
+        opacity: 0;
+        animation: fadeIn 1.2s linear forwards;
+
+        .option {
+          position: relative;
+          text-align: left;
+          padding: 0px 0px 0px 35px;
+        }
+
+        // &.ost16,
+        // &.ost30,
+        // &.ost35 {
+        //   font-size: 30px;
+        //   line-height: 36px;
+        //   .wrapper {
+        //     display: inline-flex;
+        //     line-height: 16px;
+        //     flex-direction: row;
+        //     align-items: center;
+        //     .maths-exp {
+        //       display: inline-flex;
+        //       flex-direction: row;
+
+        //       .parenthesis {
+        //         line-height: 45px;
+        //         font-size: 56px;
+        //         font-weight: 300;
+        //       }
+
+        //       .division-block {
+        //         display: flex;
+        //         text-align: center;
+        //         flex-direction: column;
+
+        //         .numerator {
+        //           width: 90%;
+        //           border: none;
+        //           margin: 0 auto;
+        //           display: block;
+        //           line-height: 16px;
+        //           border-bottom: 2px solid black;
+        //         }
+
+        //         span {
+        //           padding: 4px 0px;
+        //         }
+        //       }
+
+        //       & + em {
+        //         margin-left: -2px;
+        //       }
+        //     }
+        //   }
+        // }
+
+        // &.ost35 {
+        //   .numerator {
+        //     width: 100% !important;
+        //   }
+        // }
+
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

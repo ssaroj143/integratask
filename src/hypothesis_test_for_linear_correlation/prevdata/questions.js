@@ -1,0 +1,70 @@
+export default [
+  {
+    frame: "frame1",
+    id: "question1",
+    activeTimestamp: 167.027611,
+    onContinueTimestamp: 167.814568,
+    text: "Fifty pairs of values result in a correlation coefficient of <i>r</i>  = 0.678. Using a 0.05 significance level, the critical values for the hypothesis test are -0.279 and 0.279. What should you conclude?",
+    markerLabel: "Question 1",
+    markerTitle: "Question 1",
+    questionLabel: "",
+    correctAnswer: "optb",
+    options: [
+      {
+        id: "opta",
+        text: "There is not sufficient evidence to support the claim of a linear correlation.",
+        label: "",
+        description: "Try again.​",
+      },
+      {
+        id: "optb",
+        text: "There is sufficient evidence to support the claim of a linear correlation.",
+        label: "",
+        description: "",
+      },
+      {
+        id: "optc",
+        text: "There is not sufficient evidence to reject the claim of a linear correlation.",
+        label: "",
+        description: "Try again.",
+      },
+      {
+        id: "optd",
+        text: "There is sufficient evidence to reject the claim of a linear correlation.",
+        label: "",
+        description: "Try again.​",
+      },
+    ],
+  },
+  {
+    frame: "frame2",
+    id: "question2",
+    activeTimestamp: 169.742078,
+    onContinueTimestamp: 170.078084,
+    text: "Fifty pairs of values result in a correlation coefficient of <i>r</i>  = 0.250 and the claim is that there is a linear correlation. Using a 0.05 significance level, the critical values for the hypothesis test are -0.279 and 0.279. What should you conclude?",
+    markerLabel: "Question 2",
+    markerTitle: "Question 2",
+    questionLabel: "",
+    correctAnswer: "opta",
+    options: [
+      {
+        id: "opta",
+        text: "There is not sufficient evidence to support the claim of a linear correlation.",
+        label: "",
+        description: "",
+      },
+      {
+        id: "optb",
+        text: "There is sufficient evidence to support the claim of a linear correlation.",
+        label: "",
+        description: "Try again. ​",
+      },
+      {
+        id: "optc",
+        text: "There is not sufficient evidence to reject the claim of a linear correlation.",
+        label: "",
+        description: "Try again.",
+      },
+    ],
+  },
+];

@@ -1,0 +1,12 @@
+.#{$app-namespace}-scalable-wrapper-container {
+  .chart-container {
+    min-height: 1080px; 
+    min-width: 900px;
+  }
+  @media screen and (-ms-high-contrast: active),
+    screen and (-ms-high-contrast: none) {
+  .chart-container {      
+    min-width: 900px;
+  }
+}
+}

@@ -1,0 +1,89 @@
+&.small,&.extraSmall{
+    &.landscape{
+        .#{$app-namespace}-activity {
+          .flow-chart-container {
+            .left-section {
+                .chart-container {
+                  .flow-chart{
+                    min-width: 600px;
+                  }
+                    .arrow-text{
+                        &.green{
+                            left: -8px !important;
+                        }
+
+                        &.pink{
+                            left: 6% !important;
+                        }
+                    }
+                    .process{
+                        &.blue{
+                            width: 250px;
+                        }
+
+                        &.green{
+                            .down-text{}
+                        }
+                    }
+                   p{
+                       font-size: 11px;
+                       line-height: 15px;
+                   }
+
+                   .gr-graph,.pn-graph{
+                       width: 175px !important;
+                       height: 90px !important;
+                   }
+                   #exam1{
+                     .node{
+                       max-width: 150px;
+                       .node-container{
+                         max-width: 150px;
+                         min-width: 150px;
+                       }
+                       .arrow-text{
+                         &.green{
+                          left: 27px;
+                         }
+                      }
+                     }
+          
+                     #left_child{
+                      margin-right: 3px;
+                     }
+          
+                     .process{
+                       min-width: 150px;
+                       max-width: 150px;
+          
+                       &.pink{
+                         .down-text{
+                           right: 8px;
+                         }
+                       }
+                     }
+
+                     #sideText{
+                       min-width: unset;
+                       max-width: unset;
+                         padding: 0;
+
+                         .node-container{
+                           min-width: unset;
+
+                           p{
+                             font-size: 10px;
+                           }
+                         }
+                     }
+                   }
+                  }
+            }
+
+            
+          }
+        }
+
+    }
+  }
+  

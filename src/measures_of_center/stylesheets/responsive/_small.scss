@@ -1,0 +1,169 @@
+&.small,&.extraSmall {
+    &.landscape{
+        .#{$app-namespace}-activity {
+            .left-section{
+                .chart-container{
+                    .flow-chart{
+
+                        .node{
+                            .node-container{
+                                .text{
+                                   
+                                    &.startend{
+                                        p{
+                                            font-size: 12px;
+                                            line-height: 16px;
+                                        }
+                                    }
+                                }
+                            }
+    
+                            &#exam1{
+                               .node{
+                                   .arrow{
+                                       height: 70px;
+                                   }
+                               }
+                                .node-container{
+                                    .text{
+                                        padding: 8px;
+                                        p{
+                                            font-size: 12px;
+                                            line-height: 16px;
+                                        }
+                                    }
+                                }
+    
+                                #first-child-arrow1{
+                                    #mean-connector {
+                                       
+                                        .node-container {
+                                            
+                                            width: 53px;
+                         
+                                        }
+                                    }
+                                }
+                                #first-child-arrow{
+                                   
+                                    #first-child-content{
+                                        .node-container{
+                                            .text{
+                                                width: 101px !important;
+                                            }
+                                        }
+                                    }
+                                }
+    
+                                #second-child-arrow1{
+                                    //left: 6px;
+                                    #second-child-arrow{
+                                        
+                                        #second-child-content{
+                                           
+                                            .node-container{
+                                                .text{
+                                                   
+                                                    max-width: 100px;
+                                                }
+                                            }
+        
+                                            
+                                            #exam2{
+                                                width: 122px;
+                                                .node-container{
+                                                    .arrow{
+                                                        height: 100px;
+                                                    }
+                                                }
+                                                #left-arrow,#right-arrow{
+                                                    .w78{
+                                                        width: 58px;
+                                                    }
+                                                    #left-child-content,#right-child-content{
+                                                        .node-container{
+                                                            .text{
+                                                                width: 100px;
+                                                                height: 100px;
+                                                                padding: 8px;
+                                                            }
+
+                                                            
+                                                        }
+                                                    }
+                                                }
+        
+                                               
+                                            }
+                                        }
+                                    }
+        
+                                }
+
+                                #third-child-arrow1{
+                                    left: -6px;
+                                    #third-child-arrow{
+                                       
+                                        #third-child-content{
+                                          
+                                            .node-container{
+                                                .text{
+                                                    width: 93px !important;
+        
+                                                    .maths{
+                                                        font-size: 12px;
+                                                        line-height: 16px;
+                                                        
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                #fourth-child-arrow1{
+                                   
+                                    #fourth-child-content{
+                                      
+                                        .node-container{
+                                            .text{
+                                                width: 100px;
+    
+                                                .maths{
+                                                    font-size: 12px;
+                                                    line-height: 16px;
+                                                    .division-block{
+                                                        width: 84px !important;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+    
+                              
+                                
+                            }
+    
+                            
+    
+                            
+                        }
+
+                        
+
+@media screen and (-ms-high-contrast: active),
+screen and (-ms-high-contrast: none) {
+    #exam2{
+        left: -44px;
+    }
+}
+                    }
+                }
+            }
+         }
+
+        
+    }
+  }
+  

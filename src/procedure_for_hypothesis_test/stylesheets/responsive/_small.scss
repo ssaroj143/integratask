@@ -1,0 +1,51 @@
+
+
+&.small {
+    &.landscape{
+        .#{$app-namespace}-scalable-wrapper-container {
+            .chart-container {
+              min-height: 2050px;
+            }
+          }
+        .#{$app-namespace}-activity {
+          .flow-chart-container {
+            .left-section {
+              .chart-container {
+                
+                    p{
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+
+                    .process{
+                        &.text{
+                            padding: 8px;
+
+                            &.pink,&.green{
+                                width: 200px;
+                            }
+                        }
+                    }
+
+                    #good_model_content_1,#not_model_content_1{
+                        .text{
+                            height: 187px;
+                        }
+                    }
+
+                    #good_model_content_2{
+                        .text{
+                            height: 273px;
+                        }
+                    }
+               
+              }
+            }
+
+            
+          }
+        }
+
+    }
+  }
+  

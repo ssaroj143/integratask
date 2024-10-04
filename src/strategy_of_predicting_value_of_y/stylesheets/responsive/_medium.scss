@@ -1,0 +1,86 @@
+&.medium {
+  &.landscape {
+    .#{$app-namespace}-activity {
+      .flow-chart-container {
+        .decision {
+          p {
+            font-size: 14px !important;
+            line-height: 20px !important;
+          }
+        }
+
+        .process-container {
+          p {
+            font-size: 15px !important;
+          }
+        }
+
+        .condition1 {
+          .decision-box {
+            .decision {
+              width: 140px;
+              height: 140px;
+            }
+          }
+
+          .bottom-arrow-container {
+            margin-top: 123px !important;
+          }
+
+          .node-container {
+            .decision-arrow {
+              width: 156px;
+              margin-top: 40px;
+            }
+            .left-tailed-child,
+            .right-tailed-child {
+              .arrow {
+                height: 289px;
+              }
+            }
+            .left-tailed-child {
+              .process-container {
+                left: -56px !important;
+              }
+            }
+
+            .right-tailed-child {
+              .process-container {
+                left: 46px !important;
+              }
+            }
+          }
+        }
+
+        .condition2 {
+          top: 165px !important;
+          .decision-box {
+            .decision {
+              width: 165px !important;
+              height: 165px !important;
+            }
+          }
+
+          .node-container {
+            margin-top: 52px !important;
+
+            .decision-arrow {
+              width: 34px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.portrait {
+    .#{$app-namespace}-activity {
+      .left-section {
+        .#{$app-namespace}-scalable-wrapper-container {
+          .chart-container {
+            min-height: 1190px;
+          }
+        }
+      }
+    }
+  }
+}

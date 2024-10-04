@@ -1,0 +1,183 @@
+&.medium {
+	&.landscape {
+		.#{$app-namespace}-activity {
+			@media screen and (-ms-high-contrast: active),
+				screen and (-ms-high-contrast: none) {
+				.left-section {
+					.chart-container {
+						.node {
+							&#condition1 {
+								#wholenumber-child-left-yes {
+									left: 5px;
+								}
+							}
+						}
+					}
+				}
+			}
+			.left-section {
+				.chart-container {
+					p{
+						font-size: 14px;
+						line-height: 20px;
+					}
+
+					.text{
+						&.process{
+							font-size: 14px;
+							line-height: 20px;
+							min-width: 190px;
+							padding: 8px;
+						}
+					}
+
+					.condition-node {
+						p {
+							font-size: 9px;
+						}
+					}
+					.node {
+						.node-container {
+							max-width: 180px;
+						} 
+
+						&#condition1{
+								.decision-box{
+									.decision{
+										width: 150px;
+										height: 150px;
+										p{
+											font-size: 12px;
+											line-height: 20px;
+											width: 70%;
+											margin-bottom: 0px;
+										}
+									}
+								}
+								.end-child{
+									min-width: 160px;
+								}
+							
+
+							#wholenumber-yes{
+								margin-top: -22px;
+								left: 0px;
+
+								#whole-number-yes-child {
+									.node-container {
+										min-width: 160px
+									}
+									.text {
+										min-width: 160px;
+									}
+								}
+								.bottom {
+									min-width: 50px;
+									max-width: 50px;
+								}
+							}
+							#wholenumber-child-left-yes {
+								width: 50px;
+								top: 5px;
+								.text {
+									top: -20px;
+								}
+							}
+						}
+
+						&#condition2 {
+							#yes-child {
+								#wholenumber-child-left {
+									.text {
+										width: 150px;
+									}
+
+									.arrow {
+										height: 90px;
+									}
+								}
+							}
+						}  
+
+						&#comp{
+							.node{
+								&.selected-text,&.visited{
+									.node-container{
+										min-width: 180px;
+									}
+								}
+							}
+						}
+					   
+					} 
+					.main-text {
+						margin-top: 20px;
+					}
+				}
+			}
+			.right-section {
+				.container {
+					.body {
+						font-size: 15px;
+						padding: 0px 18px;
+
+						.text-container {
+							 margin-bottom: 0px;
+						}
+					}
+				}
+			} 
+		}
+	}
+	&.portrait {
+		.#{$app-namespace}-activity {
+			.left-section {
+				.chart-container {
+					.node {
+						.node-container {
+							max-width: 221px;
+						}
+					}
+					.node#condition1 .decision-box .decision {
+						max-width: 175px;
+						max-height: 175px;
+						p {
+							font-size: 15px;
+							line-height: 20px;
+							margin-bottom: 12px;
+							height: 70px;
+							width: 150px;
+						}
+					}
+					.node#condition1 #wholenumber-yes #whole-number-yes-child .text {
+						max-width: 110px;
+						min-width: 230px;
+						margin-left: 29px;
+					}
+					.node#condition1 #wholenumber-child-left-yes .arrow {
+						width: 105px;
+						margin-left: 3px;
+					}
+					.node#condition1 #wholenumber-child-left-yes {
+						width: 100px;
+					}
+					.node#condition1 #wholenumber-child-left-yes .text span.bottom {
+						padding: 20px 0px;
+						font-size: 18px;
+					}
+				}
+			}
+			.left-section {
+				.#{$app-namespace}-scalable-wrapper-container {
+					.chart-container {
+						min-height: 1190px;
+					}
+				}
+			}
+		}
+	}
+	&.medium {
+		.#{$app-namespace}-activity {
+		}
+	}
+}

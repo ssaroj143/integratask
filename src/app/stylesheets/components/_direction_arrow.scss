@@ -1,0 +1,23 @@
+.#{$app-namespace}-arrow{
+    position: relative;
+    box-sizing: border-box;
+    height: 38px;
+    width: 3px;
+    border: 1px solid #000000;
+    background: #000;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    &.down{
+      &::after{
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-top: 8px solid #000;
+      position: absolute;
+      bottom: -4px;
+      left: -6.65px;
+      }
+    }
+}

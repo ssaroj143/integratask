@@ -1,0 +1,32 @@
+.#{$app-namespace}-activity-container {
+  .#{$app-namespace}-activity {
+    .left-section {
+      .main-screen-text {
+        font-size: 24px;
+        line-height: 28px;
+        margin-top: 20px;
+        animation: fadeIn 1.2s linear forwards;
+
+        .option {
+          position: relative;
+          text-align: left;
+          padding: 0px 0px 0px 35px;
+        }
+
+        .heading {
+          font-size: 24px;
+          line-height: 28px;
+          font-weight: 600;
+        }
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

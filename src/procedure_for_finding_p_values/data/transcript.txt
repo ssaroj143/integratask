@@ -1,0 +1,63 @@
+The goal of this activity is to understand the process for finding the P-value in a hypothesis test.
+Before working with this flowchart, we should already know the definition of a P-value.
+In a hypothesis test, the P-value is the probability of getting a value of the test statistic that is at least as extreme as the test statistic obtained from the sample data, assuming that the null hypothesis is true.
+Also, before working with this flowchart, we should be able to determine whether a particular hypothesis test is two-tailed, left-tailed, or right tailed.
+For a Two-tailed test: The critical region is in the two extreme regions (or tails) under the curve.
+For a Left-tailed test: The critical region is in the extreme left region (or tail) under the curve.
+For a Right-tailed test: The critical region is in the extreme right region (or tail) under the curve.
+It’s time to test your knowledge.
+Click on the Start button.
+The first step is to identify what type of test it is.
+Is it a two-tailed test, left-tailed test, or right-tailed test?
+Let’s consider a particular example.
+IQ tests are designed so that the general population has a mean IQ score of 100. So the population mean is 100.
+Suppose a random sample of statistics students has a mean IQ score of 120.
+Based on that sample, we make the claim that the “statistics students have a mean IQ score that is GREATER THAN 100.”
+Does that claim correspond to a hypothesis test that is two-tailed, left-tailed, or right-tailed?
+That is incorrect.
+The claim is that statistics students have a mean IQ score that is GREATER THAN 100, so the alternative hypothesis is that the mean IQ score of statistics students is GREATER THAN 100.
+The critical region is in the RIGHT tail of the distribution.
+Please try again.
+Correct!
+The test is right-tailed because the critical region is located to the right.
+Only a sample mean greater than 100 by a significant amount would support the given claim that statistics students have a mean IQ score that is greater than 100.
+For this right-tailed test, the P-value is the area to the RIGHT of the test statistic.
+Now let’s consider a different example.
+Suppose a random sample of professional wrestlers has a mean IQ score of 98.
+Based on that sample, we make the claim that “professional wrestlers have a mean IQ score that is LESS THAN 100.”
+Does that claim correspond to a hypothesis test that is two-tailed, left-tailed, or right-tailed?
+That is incorrect.
+The claim is that wrestlers have a mean IQ score that is LESS THAN 100, so the alternative hypothesis is that the mean IQ score of wrestlers is LESS THAN 100 and the critical region is in the LEFT tail of the distribution.
+Please try again.
+Correct!
+The test is left-tailed because the critical region is located to the left.
+Only a sample mean less than 100 by a significant amount would support the given claim that the professional wrestlers have a mean IQ score that is less than 100.
+For this left-tailed test, the P-value is the area to the LEFT of the test statistic.
+It’s time to test your knowledge
+Let’s look at a third example and again suppose that a random sample of statistics students has a mean IQ score of 120.
+Based on that sample, we make the claim that “statistics students have a mean IQ score that is DIFFERENT THAN 100.
+Does that claim correspond to a hypothesis test that is two-tailed, left-tailed, or right-tailed?
+That is incorrect.
+The claim is that statistics students have a mean IQ score that is DIFFERENT THAN 100, so the alternative hypothesis is that the mean IQ score of statistics students is NOT EQUAL TO 100.
+The critical region is in BOTH the LEFT TAIL and the RIGHT Tail of the distribution.
+Please try again.
+Correct!
+The test is two-tailed because the critical region is located to the right and to the left.
+Only a sample mean less than 100 by a significant amount or greater than 100 by a significant amount would support the given claim that statistics students have a mean IQ score that is different than 100.
+Now let’s consider the two possible cases for this two-tailed test.
+The two possible cases involve (1) the test statistic is to the right of center and (2) the test statistic is to the left of center.
+First let’s continue with the example in which a random sample of statistics students has a mean IQ score of 120 and we are testing the claim that “statistics students have a mean IQ score DIFFERENT THAN 100.”
+Using technology, the area to the right of the corresponding test statistic is found to be 0.03.
+What is the P-value for this two-tailed test?
+For a two-tailed test, the P-value is TWICE the area beyond the test statistic.
+In this case, the P-value is equal to 0.06.
+Second let’s consider a different example in which a random sample of statistics students has a mean IQ score of 98 and we are testing the claim that the “statistics students have a mean IQ score DIFFERENT THAN 100.”
+Using technology, the area to the LEFT of the corresponding test statistic is found to be 0.03.
+What is the P-value for this two-tailed test?
+For a two-tailed test, the P-value is TWICE the area beyond the test statistic.
+In this case, the P-value is equal to 0.06.
+In both of these two possible cases, the P-value is equal to 0.06, which is TWICE the area beyond the test statistic.
+It’s time to test your knowledge.
+In summary, the p-value in a left-tailed test is the area to the left of the test statistic, the p-value in the right-tailed test is the area to the right of the test statistic, but the p-value in a two-tailed test is twice the area in the tail.
+Congratulations! You have mastered and important concept of Statistics.
+We are now having more fun than human beings are normally allowed to have!

@@ -1,0 +1,13 @@
+&.large {
+  &.landscape {
+    .#{$app-namespace}-activity {
+      .left-section {
+        .#{$app-namespace}-scalable-wrapper-container {
+          .chart-container {
+            min-height: 1190px;
+          }
+        }
+      }
+    }
+  }
+}

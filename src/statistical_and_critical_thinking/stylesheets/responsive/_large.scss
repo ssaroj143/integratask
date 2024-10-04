@@ -1,0 +1,23 @@
+&.large {
+  .#{$app-namespace}-activity {
+    .flow-chart-container {
+      .left-section {
+        .chart-container {
+          .node {
+            .node-container {
+              .drawing {
+                // margin-top: 10px;
+                .text-top {
+                  display: block;
+                  position: absolute;
+
+                  //   top: 7px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

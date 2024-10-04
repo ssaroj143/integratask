@@ -1,0 +1,183 @@
+&.small ,&.extraSmall{
+   &.landscape{
+     .#{$app-namespace}-activity {
+        .flow-chart-container {
+          .left-section {
+            .chart-container {
+             .flow-chart{
+               min-width: 430px;
+             }
+              // #can-assumed{
+              //   max-width: 160px;
+              // }
+              #can-assumed, #wholenumber,#approx-method-error{
+                max-width: 160px;
+              }
+              
+            }
+          }
+        }
+      }
+    // @-moz-document url-prefix() {
+    //   .#{$app-namespace}-activity {
+    //     .flow-chart-container {
+    //       .left-section {
+    //         .chart-container {
+    //           #can-assumed{
+    //             max-width: 160px;
+    //           }
+    //           #wholenumber{
+    //             max-width: 172px;
+    //           }
+    //           #wholenumber {
+    //             left: 6px;
+    //           }
+    //           #distribution-with-standard-yes {
+    //             left: 20px;
+    //             .text {
+    //               left: -13px !important;
+    //             }
+    //           }
+    //           #distribution-with-standard-error {
+    //             .text {
+    //               width: 150px;
+
+    //             }
+    //           }
+    //           #distribution-with-standard-notes {
+    //             right: 55px;
+    //           }
+    //           #can-assumed {
+    //             left: 25px;
+    //           }
+    //           #can-assumed-yes-arrow {
+    //             left: 37px;
+    //             .text {
+    //               left: -13px !important;
+    //             }
+    //           }
+    //           #distribution-with-pooled {
+    //             .text {
+    //               width: 120px;
+
+    //             }
+    //           }
+    //           #edistribution-with-pooled-notes {
+    //             right: 70px;
+    //           }
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+    .#{$app-namespace}-activity {
+      .flow-chart-container {
+        @media screen and (-ms-high-contrast: active),
+        screen and (-ms-high-contrast: none) { 
+          .left-section {
+            .chart-container {
+              #start,#condition2,#condition4{
+                #chart-start,#can-assumed-no-arrow,#condition4-yes{
+                    max-width: 155px !important;
+                  }
+              }
+              #wholenumber {
+                // left: 18px;
+              }
+              #distribution-with-standard-yes {
+                // left: 25px;
+                
+              }
+              #distribution-with-standard-error {
+                // left: 30px !important;
+                .text {
+                  // width: 150px;
+                }
+              }
+              #distribution-with-standard-notes {
+                left: 10px;
+                .text {
+                  width: 100%;
+                }
+              }
+              #can-assumed {
+                // left: 18px;
+              }
+              #can-assumed-yes-arrow {
+                // left: 25px;
+               
+              }
+              #distribution-with-pooled {
+                // left: 25px !important;
+               
+              }
+              #edistribution-with-pooled-notes {
+                left: 10px;
+                .text {
+                  width: 100%;
+                }
+              }
+              #approx-method-error {
+                .text {
+                  // width: 150px;
+
+                }
+              }
+              #approx-method-error-notes {
+                .text {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+        .left-section {
+          .chart-container {
+             
+            p,.radicand{
+                font-size: 14px !important;
+                line-height: 16px !important;
+            }
+
+            .radicand{
+                .squre-root-wrapper>div{
+                    line-height: 16px;
+                }
+            }
+
+            .root {
+                left: 5px;
+            }
+
+            .process{
+                &.text{
+                    padding: 8px;
+                }
+            }
+
+            .decision-box{
+                .decision{
+                    width: 140px !important;
+                    height: 140px !important;
+                    p{
+                        font-size: 14px !important;
+                line-height: 20px !important;
+                    }
+                }
+            }
+
+            #start,#condition2,#condition4{
+              #chart-start,#can-assumed-no-arrow,#condition4-yes{
+                  max-width: 160px;
+                }
+            }
+           
+          }
+        }
+      }
+    }
+
+  }
+   
+  }
+  

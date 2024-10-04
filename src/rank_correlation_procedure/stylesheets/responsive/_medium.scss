@@ -1,0 +1,388 @@
+&.medium {
+  &.landscape {
+    @-moz-document url-prefix() {
+      .#{$app-namespace}-activity {
+        .flow-chart-container {
+          .left-section {
+            .chart-container {
+              .node {
+                .maths {
+                  font-size: 10px;
+                }
+                &#condition3 {
+                  #decision2-yes {
+                    #decision2-yes-process {
+                      .process {
+                        &.text {
+                          left: 31px !important;
+                        }
+                        .maths {
+                          font-size: 10px ;
+                        }
+                      }
+                    }
+                  }
+                  #decision2-no-process {
+                    #decision2-no-process3 {
+                      .text {
+                        &.process {
+                          height: 121px !important;
+                        }
+                        
+                        .maths {
+                          top: -15px;
+                        }
+                        p:nth-of-type(2) {
+                          margin-top: -15px;
+                        }
+                      }
+                    } 
+                  } 
+                } 
+                  &#condition4 {
+                    #condition4-arrow{
+                      .node-container {
+                        .text {
+                          .arrows {
+                            .arrow-bottom {
+                              width: calc(100% - -65px);
+                              &::after {
+                                left: 165px;
+                              }
+                            }
+                          }
+                        }
+                      }
+                      width: 155px;
+                      left: 22px;
+                    }
+            
+                  }
+                
+              }
+            }
+          }
+        }
+      }
+    }
+    .#{$app-namespace}-activity {
+      .flow-chart-container {
+         @media screen and (-ms-high-contrast: active),
+          screen and (-ms-high-contrast: none) { 
+            .left-section {
+              .chart-container {
+                .node {
+                  &#condition3 {
+                    #decision2-yes {
+                      #decision2-yes-process {
+                        .process {
+                          &.text {
+                            width: 200px;
+                            left: 30px !important;
+                          }
+                          .maths {
+                            font-size: 10px ;
+                          }
+                        }
+                        .arrow {
+                          left: -22px;
+                        }
+                      }
+                    }
+                    #decision2-no-process {
+                      left: 35px !important;
+                    }
+                  }
+
+                  &#condition4 {
+                    #condition4-arrow{
+                      .node-container {
+                        .text {
+                          .arrows {
+                            .arrow-bottom {
+                              width: calc(100% - -30px) !important;
+                              &::after {
+                                left: 95px !important;
+                              }
+                            }
+                          }
+                        }
+                      }
+                      left: 53px !important;
+                    }
+            
+                  }
+                 
+                  #decision3-no-arrow{
+                    .condition-node{
+                      .arrow{
+                          width: 30px !important;
+                      }
+                    }
+                  }
+                  
+                  #decision1-no, #decision2-no {
+                    right: -3px !important;
+                  } 
+                }
+              }
+            }
+          }
+        .left-section {
+          .chart-container {
+            .node{
+
+              p {
+                font-size: 14px;
+                line-height: 20px;
+                }
+
+              .maths {
+                font-size: 12px;
+
+                .root-sign {
+                  font-size: 27px !important;
+                  line-height: 22px !important;
+                }
+              }
+              &.start{
+                width:calc(100% - 156px);
+              }
+              &#start , &#decision1-yes {
+                left: 10px;
+              }
+      
+                    .empty{
+                      width: calc(100% - 171px);
+                    }
+
+                 
+                    .text{
+                      &.process{
+                          padding: 8px;
+                          font-size: 14px;
+                          line-height: 20px;
+                        &.pink{
+                            padding: 8px;
+                          width: 200px;
+                        }
+
+                      }
+                    }
+                    #decision2-no{
+                      right: 14px;
+                    }
+      
+                    #decision1-no{
+                      right: 14px;
+                        #decision1-no-arrow{
+                            .process{
+                                .arrow{
+                                  bottom: -172px !important;
+                                  height: 211px !important;
+                                  left: -28px !important;
+                                  transform: rotate(
+                              53deg
+                              ) !important;
+                                }
+                            }
+                        }
+                    }
+                    #decision1,#decision2{
+                        .decision{
+                          width: 150px;
+                          height: 150px;
+                          p{
+                              font-size: 14px;
+                              line-height: 20px;
+                          }
+                        }
+                        .decision-box{
+                          padding: 0px 2px 0px 7px ;
+                        }
+                    }
+
+                  
+                    
+      
+                    &#condition2{
+                      #decision2-no{
+                          
+                        #decision2-process{
+                          top: 28px;
+                          .arrow{
+                            left: calc(50% - 113px);
+                          }
+                        }
+                      }
+                    }
+      
+                    &#condition3{
+                      top: -15px;
+                      #decision2-yes{
+                        width: 221px;
+                        top: -23px;
+                        left: -50px;
+                        padding-right: 46px;
+                        
+                        #decision2-yes-arrow{
+                            left: 15px;
+                          .arrow{
+                            height: 165px;
+                            
+                          }
+                        }
+      
+                        #decision2-yes-process{
+                            .process{
+                                &.text{
+                                    left: 25px;
+                                    width: 200px;
+                                }
+                            }
+                          .arrow{
+                            height: 130px;
+                            left: 20px;
+                          }
+                        }
+                      }
+      
+                      #decision2-no-process{
+                        left: 21px;
+                        
+                        #decision2-no-process2{
+                          .arrow{
+                            left: calc(50% - 113px);
+                          }
+                        }
+                        #decision2-no-process3{
+                          width: auto;
+                          .text{
+                            &.process{
+                              width: 200px;
+                              height: 150px;
+                            }
+                          }
+      
+                          .arrow{
+                            left: calc(50% - 184px);
+                            height: 79px;
+                          }
+                        }
+                        
+                      }
+                    }
+      
+                    &#condition4{
+                        top: -43px;
+                      #decision3{
+                        top: -130px;
+                        left: 80px;
+
+                        &.update-css{
+                          top: -154px;
+
+                          #decision3-right{
+                           
+                            #decision3-no-arrow{
+                              .condition-node{
+                                &.node-container{
+                                  top: 9px !important;
+                                }
+                              }
+                            }
+                            
+                          }
+                        }
+                        .decision{
+                            width: 90px;
+                            height: 90px;
+
+                            p{
+                              font-size: 14px;
+                              line-height: 20px;
+                          }
+                        }
+                        #decision3-no-process{
+                          .text{
+                            &.process{
+                              width: 100px;
+                              
+                            }
+                          }
+                          .arrow {
+                            height: 120px !important;
+                          }
+                        }
+
+                        #decision3-right{
+                            left: -45px ;
+                            top: 29px;
+
+                            #decision3-no-arrow{
+                              .condition-node{
+                                 &.node-container{
+                                     top: -100px !important;
+
+                                 }
+                                 
+                              }
+                          }
+                        }
+                       
+                        #decision3-left {
+                          #decision3-box {
+                            .arrow {
+                              &.decision3-box-arrow {
+                                height: 90px;
+                              }
+                            }
+                          }
+                        }
+
+                        #decision3-left-process{
+                            .text{
+                                width: 125px !important;
+                            }
+                        }
+                      }
+      
+                      #condition4-arrow{
+                        .node-container {
+                          .text {
+                            .arrows {
+                              .arrow-bottom {
+                                width: calc(100% - -35px);
+                                &::after {
+                                  left: 107px;
+                                }
+                              }
+                            }
+                          }
+                        }
+                        width: 155px;
+                        left: 50px;
+                      }
+                    }
+
+                    &#condition5{
+                        top: -188px;
+                    }
+                  }
+                }
+              }
+      }
+    }
+  }
+  &.portrait {
+    .#{$app-namespace}-activity {
+      .left-section {
+        .#{$app-namespace}-scalable-wrapper-container {
+          .chart-container {
+            min-height: 1190px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,209 @@
+// excess height to improve interactive area / accessibility
+$height: 30px;
+$thumb-height: 12px;
+$track-height: 4px;
+
+// colours
+$upper-color: #c7c7c7;
+$lower-color: #252525;
+$thumb-color: #252525;
+$thumb-hover-color: #252525;
+
+$upper-background: linear-gradient(to bottom, $upper-color, $upper-color) 100%
+  50% / 100% $track-height no-repeat transparent;
+$lower-background: linear-gradient(to bottom, $lower-color, $lower-color) 100%
+  50% / 100% $track-height no-repeat transparent;
+
+// Webkit cannot style progress so we fake it with a long shadow
+// on the thumb element
+@function webkit-slider-thumb-shadow($i: 1) {
+  $val: #{$i}px 0 0 -#{($thumb-height - $track-height) / 2} #{$upper-color};
+  @if $i == 1 {
+    @for $k from 2 through 1000 {
+      $val: #{$val}, webkit-slider-thumb-shadow($k);
+    }
+  }
+  @return $val;
+}
+
+
+.#{$app-namespace}-footer {
+  font-family: inherit;
+  input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 64px;
+    margin: 0;
+    height: $height;
+    overflow: hidden;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 6px;
+  }
+
+  // Webkit
+  input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    background: $lower-color;
+    border-radius: 6px;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    position: relative;
+    -webkit-appearance: none;
+    appearance: none;
+    height: $thumb-height;
+    width: $thumb-height;
+    background: $thumb-color;
+    border-radius: 50%;
+    border: 0;
+    top: 50%;
+    margin-top: (-$thumb-height/2);
+    box-shadow: 0 3px 8px 0 rgba(37, 37, 37, 0.12),
+      0 1px 1px 0 rgba(37, 37, 37, 0.04), 0 3px 1px 0 rgba(37, 37, 37, 0.04),
+      webkit-slider-thumb-shadow();
+    transition: background-color 150ms;
+  }
+
+  // Firefox
+  input[type="range"]::-moz-range-track,
+  input[type="range"]::-moz-range-progress {
+    width: 100%;
+    height: $height;
+    background: $upper-background;
+  }
+
+  input[type="range"]::-moz-range-progress {
+    background: $lower-background;
+  }
+
+  input[type="range"]::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+    height: $thumb-height;
+    width: $thumb-height;
+    background: $thumb-color;
+    border-radius: 50%;
+    border: 0;
+    transition: background-color 150ms;
+  }
+
+  // Internet Exploder
+  input[type="range"]::-ms-track {
+    width: 100%;
+    height: $height;
+    border: 0;
+    // color needed to hide track marks
+    color: transparent;
+    background: transparent;
+  }
+
+  input[type="range"]::-ms-fill-lower {
+    background: $lower-background;
+  }
+
+  input[type="range"]::-ms-fill-upper {
+    background: $upper-background;
+  }
+
+  input[type="range"]::-ms-thumb {
+    appearance: none;
+    height: $thumb-height;
+    width: $thumb-height;
+    background: $thumb-color;
+    border-radius: 50%;
+    border: 0;
+    transition: background-color 150ms;
+    // IE Edge thinks it can support -webkit prefixes
+    top: 0;
+    margin: 0;
+    box-shadow: none;
+  }
+
+  .e-range:hover,
+  .e-range:focus {
+    &::-webkit-slider-thumb {
+      background-color: $thumb-hover-color;
+    }
+    &::-moz-range-thumb {
+      background-color: $thumb-hover-color;
+    }
+    &::-ms-thumb {
+      background-color: $thumb-hover-color;
+    }
+  }
+
+  input[type="range"] {
+    &.disable {
+      pointer-events: none;
+      &::-webkit-slider-runnable-track {
+        background: #fff;
+      }
+      &::-webkit-slider-thumb {
+        box-shadow: none;
+        background: #fff;
+      }
+      &::-moz-range-progress{
+        height: 4px;
+        background: #fff;
+        border-top-right-radius: 5px;
+       border-bottom-right-radius: 5px;
+       border-top-left-radius: 5px;
+       border-bottom-left-radius: 5px;
+      }
+
+      &::-moz-range-track{
+        height: 4px;
+        background: #fff;
+        border-top-right-radius: 5px;
+       border-bottom-right-radius: 5px;
+       border-top-left-radius: 5px;
+       border-bottom-left-radius: 5px;
+      }
+
+      &::-moz-range-thumb {
+        box-shadow: none;
+        background: #fff;
+      }
+
+      &::-ms-thumb {
+        box-shadow: none;
+        background: #fff;
+      }
+    }
+  }
+}
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+  .#{$app-namespace}-footer {
+  input[type="range"] {
+    margin-right: 3px;
+    
+    &.disable {
+      pointer-events: none;
+      &::-ms-track {
+        background: transparent;
+      }
+      &::-ms-thumb {
+        box-shadow: none;
+      }
+      &::-ms-fill-lower {
+        background: #fff;
+       height: 4px;
+       border-top-left-radius: 5px;
+       border-bottom-left-radius: 5px;
+    }
+    &::-ms-fill-upper {
+      background: #fff;
+      height: 4px;
+      border-top-right-radius: 5px;
+       border-bottom-right-radius: 5px;
+      
+  }
+    }
+  }
+  }
+  
+  }

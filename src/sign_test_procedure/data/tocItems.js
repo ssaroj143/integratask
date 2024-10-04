@@ -1,0 +1,56 @@
+export default [
+	{ id: 'title', name: 'Title', startTime: 0, endTime: 0 },
+	{
+		id: 'goal',
+		name: 'Flowchart Goals',
+		startTime: 0.1,
+		endTime: 47.02581,
+	},
+	{
+		id: 'example1',
+		name: 'Determining Number of Signs',
+		startTime: 48.02581,
+		endTime: 74.063015,
+	},
+	{
+		id: 'computingl',
+		name: 'Data Contradict H<sub>1</sub>?',
+		label: 'Data Contradict H sub 1?',
+		startTime: 74.386079,
+		endTime: 185.190848,
+	},
+	{
+		id: 'findingpercentile',
+		name: 'Is n &#8804; 25?',
+		label: 'Is n less than or equal to 25?',
+		startTime: 186.190848,
+		endTime: 201.22536,
+	},
+	{
+		id: 'isgreaterthan25',
+		name: 'n > 25',
+		label: 'n greater than 25',
+		startTime: 202.01967,
+		endTime: 218.35904,
+	},
+	{
+		id: 'example2',
+		name: 'Is Test Statistic &#8804; Critical Value?',
+		label: 'Is Test Statistic less than or equal to Critical Value?',
+		startTime: 219.443233,
+		endTime: 248.597038,
+	},
+	{
+		id: 'summary',
+		name: 'Summary',
+		startTime: 248.773045,
+		endTime: 278.762436,
+	},
+	{
+		id: 'success',
+		name: 'Success',
+		hidden: true,
+		startTime: 279.762436,
+		endTime: 289.097143,
+	},
+];

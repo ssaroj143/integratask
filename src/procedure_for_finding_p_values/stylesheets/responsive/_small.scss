@@ -1,0 +1,317 @@
+&.small {
+  &.landscape {
+    @media screen and (-ms-high-contrast: active),
+    screen and (-ms-high-contrast: none) {
+      .#{$app-namespace}-activity-container {
+        .#{$app-namespace}-activity {
+          .left-section {
+            .chart-container {
+              .left-tailed-child{
+                top: 2px ;
+              }
+              .right-tailed-child {
+                .arrow {
+                  top: 2px ;
+                }
+                .process-container {
+                  top: 294px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .#{$app-namespace}-activity {
+      .flow-chart-container {
+        .left-section {
+          .chart-container {
+            padding: 0;
+            .node {
+              .node-container {
+                .startend {
+                  padding: 3px 12px;
+                  width: 75px;
+                  p {
+                    font-size: 13px;
+                  }
+                }
+              }
+            }
+
+            .condition1 {
+              .decision-arrow{
+               &.left{
+                &::before {
+                  width: 113%;
+                }
+               }
+               &.right{
+                 &::before{
+                  left: -12.5px;
+                  width: 113%;
+                 }
+               }
+              }
+              .decision-box {
+                margin: 0 38px 0 38px;
+                .decision {
+                  width: 100px;
+                  height: 100px;
+                  p {
+                    font-size: 10px !important;
+                    line-height: 13px !important;
+                    // transform: translate(-50%, -80%) !important;
+                  }
+                }
+              }
+              button {
+                font-size: 9px !important;
+                line-height: 13px !important;
+              }
+              .bottom-arrow-container {
+                margin-top: 80px;
+              }
+
+              .node-container {
+                width: 75px;
+                top: -7px;
+                .decision-arrow {
+                  width: 95px;
+                  margin-top: 21px;
+
+                  // &::after {
+                  //   top: 17px;
+                  // }
+                }
+
+                .right-tailed-child,
+                .left-tailed-child {
+                  .arrow {
+                    height: 246px;
+                  }
+                }
+
+                .right-tailed-child {
+                  .process-container {
+                    left: 20px;
+                  }
+                }
+
+                .left-tailed-child {
+                  .process-container {
+                    left: -44px;
+                  }
+                }
+              }
+            }
+
+            .condition2 {
+              top: 124px;
+              p {
+                font-size: 9px !important;
+                line-height: 13px !important;
+              }
+              .decision-box {
+                margin: 0px 8px 0px 9px !important;
+                .decision {
+                  width: 117px !important;
+                  height: 117px !important;
+                  p {
+                    font-size: 10px !important;
+                    line-height: 13px !important;
+                    // transform: translate(-50%, -69%) translateZ(0) !important;
+                  }
+                }
+              }
+
+              .two-tailed-child{
+                &.node{
+                  .process-container{
+                    &.left{
+                      left: -16px;
+                    }
+                    &.right{
+                      right: -16px;
+                    }
+                  }
+                }
+              }
+
+              .node-container {
+                margin-top: 30px !important;
+                width: 18px !important;
+                .decision-arrow {
+                  width: 18px !important;
+                }
+              }
+            }
+
+            .process-container {
+              .process {
+                width: 95px !important;
+                height: 68px !important;
+
+                p {
+                  font-size: 9px !important;
+                  line-height: 13px !important;
+                }
+              }
+            }
+
+            .glow-arrow.glowing-two-child {
+              &.left{
+                left: 10px;
+                top: 15px;
+              }
+              &.right{
+                left: 80px;
+                top: 15px;
+              }
+            }
+            .glow-arrow.glowing-right-child {
+              left: 80px;
+              top: 15px;
+            }
+            .glow-arrow.glowing-left-child {
+              left: 10px;
+              top: 15px;
+            }
+
+
+            .drawing {
+              padding: 0;
+              margin: 0;
+              .drawing1,
+              .drawing2 {
+                margin-top: 5px;
+              }
+              .text-top {
+                font-size: 8px;
+                line-height: 10px;
+                &.right {
+                  &.sm {
+                    span {
+                      width: 64px;
+                      right: 0px;
+                      top: 0px;
+                    }
+
+                    span.line {
+                      position: absolute;
+                      width: 2px;
+                      height: 18px;
+                      top: 21px;
+                      right: 16px;
+                    }
+                  }
+                }
+
+                &.left {
+                  &.sm {
+                    span {
+                      width: 64px;
+                      left: 0px;
+                      top: 0px;
+                    }
+
+                    span.line {
+                      position: absolute;
+                      width: 2px;
+                      height: 18px;
+                      top: 21px;
+                      left: 16px;
+                    }
+                  }
+                }
+
+                .line {
+                  height: 31px;
+                }
+              }
+
+              .text-bottom {
+                font-size: 8px;
+
+                line-height: 13px;
+                bottom: -11px;
+                &.left {
+                  left: 26px;
+                  .text {
+                    margin-left: 7px;
+                    margin-top: 17px;
+                  }
+                }
+                &.right {
+                  right: 20px;
+                  .text {
+                    margin-right: 7px;
+                    margin-top: 17px;
+                  }
+                  .arrow-img{
+                    &.right{
+                      right: -4px;
+                    }
+                  }
+                }
+                .line {
+                  width: 2px;
+                  margin: 0px;
+                  height: 20px;
+                  display: block;
+                  background: #000;
+                  position: relative;
+                  &::before {
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    border-left: 6px solid transparent;
+                    border-right: 6px solid transparent;
+                    border-top: 7px solid #000;
+                    position: absolute;
+                    top: -1px;
+                    left: -5px;
+                    margin: 0 auto;
+                    transform: rotate(179deg);
+                  }
+
+                  &::after {
+                    content: "";
+                    width: 8px;
+                    height: 2px;
+                    background: #000;
+                    position: absolute;
+                    bottom: 0;
+                  }
+
+                  &.right {
+                    &::after {
+                      right: 0;
+                    }
+                  }
+                }
+              }
+              .additional-value{
+                &.right{
+                  .value-container{
+                    right: -80px;
+                    top: 21px;
+                  }
+                }
+                &.left{
+                  .value-container{
+                    right: -45px;
+                    top: 21px;
+                  }
+                }
+              }
+            }
+          }
+          .main-screen-text {
+            bottom: -90px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+.#{$app-namespace}-activity-container {
+   
+    .#{$app-namespace}-activity {
+      .left-section {
+       
+          .main-screen-text{
+            margin-top: 20px;
+            font-size: 24px;
+            line-height: 28px;
+            
+           
+            .option{
+              position: relative;
+    text-align: left;
+    padding: 0px 35px;
+    opacity: 0;
+    animation: fadeIn 1.2s linear forwards;
+            }
+
+
+            &.ost16,&.ost30,&.ost35{
+              
+              .wrapper{
+                display: inline-flex;
+    line-height: 16px;
+    flex-direction: row;
+    align-items: center;
+    .maths-exp {
+      display: inline-flex;
+      flex-direction: row;
+
+      .parenthesis {
+        line-height: 42px;
+    font-size: 47px;
+        font-weight: 300;
+      }
+
+      .division-block {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+
+        .numerator {
+          width: 90%;
+          border: none;
+          margin: 0 auto;
+          display: block;
+          line-height: 16px;
+          border-bottom: 2px solid black;
+        }
+
+        span{
+          padding: 4px 0px;
+        }
+      }
+
+      & + em {
+        margin-left: -2px;
+      }
+    }
+              }
+              
+            }
+
+            &.ost35{
+              .numerator{
+                width: 100% !important;
+              }
+            }
+
+            @keyframes fadeIn {
+              from{
+                opacity: 0;
+              }
+              to{
+                opacity: 1;
+              }
+            }
+             
+          }
+        
+        
+      }
+  
+    
+    }
+  
+   
+  }
+
+  
+  

@@ -1,0 +1,117 @@
+&.small {
+    &.landscape{
+        .#{$app-namespace}-activity-container {
+            header {
+                padding: 0px 12px;
+            }
+        }
+        .#{$app-namespace}-activity {
+            .flow-chart-container {
+                .left-section {
+                    .chart-container {
+                        .node {
+                            p{
+                                font-size: 13px;
+                                line-height: 20px;
+                            }
+                            .node-container {
+                                
+                                .text {
+                                    &.startend{
+                                        p{
+                                            font-size: 13px;
+                                line-height: 20px;
+                                        }
+                                    }
+                                    &.decision-box {
+                                        .decision {
+                                            height: 180px;
+                                            width: 180px;
+
+                                            p {
+                                                font-size: 13px;
+                                line-height: 20px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            &#condition1 {
+                                top: 1px;
+                                
+                                .child-node {
+                                    
+                                    &.first-child {
+                                        .text {
+                                            &::after {
+                                                top: -104px;
+                                               width: calc(100% - 95px);
+                                            }
+
+                                            &::before {
+                                                height: 95px;
+                                            }
+                                        }
+                                    }
+                                    &.middle-child{
+                                        .node-container {
+                                            .text{
+                                                &.condition-node {
+                                                    &::before {
+                                                        bottom: 65px;
+                                                    }
+                                                }
+                                            }
+                                        
+                                        } 
+                                    }
+                                    &.last-child {
+                                        .text {
+                                            &::after {
+                                                top: -104px;
+                                                width: calc(100% - 85px);
+                                            }
+
+                                            &::before {
+                                               height: 95px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+                .right-section {
+                    .container {
+                        .body {
+                            font-size: 18px;
+
+                            p {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media screen and (-ms-high-contrast: active),
+        screen and (-ms-high-contrast: none) {
+        .left-section
+          .chart-container
+          .node#condition1
+          .child-node
+          .node-container
+            
+          .text {
+            max-width: 120px;
+    
+          }
+    
+         
+      }
+    }
+}
+  

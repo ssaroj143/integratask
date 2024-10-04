@@ -1,0 +1,123 @@
+&.small {
+    &.landscape{
+        .#{$app-namespace}-activity {
+            .flow-chart-container {
+                .left-section {
+                    .chart-container {
+                        p{
+                            font-size: 14px;
+                            line-height: 20px;
+                        }
+
+                        .text{
+                            &.process{
+                                font-size: 14px;
+                                line-height: 20px;
+                                padding: 5px;
+                            }
+                        }
+                        .node {
+                            .node-container {
+                                max-width: 170px;
+                            } 
+
+                            &#condition1{
+                                #wholenumber{
+                                    &.decision-box{
+                                        .decision{
+                                            width: 120px;
+                                            height: 120px;
+                                            p{
+                                                font-size: 14px;
+                                                line-height: 20px;
+                                               
+                                            }
+                                        }
+                                    }
+                                    .end-child{
+                                        min-width: 170px;
+                                    }
+                                }
+
+                                #whole-number-yes{
+                                    margin-top: -60px;
+                                    left: -15px;
+
+                                    &.special-text{
+                                        margin-top: -46px;
+                                    }
+                                    #wholenumber-child-left-yes{
+                                        &.branch{
+                                            top: 8px;
+                                        }
+                                    }
+                                    #whole-number-yes-child {
+                                        .node-container {
+                                           // width: 170px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            &#comp{
+                                .node{
+                                    &.selected-text,&.visited{
+                                        .node-container{
+                                            min-width: 170px;
+                                        }
+                                    }
+                                }
+                            }
+                           
+                        } 
+                        .main-text {
+                            margin-top: 20px;
+                        }
+                    }
+                }
+                .right-section {
+                    .container {
+                        .body {
+                            padding: 0px 8px;
+                            font-size: 15px;
+
+                            table {
+                                caption {
+                                    font-size: 15px;
+                                }
+
+                                td {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // @media screen and (-ms-high-contrast: active),
+        // screen and (-ms-high-contrast: none) {
+        //     .#{$app-namespace}-activity-container {
+        //         .#{$app-namespace}-activity {
+        //             .left-section {
+        //                 .chart-container {
+        //                     .node{
+        //                         &.condition1 {
+        //                             left: 0px;
+        //                             #whole-number-yes {
+        //                                 left: -15px;
+        //                             }
+        //                         }
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     } 
+        // }
+    }
+}
+
+
+
+
+  

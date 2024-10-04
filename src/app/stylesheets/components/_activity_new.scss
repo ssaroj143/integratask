@@ -1,0 +1,367 @@
+$blue-theme-border: #1e97ff;
+$blue-selected-background: #065da6;
+$blue-circle-outer: #98ccff;
+$blue-cirlce-inner: #0b76d2;
+$blue-unvisited-background: #1e97ff;
+$blue-unvisited-color: #00344f;
+
+$yellow-theme-border: #de9707;
+$yellow-selected-background: #775004;
+$yellow-circle-outer: #ffdf93;
+$yellow-circle-inner: #0b76d2;
+
+@mixin chart-circle {
+  width: 3px;
+  height: 3px;
+  //background: $blue-circle-outer;
+  border-radius: 50%;
+  position: absolute;
+  left: -2px;
+}
+
+@mixin triangle {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-top: 11px solid #000;
+
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin condition-arrow-top-to-bottom {
+  position: relative;
+  height: 9px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 19px;
+  width: 50%;
+}
+
+@mixin condition-arrow-top-to-bottom-inner {
+  content: "";
+  height: 100%;
+  width: 50%;
+  border: 2px dashed $yellow-theme-border;
+  border-top: 0;
+}
+@mixin downArrowLine {
+  box-sizing: border-box;
+  height: 42px;
+  width: 5px;
+  border: 1px solid #000000;
+  background: #000;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+@mixin downArrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  position: absolute;
+  bottom: 2px;
+  left: calc(50% - 5px);
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+@mixin decision {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+
+  box-shadow: unset;
+}
+
+@mixin decisionboxafter {
+  position: absolute;
+  top: 3px;
+  left: 9px;
+  content: "";
+  height: calc(100% - 22px);
+  width: calc(100% - 22px);
+  box-shadow: inset 0px 0px 0px 2px #de9707;
+
+  background: #fff3aa;
+  
+  -ms-transform: rotateX(45deg) rotateZ(45deg);
+  -webkit-transform: rotateX(45deg) rotateZ(45deg);
+  -moz-transform: rotateX(45deg) rotateZ(45deg);
+  -o-transform: rotateX(45deg) rotateZ(45deg);
+  transform: rotateX(45deg) rotateZ(45deg);
+}
+.#{$app-namespace}-activity {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  font-family: inherit;
+  display: flex;
+  flex-direction: column;
+  .portrait {
+    display: none;
+  }
+
+  .landscape {
+    display: none;
+  }
+  .flow-chart-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0 24px;
+    flex-direction: row;
+    justify-content: center;
+
+    &.hide {
+      display: none;
+    }
+    .left-section {
+      width: 70%;
+      overflow: hidden;
+      //overflow-y: auto;
+      position: relative;
+      text-align: center;
+      margin-top: 24px;
+      margin-bottom: 16px;
+      // &::-webkit-scrollbar {
+      //   -webkit-appearance: none;
+      //   width: 0px; // verital scrollbar
+      //   height: 5px; // horizontal scrollbar
+      // }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 20px;
+        background-color: transparent;
+        // -webkit-box-shadow: 0 0 1px rgba(187, 139, 139, 0.5);
+      }
+
+      &::-webkit-scrollbar {
+        background: transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 20px;
+        background: transparent;
+        -webkit-border-radius: 20px;
+      }
+
+      .chart-container {
+        height: 100%;
+        padding: 0px;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        overflow-y: auto;
+
+        &.hide{
+          animation: fadeOut 1s linear forwards;
+        }
+
+        &.show{
+          animation: fadeIn 1s linear forwards;
+        }
+        &.toggleHeight {
+          height: calc(100% - 83px);
+          margin-bottom: 24px;
+        }
+        .node {
+          position: relative;
+          //width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+
+          &.row-reverse {
+            flex-direction: row-reverse;
+          }
+          .node-container {
+            position: relative;
+            //width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .text {
+              &.startend {
+                box-sizing: border-box;
+                padding: 7px 20px;
+                width: 120px;
+
+                box-shadow: inset 0px 0px 0px 2px #00749b;
+                border-radius: 26px;
+                background-color: #effbff;
+
+                p {
+                  color: #00749b;
+                  font-size: 20px;
+                  font-weight: bold;
+                  letter-spacing: 0;
+                  line-height: 26px;
+                }
+
+                &:focus {
+                  box-shadow: inset 0px 0px 0px 2px #00749b,
+                    inset 0 0 0 4px #effbff, inset 0 0 0 5px #006a7c;
+                }
+              }
+            }
+
+            .text {
+              ol {
+                text-align: left;
+                // padding: 0px 14px;
+                list-style-position: inside;
+                > li {
+                  margin-bottom: 4px;
+                  font-weight: 500;
+                }
+                ul {
+                  padding: 0px 17px;
+                  list-style-type: disc;
+                  li {
+                    font-weight: 400;
+                  }
+                }
+              }
+            }
+            .process {
+              position: relative;
+              height: 100%;
+              padding: 16px;
+            }
+          }
+
+          .arrow {
+            position: relative;
+            @include downArrowLine;
+
+            &::after {
+              content: "";
+              @include triangle;
+            }
+          }
+          .decision-arrow {
+            position: relative;
+
+            /* background: red; */
+
+            border-bottom: 2px solid #000;
+
+            &::after {
+              @include triangle;
+            }
+            button,
+            p {
+              border: 0;
+              background: transparent;
+              font-size: 16px;
+              font-weight: bold;
+              letter-spacing: 0;
+              line-height: 22px;
+              cursor: pointer;
+            }
+
+            p {
+              cursor: auto;
+            }
+          }
+        }
+
+        button {
+          border: 0;
+          background: transparent;
+          font-size: 16px;
+          font-weight: bold;
+          letter-spacing: 0;
+          line-height: 22px;
+          cursor: pointer;
+        }
+      }
+      .decision-box {
+        position: relative;
+        padding: 0px 16px;
+        .decision {
+          @include decision;
+
+          &::after {
+            content: "";
+            @include decisionboxafter;
+          }
+
+          p {
+           
+            color: #000;
+            z-index: 1;
+            color: #252525;
+            font-size: 18px;
+            letter-spacing: 0;
+            line-height: 24px;
+            text-align: center;
+          }
+        }
+      }
+
+      .bottom-arrow-container {
+        position: relative;
+
+        display: flex;
+        flex-direction: row;
+
+        left: calc(50% - 1px);
+        margin-top: -18px;
+
+        .decision-arrow {
+          &.bottom {
+            @include downArrowLine;
+            width: 2px;
+            padding: unset;
+            margin-top: unset;
+
+            &::after {
+              left: -5px;
+            }
+          }
+        }
+      }
+      // &.nonprintable-flowchart {
+      //   display: block;
+      // }
+      // &.printable-flowchart {
+      //   display: none;
+      // }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to{
+          opacity: 1;
+          display: block;
+        }
+      }
+
+      @keyframes fadeOut {
+        from {
+          opacity: 1;
+        }
+
+        to{
+          opacity: 0;
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,416 @@
+&.small,&.extraSmall{
+  &.landscape {
+    .#{$app-namespace}-activity-container {
+      header {
+        padding: 0px 11px;
+
+        .toc-container {
+          .tocfield {
+            height: 30px;
+           
+            max-width: 190px;
+            
+            .toc-dropdown {
+              .left-section {
+                width: 100%;
+                .list-icon {
+                  width: 14px;
+                  height: 14px;
+                }
+
+                .toctext {
+                  font-size: 10px;
+                  line-height: 18px;
+
+                }
+              }
+
+              .dropdown-icon {
+
+                width: 24px;
+                height: 24px;
+              }
+
+
+            }
+
+            .toc-list {
+              .toc-list-header {
+                height: 30px;
+                .header-text,
+                .header-right {
+                  font-size: 10px;
+
+                }
+              }
+
+              .tocdetail {
+                  max-height: 130px;
+
+                ul {
+                  li {
+                    .item-text {
+                      padding-top: 5px;
+                      padding-bottom: 5px;
+                      font-size: 12px;
+                      line-height: 18px;
+
+                    }
+                  }
+                }
+
+              }
+            }
+          }
+
+
+        }
+      }
+      .#{$app-namespace}-activity{
+        .flowchart-title{
+          margin: 0px 24px;
+        }
+        .flow-chart-container{
+          flex-direction: column;
+          padding: 0px 8px;
+          .left-section{
+            width: 100%;
+            height: 70%;
+
+            .main-screen-text{
+              font-size: 18px;
+              line-height: 24px;
+              .maths{
+                .wrapper{
+                  font-size: inherit !important;
+                  line-height: inherit !important;
+                }
+              }
+            }
+          }
+          .right-section{
+            width: 100%;
+            height: 30%;
+            .right-section-inner{
+              padding: 24px 0 40px 0px;
+              .container{
+                padding: 12px 0px;
+              }
+              .body{
+                font-size: 14px;
+                line-height: 22px;
+                padding: 0px 12px;
+
+                .maths{
+                  .wrapper{
+                    font-size: inherit !important;
+                    line-height: inherit !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .question-container{
+          .question-wrapper{
+            max-width: 400px;
+          }
+        }
+      }
+      footer{
+        padding: 0px 2px;
+        .restart-audio-container{
+          button{
+            padding: 1px 4px;
+            .icon{
+              width: 14px;
+              height: 14px;
+            } 
+            .text{
+              font-size: 10px;
+    line-height: 14px;
+            }
+          }
+        }
+
+        .play-controls{
+         
+          button{
+            width: 14px;
+            height: 14px;
+
+            svg{
+              width: inherit;
+              height: inherit;
+            }
+
+            &.rewind{
+              margin-left: 0px;
+            }
+            &.play-btn{
+              width: 22px;
+            height: 22px;
+              margin-left: 5px;
+              margin-right: 5px;
+            }
+            &.forward{
+              margin-right: 0px;
+            }
+          }
+        }
+        .timerdiv{
+          .transcript-btn{
+            width: 14px;
+            height: 14px; 
+            margin-right: 0;
+            svg{
+              width: inherit;
+              height: inherit;
+            }
+          }
+          button{
+            width: 14px;
+            height: 14px;
+            margin-right: 0;
+            svg{
+              width: inherit;
+              height: inherit;
+            }
+          }
+          .transcript-btn{
+            width: 18px;
+            height: 16px;     
+            margin-right: 2px;                       
+          }
+          .caption{
+            margin-right: 2px;
+          }
+
+          .time{
+            font-size: 9px;
+            line-height: 14px;
+            margin-right: 1px;
+            width: auto;
+
+            .slash{
+              margin-left: 0;
+              margin-right: 0;
+            }
+          }
+
+          input[type="range"]{
+            width: 45px;
+            margin-right: 0;
+          }          
+          
+        }
+      }
+
+      @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) { 
+        header{
+          .tocfield{
+            left: 30px;
+            width: 150px !important;
+            max-width: 150px !important;
+          }
+        } 
+        .#{$app-namespace}-footer {
+          .timerdiv{
+            .transcript-btn{
+              margin-right: -1px;
+            }
+            .caption{
+              margin-right: 0;
+            }
+            .volume-icon{
+              margin-left: 4px;
+            }
+            .time{
+              font-size: 6px;
+              button{
+                margin-right: -2px;
+              }
+            }
+          }
+        }
+        
+        }
+
+        .#{$app-namespace}-overlay-container {
+          font-size: 10px;
+          line-height: 12px;
+  
+          .header{
+            .help{
+              right: 3px;
+            }
+          }
+  
+          .footer{
+            .restart-section{
+              left: 5px;
+              bottom: 34px;
+            }
+  
+            .quiz-section{
+              span{
+                left: 37px;
+                top: 20px;
+              }
+            }
+            .play-controls{
+              width: 330px;
+  
+              .prev-section{
+                span{
+                  width: 60px;
+                  left: 60px;
+                }
+              }
+              .rewind-section{
+                width: 50px;
+                left: 104px;
+                span{
+                width: 73px;
+                left: -40px;
+                }
+              }
+              .forward-section{
+                right: 55px;
+                width: 50px;
+                span{
+                  width: 74px;
+                  left: -60px;
+                }
+              }
+              .next-section{
+                width: 50px;
+                right: 96px;
+                span{
+                  left: 17px;
+                }
+              }
+            }
+            .audio-controls{
+              .caption-section{
+                right: 58px;
+                left: auto;
+                span{
+                  position: relative;
+                  left: 18px;
+                }
+              }
+              .volume-section{
+                right: 17px;
+  
+                span{
+                  width: 10px;
+                  margin-bottom: 53px;
+                }
+              }
+            }
+          }
+        }
+    }
+
+    .caption-inner {
+      padding: 7px 70px;
+    }
+  }
+}
+
+&.extraSmall{
+  &.landscape {
+    .#{$app-namespace}-activity-container {
+    
+      .#{$app-namespace}-activity{
+       
+        .question-container{
+          .question-wrapper{
+            max-width: 300px;
+          }
+        }
+      }
+      .#{$app-namespace}-overlay-container {
+        font-size: 10px;
+        line-height: 12px;
+
+        .header{
+          .help{
+            right: 3px;
+          }
+        }
+
+        .footer{
+          .restart-section{
+            left: 5px;
+            bottom: 34px;
+          }
+
+          .quiz-section{
+            span{
+              left: 37px;
+            }
+          }
+          .play-controls{
+            width: 330px;
+
+            .prev-section{
+              span{
+                width: 60px;
+                left: 68px;
+              }
+            }
+            .rewind-section{
+              width: 50px;
+              left: 104px;
+              span{
+                width: 60px;
+                left: -23px;
+              }
+            }
+            .forward-section{
+              right: 55px;
+              width: 50px;
+              span{
+                width: 60px;
+                left: -60px;
+              }
+            }
+            .next-section{
+              width: 50px;
+              right: 96px;
+              span{
+                left: 17px;
+                width: 45px;
+              }
+            }
+          }
+          .audio-controls{
+            .caption-section{
+              right: 28px;
+              left: auto;
+              span{
+                position: relative;
+                left: 18px;
+              }
+            }
+            .volume-section{
+              right: 17px;
+
+              span{
+                width: 10px;
+                margin-bottom: 53px;
+              }
+            }
+          }
+        }
+      }
+      
+     
+    }
+    
+   
+  }
+}

@@ -1,0 +1,125 @@
+&.large {
+	&.landscape{
+        .#{$app-namespace}-activity {
+            .left-section{
+                .chart-container{
+                    .flow-chart{
+                        .node{
+                            
+                            &#exam1{
+                               
+                                #first-child-arrow{
+                                   
+                                    #first-child-content{
+                                        .node-container{
+                                            .text{
+                                                width: 169px !important;
+                                            }
+                                        }
+                                    }
+                                }
+    
+                                #second-child-arrow1{
+                                    //left: 6px;
+                                    #second-child-arrow{
+                                        
+                                        #second-child-content{
+                                           
+                                            .node-container{
+                                                .text{
+                                                   
+                                                    max-width: 112px;
+                                                }
+
+                                                .arrow{
+                                                    height: 58px;
+                                                }
+                                            }
+        
+                                            
+                                            #exam2{
+                                                width: 200px;
+                                                
+                                                #left-arrow,#right-arrow{
+                                                    .w78{
+                                                        width: 84px;
+    right: 19px;
+    position: relative;
+                                                    }
+                                                    #left-child-content,#right-child-content{
+                                                        .node-container{
+                                                            .text{
+                                                               
+                                                                height: 210px;
+                                                                
+                                                            }
+
+                                                            
+                                                        }
+                                                    }
+                                                }
+        
+                                               
+                                            }
+                                        }
+                                    }
+        
+                                }
+
+                                #third-child-arrow1{
+                                    left: -31px;
+                                    #third-child-arrow{
+                                       
+                                        #third-child-content{
+                                          
+                                            .node-container{
+                                                .text{
+                                                    width: 155px !important;
+        
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                #fourth-child-arrow1{
+                                   left: -20px;
+                                    #fourth-child-content{
+                                      
+                                        .node-container{
+                                            .text{
+                                                width: 130px;
+                                                .division-block{
+                                                    width: 90px !important;
+                                                }
+                                                
+                                            }
+                                        }
+                                    }
+                                }
+    
+                              
+                                
+                            }
+    
+                            
+    
+                            
+                        }
+
+                        
+
+@media screen and (-ms-high-contrast: active),
+screen and (-ms-high-contrast: none) {
+    #exam2{
+        left: -17px;
+    }
+}
+                    }
+                }
+            }
+         }
+
+        
+    }
+}

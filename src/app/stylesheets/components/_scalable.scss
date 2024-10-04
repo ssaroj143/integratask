@@ -1,0 +1,14 @@
+.#{$app-namespace}-scalable-wrapper-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  &.toggleHeight {
+    height: calc(100% - 59px);
+  }
+  .chart-container {
+    overflow: hidden !important;
+    min-height: 780px;
+  }
+}

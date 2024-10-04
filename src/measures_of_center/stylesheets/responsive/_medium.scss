@@ -1,0 +1,300 @@
+&.medium {
+    &.landscape{
+        .#{$app-namespace}-activity {
+            .left-section{
+                .chart-container{
+                    .flow-chart{
+
+                        .node{
+                            .node-container{
+                                .text{
+                                   
+                                    &.startend{
+                                        p{
+                                            font-size: 14px;
+                                            line-height: 18px;
+                                        }
+                                    }
+                                }
+                            }
+    
+                            &#exam1{
+                                .node{
+                                    .arrow{
+                                        height: 70px;
+                                    }
+                                }
+                                .node-container{
+                                    .text{
+                                        padding: 8px;
+                                        p{
+                                            font-size: 14px;
+                                            line-height: 18px;
+                                        }
+                                    }
+                                }
+                                #first-child-arrow1{
+                                    #mean-connector {
+                                       
+                                        .node-container {
+                                            
+                                            width: 60px;
+                         
+                                        }
+                                    }
+                                }
+    
+                                #first-child-arrow{
+                                   
+                                    #first-child-content{
+                                        .node-container{
+                                            .text{
+                                                width: 115px !important;
+                                            }
+                                        }
+                                    }
+                                }
+    
+                                #second-child-arrow1{
+                                    //left: 6px;
+                                    #second-child-arrow{
+                                        
+                                        #second-child-content{
+                                           
+                                            .node-container{
+                                                .text{
+                                                   
+                                                    max-width: 100px;
+                                                }
+                                            }
+        
+                                            
+                                            #exam2{
+                                                width: 122px;
+                                                .node-container{
+                                                    .arrow{
+                                                        height: 100px;
+                                                    }
+                                                }
+                                                #left-arrow,#right-arrow{
+                                                    .w78{
+                                                        width: 58px;
+                                                    }
+                                                    #left-child-content,#right-child-content{
+                                                        .node-container{
+                                                            .text{
+                                                                width: 100px;
+                                                                height: 107px;
+                                                                padding: 8px;
+                                                            }
+
+                                                            
+                                                        }
+                                                    }
+                                                }
+        
+                                               
+                                            }
+                                        }
+                                    }
+        
+                                }
+
+                                #third-child-arrow1{
+                                    left: -6px;
+                                    #third-child-arrow{
+                                       
+                                        #third-child-content{
+                                          
+                                            .node-container{
+                                                .text{
+                                                    width: 105px !important;
+        
+                                                    .maths{
+                                                        font-size: 14px;
+                                                        line-height: 18px;
+                                                        
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                #fourth-child-arrow1{
+                                   
+                                    #fourth-child-content{
+                                      
+                                        .node-container{
+                                            .text{
+                                                width: 110px;
+    
+                                                .maths{
+                                                    font-size: 14px;
+                                                    line-height: 18px;
+                                                    .division-block{
+                                                        width: 84px !important;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+    
+                              
+                                
+                            }
+    
+                            
+    
+                            
+                        }
+
+                        
+
+@media screen and (-ms-high-contrast: active),
+screen and (-ms-high-contrast: none) {
+    #exam2{
+        left: -44px;
+    }
+}
+                    }
+
+                    .main-screen-text{
+                        &.ost13{
+                            .numerator{
+                                span{
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+         }
+
+        
+    }
+	&.portrait {
+        .#{$app-namespace}-activity {
+            .left-section{
+                .chart-container{
+                    .flow-chart{
+                        .node{
+                            
+                            &#exam1{
+                               
+                                #first-child-arrow{
+                                   
+                                    #first-child-content{
+                                        .node-container{
+                                            .text{
+                                                width: 169px !important;
+                                            }
+                                        }
+                                    }
+                                }
+    
+                                #second-child-arrow1{
+                                    //left: 6px;
+                                    #second-child-arrow{
+                                        
+                                        #second-child-content{
+                                           
+                                            .node-container{
+                                                .text{
+                                                   
+                                                    max-width: 112px;
+                                                }
+
+                                                .arrow{
+                                                    height: 58px;
+                                                }
+                                            }
+        
+                                            
+                                            #exam2{
+                                                width: 200px;
+                                                
+                                                #left-arrow,#right-arrow{
+                                                    .w78{
+                                                        width: 84px;
+    right: 19px;
+    position: relative;
+                                                    }
+                                                    #left-child-content,#right-child-content{
+                                                        .node-container{
+                                                            .text{
+                                                               
+                                                                height: 210px;
+                                                                
+                                                            }
+
+                                                            
+                                                        }
+                                                    }
+                                                }
+        
+                                               
+                                            }
+                                        }
+                                    }
+        
+                                }
+
+                                #third-child-arrow1{
+                                    left: -31px;
+                                    #third-child-arrow{
+                                       
+                                        #third-child-content{
+                                          
+                                            .node-container{
+                                                .text{
+                                                    width: 155px !important;
+        
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                #fourth-child-arrow1{
+                                   left: -20px;
+                                    #fourth-child-content{
+                                      
+                                        .node-container{
+                                            .text{
+                                                width: 130px;
+                                                .division-block{
+                                                    width: 90px !important;
+                                                }
+                                                
+                                            }
+                                        }
+                                    }
+                                }
+    
+                              
+                                
+                            }
+    
+                            
+    
+                            
+                        }
+
+                        
+
+@media screen and (-ms-high-contrast: active),
+screen and (-ms-high-contrast: none) {
+    #exam2{
+        left: -44px;
+    }
+}
+                    }
+                }
+            }
+         }
+
+	}
+}

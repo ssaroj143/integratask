@@ -1,0 +1,647 @@
+$left-color: #941e61;
+$right-color: #397f3c;
+$trianlge-border-size: 11px;
+
+
+
+.#{$app-namespace}-activity-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .#{$app-namespace}-activity {
+    .left-section {
+      .chart-container {
+        button{
+          cursor: auto;
+          &.active{
+            cursor: pointer;
+            animation: glowingButton 3s infinite;
+          }
+        }
+        p,button{
+          font-size: 20px;
+          line-height: 26px;
+        }
+        .order1 {
+          order: 1;
+         
+          width: 170px;
+          
+        }
+
+        .order2 {
+          order: 2;
+          
+        }
+
+        .order3 {
+          order: 3;
+          width: 170px;
+          
+        }
+
+        .row-reverse {
+          flex-direction: row-reverse;
+          
+        }
+
+        .decision-box {
+          .decision {
+            width: 202px;
+            height: 202px;
+            &.sm {
+              width: 140px;
+              height: 140px;
+
+              p{
+                width: 68%;
+              }
+            }
+
+            &::after{
+              left: 11px;
+            }
+
+            p {
+
+              font-size: 20px;
+              line-height: 26px;
+              transform: translateZ(140px);
+              width: 64%;
+              margin-bottom: 15px;
+            }
+          }
+        }
+
+        .process-bottom{
+          margin-top: 6px;
+          &.glow{
+            animation: glowingText 3s infinite;
+          }
+        }
+        .process{
+          background: #ECFDED;
+          border: 2px solid #397F3C;
+          padding: 8px !important;
+          height: 226px !important;
+          width: 165px !important;
+          p{
+            font-size: 20px;
+            line-height: 26px;
+            text-align: left;
+          }
+        }
+
+        .down-arrow{
+          .arrow{
+            height: 100px;
+          }
+
+         
+          &::after{
+            content: "";
+            position: absolute;
+            height: 5px;
+            top: 0;
+            width:calc(100% - 48px);
+            background:$right-color;
+            right: 0;
+          }
+
+          &.left{
+            &::after{
+              left: 0;
+              background:$left-color;
+            }
+          }
+        }
+
+        .up-arrow{
+          text-align: right;
+    right: 8px;
+    position: relative;
+          p{
+            font-weight: 600;
+          }
+
+        }
+
+        #decision1-no{
+          left: 20px;
+        }
+
+        #decision3-no{
+          .up-arrow{
+            p{
+              color: $left-color;
+            }
+          }
+          .arrow{
+            background: $left-color;
+            border: 2px solid $left-color;
+           
+            &::after{
+              border-top: 11px solid $left-color;
+              bottom: -6px;
+            }
+          }
+        }
+
+        #decision1-yes{
+          left: -20px;
+        }
+        #condition1{
+         
+          .condition-node{
+            &.top{
+              position: relative;
+              display: flex;
+              flex-direction: row;
+              left: 17px;
+              top: 90px;
+              .down-arrow{
+                width: 181px;
+                .arrow{
+                  width: 6px;
+                }
+                &::after{
+                  content:"";
+                  left: -51px;
+                  width: calc(50% - 35px);
+                }
+              }
+
+              .up-arrow{
+                width: 141px;
+                position: relative;
+                top: -30px;
+                right: 8px;
+              }
+              .content{
+                text-align: left;
+                padding: 0px 4px;
+              }
+
+              
+
+              &.no{
+                flex-direction: row-reverse;
+                left: -42px;
+
+                .down-arrow{
+                  width: 229px;
+                  .arrow{
+                    width: 7px;
+                  }
+                  .content{
+
+                    text-align: right;
+
+                  }
+
+                  &::after{
+                    content: "";
+                    right: -51px;
+                    width: calc(50% - 58px);
+    left: unset;
+                  }
+                }
+
+                .up-arrow{
+                  text-align: left;
+                  left: 10px;
+                }
+                
+              }
+            }
+          }
+          
+        }
+        #condition2,#condition3{
+          top: 90px;
+          .order1{
+            left: 80px;
+            top: 33px;
+
+            .up-arrow{
+              text-align: left;
+              left: 19px;
+              right: 0px;
+            }
+          }
+
+          .order3{
+            left: -80px;
+            top: 33px;
+
+            .up-arrow{
+              text-align: right;
+              right: 16px;
+            }
+          }
+
+          .down-arrow{
+
+            align-items: center;
+            p{
+              width: 104px;
+              text-align: right;
+              padding: 0px 4px;
+              &.left{
+                text-align: left;
+              }
+            }
+          }
+        }
+
+
+       
+
+        .no{
+          .arrow{
+            background: $left-color;
+            border: 2px solid $left-color;
+           
+            &::after{
+              border-top: 11px solid $left-color;
+              bottom: -6px;
+            }
+          }
+
+          .up-arrow{
+            
+            p,button{
+              color: $left-color;
+            }
+          }
+        }
+
+        .yes{
+          .arrow{
+            background: $right-color;
+            border: 2px solid $right-color;
+           
+            &::after{
+              border-top: 11px solid $right-color;
+              bottom: -6px;
+            }
+          }
+
+          .up-arrow{
+            p,button{
+              color: $right-color;
+            }
+          }
+        }
+
+        #decision2-no{
+          .child-node{
+            align-items: center;
+            
+            top: 3px;
+            .text{
+              position: relative;
+    width: 115px;
+    padding: 0px 4px;
+            }
+          }
+          .up-arrow{
+            p{
+              color: $left-color;
+
+            }
+          }
+
+          
+        }
+
+        .child-node{
+          top: 3px;
+        }
+
+
+        // show/hide logic
+        #process1,#process2,#process3,#process4{
+          
+          &:focus{
+            
+            box-shadow: inset 0px 0px 0px 0px #397f3c, inset 0 0 0 3px #effbff, inset 0 0 0 5px #397f3c;
+          }
+        }
+       
+          .decision1-no-branch,.decision1-yes-branch,.decision2-no-branch,.decision2-yes-branch,.decision3-no-branch,.decision3-yes-branch{
+            .up-arrow,.down-arrow{
+              display: none;
+            }
+            &.active{
+              .up-arrow{
+                display: inline;
+              
+              }
+              .down-arrow{
+                display: flex;
+              }
+              .up-arrow,.down-arrow{
+                opacity: 0;
+                animation: fadeIn 1.2s linear forwards;
+              }
+            }
+          }
+
+          .decision2-yes,.decision2-no,.decision3-no,.decision3-yes{
+            display: none !important;
+            &.active{
+              display: flex !important;
+              opacity: 0;
+              animation: fadeIn 1.2s linear forwards;
+
+              
+            }
+          }
+         
+         
+        
+
+        #decision2,#decision3{
+          display: none;
+          &.active{
+            display: flex;
+            opacity: 0;
+                animation: fadeIn 1.2s linear forwards;
+          }
+        }
+
+
+        #decision2-no{
+          .decision2-side-text{
+            display: none;
+            font-weight: 600;
+            &.active{
+              display: flex;
+              opacity: 0;
+                  animation: fadeIn 1.2s linear forwards;
+            }
+
+            &.shift-bottom{
+              top: 190px;
+            }
+          }
+        }
+       
+        #decision1-box,#decision2-box,#decision3-box{
+          &:focus{
+            &::after{
+              box-shadow: inset 0px 0px 0px 2px #de9707, 0 0 0 2px #ffffff, 0 0 0 4px #de9707;
+            }
+          }
+        }
+
+        
+        @keyframes fadeIn {
+          to{
+            opacity: 1;
+          }
+        }
+
+        @keyframes glowingButton {
+          0% { text-shadow:  0 0 0px yellow; }
+          25% { text-shadow:  0 0 5px yellow; }
+          50% {text-shadow:  0 0 10px yellow;}
+          75%{text-shadow:  0 0 5px yellow;}
+          100% { text-shadow:  0 0 0px yellow; }
+        }
+
+        @keyframes glowingText {
+          0% { text-shadow:  0 0 0px yellow; }
+          25% { text-shadow:  0 0 5px yellow; }
+          50% {text-shadow:  0 0 10px yellow;}
+          75%{text-shadow:  0 0 5px yellow;}
+          100% { text-shadow:  0 0 0px yellow; }
+        }
+      }
+    }
+
+  }
+
+  .pehtmlflowcharts-overlay-container {
+    .question-marker {
+      .quiz-section {
+        position: absolute;
+        left: calc(7.6846% - 5px);
+        bottom: -7px;
+
+        span {
+          left: 42px;
+          position: relative;
+          top: 18px;
+        }
+
+        .arrow {
+          left: -9px;
+          bottom: -5px;
+          position: relative;
+        }
+
+        .icon {
+          svg {
+            path {
+              fill: #fff;
+
+              &:first-of-type {
+                fill: #000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+&.medium,&.large{
+  &.portrait,&.landscape{
+    .#{$app-namespace}-activity-container {
+     
+      .#{$app-namespace}-activity {
+        .left-section {
+          .flowchart-view{
+            position: relative;
+           
+          }
+          .chart-container{
+            p{
+              font-size: 18px;
+              line-height: 24px;
+            }
+
+           
+            #condition1{
+              .order1{
+                left: 56px;
+              }
+
+              .order3{
+                left: -56px;
+               
+              }
+
+              .condition-node{
+                
+
+               
+                &.top{
+                  .up-arrow{
+                    right: -17px;
+                  }
+                  .down-arrow{
+                    width: 190px;
+                    left: 5px;
+                    &::after{
+                      left: -15px;
+    width: calc(50% - 75px);
+                    }
+                  }
+                }
+
+                &.no{
+                  .down-arrow{
+                    left: 20px;
+                    &::after{
+                      left: unset;
+                      right: -15px;
+    width: calc(50% - 75px);
+                    }
+                  }
+
+                  .up-arrow{
+                    left: 12px;
+                  }
+                }
+              }
+            }
+            
+            #condition2,#condition3{
+              .order1{
+                left: 98px;
+                top: 35px;
+              }
+              .order3{
+                left: -98px;
+                top: 35px;
+              }
+
+              .down-arrow{
+                &::after{
+                  width: calc(100% - 67px);
+                }
+              }
+            }
+            
+
+            .process{
+              height: 232px !important;
+              width: 140px !important;
+            }
+
+            
+           
+
+           
+          }
+        }
+    
+      }
+    
+     
+    }
+  }
+}
+
+@media screen and (-ms-high-contrast: active),
+  screen and (-ms-high-contrast: none) {
+  .#{$app-namespace}-activity-container {
+    .#{$app-namespace}-activity {
+      .left-section {
+        
+        .chart-container {
+          .down-arrow{
+           
+           
+            &::after{
+              content: "";
+              width:calc(100% - 50px);
+              
+            }
+  
+           
+          }
+
+          #condition1{
+         
+            .condition-node{
+              &.top{
+                
+                .down-arrow{
+                  .arrow{
+                    width: 9px;
+                  }
+                  &::after{
+                    content:"";
+                    left: -49px;
+                    width: calc(50% - 37px);
+                  }
+                }
+  
+               
+  
+                &.no{
+                  //left: -200px;
+                  .down-arrow{
+                    .arrow{
+                      width: 12px;
+                    }
+                   
+                    &::after{
+                      content: "";
+                      left: auto;
+                      right: -49px;
+                      width: calc(50% - 60px);
+                      //width: (50% - 18px);
+                    }
+                  }
+                  
+                }
+              }
+              
+            }
+            
+          }
+
+          
+
+          .child-node{
+            .text{
+              width: 202px;
+              height: 165px;
+            }
+          }
+
+          .decision2-side-text{
+            top: 30px;
+            p{
+              font-size: 18px;
+            }
+
+            &.shift-bottom{
+              top: 184px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

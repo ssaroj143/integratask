@@ -1,0 +1,45 @@
+&.medium {
+  
+  &.portrait {
+    .#{$app-namespace}-activity {
+      .left-section {
+        .chart-container {
+          .process{
+            &.blue{
+              width:calc(100% - 498px)
+            }
+          }
+         #exam1{
+           .node{
+            //  max-width: 225px;
+             .node-container{
+              //  max-width: 225px;
+              //  min-width: 225px;
+             }
+             .arrow-text{
+               &.green{
+                // left: 27px;
+               }
+            }
+           }
+
+           #left_child{
+            // margin-right: 0;
+           }
+
+           .process{
+            //  min-width: 225px;
+            //  max-width: 225px;
+
+             &.pink{
+               .down-text{
+                //  right: 8px;
+               }
+             }
+           }
+         }
+        }
+      }
+    }
+  }
+}

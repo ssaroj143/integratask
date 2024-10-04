@@ -1,0 +1,60 @@
+&.small {
+  &.landscape {
+    .#{$app-namespace}-activity {
+      .flow-chart-container {
+        .left-section{
+          p{
+            font-size: 14px !important;
+            line-height: 20px !important;
+          }
+
+          .decision-box{
+            .decision{
+              width: 120px !important;
+              height: 120px !important;
+            }
+          }
+
+          #observationmade{
+            .first-child,.third-child{
+              
+            }
+
+            #retrospective-child3{
+              right: 6px !important;
+              margin-top: 27px !important;
+
+              .arrow{
+                &.child-node{
+                  margin-top: -1px !important;
+                }
+              }
+            }
+
+            #retrospective-child1{
+              left: 6px !important;
+              margin-top: 53px !important;
+
+              .arrow{
+                &.child-node{
+                  margin-top: -1px !important;
+                }
+              }
+            }
+          }
+          #observationmade .process{
+            min-width: 140px !important;
+            max-width: 140px !important;
+          }
+          .process{
+            &.text{
+              min-width: 140px !important;
+              max-width: 140px !important;
+              padding: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

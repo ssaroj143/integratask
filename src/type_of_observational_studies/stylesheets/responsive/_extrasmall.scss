@@ -1,0 +1,141 @@
+@mixin smallFont {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  &.extraSmall {
+    &.landscape{
+        .#{$app-namespace}-activity-container {
+            header {
+                padding: 0px 12px;
+            }
+        }
+        .#{$app-namespace}-activity {
+            .flow-chart-container {
+                .left-section {
+                    .chart-container {
+                        .node {
+                            p{
+                                @include smallFont();
+                            }
+                            .node-container{
+                                p{
+                                    @include smallFont();
+                                }
+                
+                                .text{
+                                    &.process{
+                                        @include smallFont();
+                                        padding: 5px;
+                                    }
+                                    &.startend{                                
+                                        p{
+                                            @include smallFont();
+                                        }
+                                    }
+                                }   
+                                                     
+                            }
+
+                            &#condition1 {
+                                top: 1px;
+                                
+                                .child-node {                                    
+                                   
+                                    &.first-child {
+                                        .text {
+                                            &::after {
+                                                top: -107px;
+                                               width: calc(100% - 95px);
+                                            }
+
+                                            &::before {
+                                                height: 95px;
+                                            }
+                                        }
+                                        .node-container {
+                                            .text{
+                                                &.condition-node {
+                                                    &::before {
+                                                        bottom: 73px;
+                                                    }
+                                                }
+                                            }
+                                        
+                                        }
+                                    }
+                                    &.middle-child{
+                                        .node-container {
+                                            .text{
+                                                &.condition-node {
+                                                    &::before {
+                                                        bottom: 65px;
+                                                    }
+                                                }
+                                            }
+                                        
+                                        } 
+                                    }
+                                    &.last-child {
+                                        .text {
+                                            &::after {
+                                                top: -107px;
+                                                width: calc(100% - 92px);
+                                            }
+
+                                            &::before {
+                                               height: 95px;
+                                            }
+                                        }
+                                        .node-container {
+                                            .text{
+                                                &.condition-node {
+                                                    &::before {
+                                                        bottom: 72px;
+                                                    }
+                                                }
+                                            }
+                                        
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        #retrospective-child,#prospective-child,#cross-sectional-child{
+                            .node-container{
+                                .text{
+                                    //min-width: 150px;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+                .right-section {
+                    .container {
+                        .body {
+                            p{
+                                padding: 0px 8px;
+                            font-size: 15px;
+                            }
+                            .text-container{
+                                p{
+                                    padding: 0px 8px;
+                                font-size: 15px;
+                                }
+                            }
+                           
+                            
+                            
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+  
+
+
+  

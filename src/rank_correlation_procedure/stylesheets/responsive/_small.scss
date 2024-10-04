@@ -1,0 +1,363 @@
+&.small {
+    &.landscape{
+      @-moz-document url-prefix() {
+        .#{$app-namespace}-activity {
+          .flow-chart-container {
+            .left-section {
+              .chart-container {
+                .node {
+                  &#condition3 {
+                    #decision2-yes {
+                      #decision2-yes-process {
+                        .process {
+                          &.text {
+                            left: 31px !important;
+                          }
+                          .maths {
+                            font-size: 11px ;
+                          }
+                        }
+                      }
+                    }
+                    #decision2-no-process {
+                      #decision2-no-process3 {
+                        .text {
+                          &.process {
+                            height: 121px !important;
+                          }
+                          
+                          .maths {
+                            top: -15px;
+                          }
+                          p:nth-of-type(2) {
+                            margin-top: -15px;
+                          }
+                        }
+                      } 
+                    } 
+                  } 
+                }
+              }
+            }
+          }
+        }
+      }
+      .#{$app-namespace}-activity {
+        .flow-chart-container {
+          @media screen and (-ms-high-contrast: active),
+          screen and (-ms-high-contrast: none) { 
+            .left-section {
+              .chart-container {
+                .node {
+                  &#condition3 {
+                    #decision2-yes {
+                      #decision2-yes-process {
+                        .process {
+                          &.text {
+                            width: 200px;
+                            left: -1px !important;
+                          }
+                          .maths {
+                            font-size: 11px ;
+                          }
+                        }
+                        .arrow {
+                          left: -22px;
+                        }
+                      }
+                    }
+                    #decision2-no-process {
+                      left: 35px !important;
+                    }
+                  }
+                  #decision3-no-arrow{
+                    .condition-node{
+                      .arrow{
+                          width: 30px !important;
+                      }
+                    }
+                  }
+                  
+                  #decision1-no, #decision2-no {
+                    right: 0px !important;
+                  } 
+                }
+              }
+            }
+          }
+          .left-section {
+            .chart-container {
+              .node{
+
+                p {
+                  font-size: 14px;
+                  line-height: 20px;
+                  }
+
+                .maths {
+                  font-size: 14px;
+
+                  .root-sign {
+                    font-size: 27px !important;
+                    line-height: 22px !important;
+                  }
+                }
+                &.start{
+                  width:calc(100% - 156px);
+                }
+        
+                      .empty{
+                        width: calc(100% - 171px);
+                      }
+
+                      &#condition1 {
+                        #decision1-no {
+                          #decision1-no-arrow{
+                            .condition-node{
+                              .arrow{
+                                  width: 35px ;
+                              }
+  
+                              .text{
+                                  left: 6px !important;
+                              }
+                            }
+                          }
+                        }
+                      }
+                      &#condition2 {
+                        #decision2-no {
+                            .condition-node{
+                              .arrow{
+                                  width: 35px ;
+                              }
+  
+                              .text{
+                                  left: 6px !important;
+                              }
+                            }
+                        }
+                      }
+                      &#condition4 {
+                        #decision3 {
+                          #decision3-right {
+                            #decision3-no-arrow {
+                              .condition-node{
+                                .arrow{
+                                    width: 35px ;
+                                }
+    
+                                .text{
+                                    left: 6px !important;
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      .text{
+                        &.process{
+                            padding: 8px;
+                            font-size: 14px;
+                            line-height: 20px;
+                          &.pink{
+                              padding: 8px;
+                            width: 200px;
+                          }
+
+                        }
+                      }
+                      #decision2-no{
+                        right: 14px;
+                      }
+        
+                      #decision1-no{
+                        right: 14px;
+                          #decision1-no-arrow{
+                              .process{
+                                  .arrow{
+                                    bottom: -154px !important;
+                                    height: 188px !important;
+                                    left: -28px !important;
+                                    transform: rotate(
+                                53deg
+                                ) !important;
+                                  }
+                              }
+                          }
+                      }
+                      #decision1,#decision2{
+                          .decision{
+                            width: 150px;
+                            height: 150px;
+                            p{
+                                font-size: 14px;
+                                line-height: 20px;
+                            }
+                          }
+                          .decision-box{
+                            padding: 0px 2px 0px 5px ;
+                          }
+                      }
+
+                    
+                      
+        
+                      &#condition2{
+                        #decision2-no{
+                            
+                          #decision2-process{
+                            top: 28px;
+                            .arrow{
+                              left: calc(50% - 113px);
+                            }
+                          }
+                        }
+                      }
+        
+                      &#condition3{
+                        top: -15px;
+                        #decision2-yes{
+                          width: 198px;
+                          top: -23px;
+                          padding-right: 46px;
+                          
+                          #decision2-yes-arrow{
+                              left: 15px;
+                            .arrow{
+                              height: 165px;
+                              
+                            }
+                          }
+        
+                          #decision2-yes-process{
+                              .process{
+                                  &.text{
+                                      left: 25px;
+                                  }
+                              }
+                            .arrow{
+                              height: 130px;
+                            }
+                          }
+                        }
+        
+                        #decision2-no-process{
+                          left: 21px;
+                          
+                          #decision2-no-process2{
+                            .arrow{
+                              left: calc(50% - 113px);
+                            }
+                          }
+                          #decision2-no-process3{
+                            width: auto;
+                            .text{
+                              &.process{
+                                width: 200px;
+                                height: 170px;
+                              }
+                            }
+        
+                            .arrow{
+                              left: calc(50% - 184px);
+                              height: 79px;
+                            }
+                          }
+                          
+                        }
+                      }
+        
+                      &#condition4{
+                          top: -43px;
+                        #decision3{
+                          top: -130px;
+                          left: -11px;
+
+                          &.update-css{
+                            top: -154px;
+
+                            #decision3-right{
+                             
+                              #decision3-no-arrow{
+                                .condition-node{
+                                  &.node-container{
+                                    top: 9px !important;
+                                  }
+                                }
+                              }
+                              
+                            }
+                          }
+                          .decision{
+                              width: 90px;
+                              height: 90px;
+
+                              p{
+                                font-size: 14px;
+                                line-height: 20px;
+                            }
+                          }
+                          #decision3-no-process{
+                            .text{
+                              &.process{
+                                width: 100px;
+                                
+                              }
+                            }
+                            .arrow {
+                              height: 120px !important;
+                            }
+                          }
+
+                          #decision3-right{
+                              left: -45px ;
+                              top: 29px;
+
+                              #decision3-no-arrow{
+                                .condition-node{
+                                   &.node-container{
+                                       top: -100px !important;
+
+                                   }
+                                   
+                                }
+                            }
+                          }
+                         
+                          #decision3-left {
+                            #decision3-box {
+                              .arrow {
+                                &.decision3-box-arrow {
+                                  height: 90px;
+                                }
+                              }
+                            }
+                          }
+
+                          #decision3-left-process{
+                              .text{
+                                  width: 125px !important;
+                              }
+                          }
+                        }
+        
+                        #condition4-arrow{
+                          width: 155px;
+                        }
+                      }
+
+                      &#condition5{
+                          top: -188px;
+                          width: 420px;
+                      }
+                    }
+                  }
+            }
+          }
+        }
+    }
+  }
+
+  
+  

@@ -1,0 +1,24 @@
+In this activity, we will review the flowchart procedure for making predictions about a variable y given a value of a variable x.
+First, we must determine whether the regression equation is a “good” model?
+The regression equation is a good model if it satisfies the following criteria.
+1. The regression line graphed in the scatterplot shows that the line fits the points well.
+2. r indicates that there is a linear correlation. and
+3. The prediction is not much beyond the scope of the available sample data.
+If using the preceding criteria, the regression equation appears to be a good model, then we can make predictions using the regression equation.
+Substitute the given value x into the regression equation.
+The result is the predicted value of y.
+For example, consider the regression equation y-hat=2+3x
+If that regression equation is found to be a good model and we are given x=5, the predicted value of y is 2 + 3(5) = 17.
+However, if the regression equation is not found to be a good model, the best predicted value of y is it’s sample mean.
+In this case, predicted values are generally not very good because the predicted value is always the same regardless of the value of x.
+In this case, then we do not substitute x into the regression equation.
+There is no correlation between height and IQ score.
+Given someone of any height, their best predicted IQ score is 100, which is the mean IQ score of the population.
+Now, it is time to test your knowledge.
+Let’s try another one.
+This flowchart reviewed the strategy for predicting values of a variable y
+when given some value of x.
+Use the regression equation to make predictions for the variable y
+if and only if the regression equation is found to be a good model.
+Congratulations, you have mastered an important concept of Statistics!
+Using regression, I predict that you are on your way to great success!

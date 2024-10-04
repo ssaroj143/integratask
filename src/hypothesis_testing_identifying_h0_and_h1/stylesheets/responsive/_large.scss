@@ -1,0 +1,64 @@
+&.large {
+  &.landscape {
+    .#{$app-namespace}-activity {
+      .left-section {
+        .#{$app-namespace}-scalable-wrapper-container {
+          .chart-container {
+            //min-height: 1190px;
+            // min-height: 1550px;
+            margin-left: -9%;
+            min-height: 1550px;
+            min-width: 950px;
+          }
+        }
+
+        .ost13.main-screen-text{
+          font-size: 24px;
+          margin-top: 20px;
+          line-height: 24px;
+      }
+      }
+
+      .flow-chart {
+        .node-container {
+          .process {
+            padding: 12px !important;
+            &.blue {
+              width: calc(100% - 140px) !important;
+              
+            }
+            &.green,
+            &.pink {
+              font-size: 15px;
+              width: 410px;
+              max-width: 650px !important;
+              min-height: 161px;
+            }
+          }
+        }
+        #exam3{
+          justify-content: space-evenly;
+        }
+        #exam1{
+          justify-content:  space-evenly;
+
+          .node{
+            // margin-right: 20px;
+          }
+        }
+      }
+
+      .right-section {
+        .right-section-inner {
+          .body {
+            .button-group{
+              a{
+                padding: 10px 2px 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

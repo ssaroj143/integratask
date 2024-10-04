@@ -1,0 +1,135 @@
+&.large {
+  &.landscape {
+    .#{$app-namespace}-activity {
+      .left-section {
+        // .#{$app-namespace}-scalable-wrapper-container {
+          // background-color: red;
+          .chart-container {
+            // background-color: red;
+            .main-text{
+              height: 60px;
+            }
+            .toggleHeight{
+              height: calc(100% - 83px);
+            }
+            // min-height: 1190px;
+            .node{ 
+              .selected,.selected-text {.back{
+                transform: rotate(
+                90deg
+                );
+                left: 185px;
+                top: 5px;
+                .arrow{
+                  height: 109px;
+                }
+              }}
+              .node-container{
+                max-width: 250px;
+                min-width: 250px;
+                width: 100%;
+            }
+
+            }
+          #right-section{ 
+            &.node{
+              margin-left: 115px;
+              .from-box1{
+                  left: -219px;
+                  transform: rotate(
+                  -32deg
+                  );
+                  top: -178px;
+                .arrow{
+                  height: 226px;
+                }
+                .node-container{
+                  .text{
+                    left: 156px;
+                    top: 115px;
+                    transform: rotate(
+                    30deg
+                    );
+                    color: #397f3c;
+                    font-size: 20px;
+                  }
+                }
+                &.safari{
+                  left:-217px;
+                  top:-159px;
+                   transform: rotate(
+                -30deg
+                );
+                }
+              }
+              .from-box2{
+                 left: -217px;
+                  transform: rotate(
+                  -90deg
+                  );
+                  top: -2px;
+                .arrow{
+                 height:120px
+                }
+                .node-container{
+                  .text{
+                    left: 150px;
+                    top: 45px;
+                    transform: rotate(
+                    90deg
+                    );
+                    color: #397f3c;
+                    font-size: 20px;
+                  }
+                }
+                &.safari{
+                  left:-185px;
+                  top:28px;
+                }
+              }
+              .from-box3{
+                left: -217px;
+                  transform: rotate(
+                  -148deg
+                  );
+                  top: 68px;
+                .arrow{
+                  height: 225px;
+                } 
+                .node-container{
+                  .text{
+                    left: 106px;
+                    top: 112px;
+                    transform: rotate(
+                    150deg
+                    );
+                    color: #941e61;
+                    font-size: 20px;
+                  }
+                }
+                &.safari{
+                    left:-164px;
+                    top:80px;
+                    transform: rotate(
+                -150deg
+                );
+                    // top:24px;
+                  }
+              }
+             
+            }
+            .equation-container{ 
+              .node-container{
+              min-width: 310px;
+              .process{
+                font-size: 18px;
+              }
+              }
+            }
+          }
+          }
+        // }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+&.large {
+  .#{$app-namespace}-activity {
+    .flow-chart-container {
+      .left-section {
+        .chart-container {
+          #observationmade{
+            .process{
+              min-width: 200px;
+              max-width: 200px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,125 @@
+&.extraSmall {
+    &.landscape {
+		.#{$app-namespace}-activity {
+			.flow-chart-container {
+				.left-section {
+					.chart-container {
+						p{
+                            font-size: 14px;
+                            line-height: 20px;
+                        }
+
+                        .text{
+                            &.process{
+                                font-size: 14px;
+                                line-height: 20px;
+								min-width: 190px;
+								padding: 8px;
+                            }
+                        }
+
+						.condition-node {
+							p {
+								font-size: 9px;
+							}
+						}
+                        .node {
+                            .node-container {
+                                max-width: 180px;
+                            } 
+
+                            &#condition1{
+                                    .decision-box{
+                                        .decision{
+                                            width: 150px;
+                                            height: 150px;
+                                            p{
+                                                font-size: 12px;
+                                                line-height: 20px;
+                                                width: 70%;
+												margin-bottom: 0px;
+                                            }
+                                        }
+                                    }
+                                    .end-child{
+                                        min-width: 160px;
+                                    }
+                                
+
+                                #wholenumber-yes{
+                                    margin-top: -22px;
+                                    left: 0px;
+
+                                    #whole-number-yes-child {
+										.node-container {
+											min-width: 160px
+										}
+                                        .text {
+                                            min-width: 160px;
+                                        }
+                                    }
+									.bottom {
+										min-width: 50px;
+										max-width: 50px;
+									}
+                                }
+								#wholenumber-child-left-yes {
+									width: 50px;
+									top: 5px;
+									.text {
+										top: -20px;
+									}
+								}
+                            }
+
+							&#condition2 {
+								#yes-child {
+									#wholenumber-child-left {
+										.text {
+											width: 150px;
+										}
+
+										.arrow {
+											height: 90px;
+										}
+									}
+								}
+							}  
+
+                            &#comp{
+                                .node{
+                                    &.selected-text,&.visited{
+                                        .node-container{
+                                            min-width: 180px;
+                                        }
+                                    }
+                                }
+                            }
+                           
+                        } 
+                        .main-text {
+                            margin-top: 20px;
+                        }
+                    }
+                }
+				.right-section {
+					.container {
+						.body {
+							font-size: 15px;
+							padding: 0px 18px;
+
+							.text-container {
+								 margin-bottom: 0px;
+							}
+						}
+					}
+				} 
+			}
+		}
+	}
+}
+
+
+
+
+  

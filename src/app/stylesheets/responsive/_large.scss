@@ -1,0 +1,18 @@
+&.#{$app-namespace} {
+  &.large {
+    &.portrait {
+      .pehtmlflowcharts-activity-container {
+        .pehtmlflowcharts-activity {
+          .flow-chart-container {
+            flex-direction: column;
+            .left-section {
+              .chart-container {
+                max-width: 800px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

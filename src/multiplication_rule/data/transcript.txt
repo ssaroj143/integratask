@@ -1,0 +1,25 @@
+The multiplication rule of probability is especially important because it has many important applications, such as determining redundancy for improving the reliability of critical systems.
+In this activity, you will investigate the multiplication rule, which is used for finding the probability that event A occurs in a first trial and event B occurs in a second trial.
+This is written as the probability of A and B.
+To determine probability of events A and B BOTH occurring, you need to consider whether these events are INDEPENDENT or DEPENDENT.
+The events are considered INDEPENDENT if the occurrence of one event DOES NOT affect the probability of the occurrence of the other event.
+DOES NOT affect the probability of the occurrence of the other event.
+Now, it is time to test your knowledge.
+If the two events are INDEPENDENT, then the probability of A and B occurring is the probability of A occurring multiplied by the probability of B occurring.
+Let’s consider the independent events of flipping a coin two times.
+Let A be the event of getting heads on the first toss and let B be the event of getting tails on the second toss.
+The probability of getting heads on the first toss and then getting tails on the second toss is one half times one half, which is equal to one divided by four.
+Now, it is time to test your knowledge.
+HOWEVER, if the two events are NOT independent, then the occurrence of one event DOES affect the occurrence of the other.
+In this case, the probability of events A and B is the probability of A occurring multiplied by the probability of B occurring AFTER it is assumed that event A has already occurred.
+Let’s consider the dependent events of selecting two different female students from a class of five students three of whom are female.
+The probability of a female on the first selection is three fifth.
+There are four students available for the second selection, and two of them are female.
+There is a two forth probability of a female on the second selection. 
+So, the probability of selecting two different females is three fifth multiplied by two foth. 
+The result is six twentyth or two tenths or zero point three.
+Now, it is time to test your knowledge.
+Through this activity, we have demonstrated how to apply the multiplication rule when finding the probability that event A occurs in a first trial and event B occurs in a second trial.
+Remember, correctly determining whether the events are INDEPENDENT or DEPENDENT is a requirement for finding the correct probability.
+Congratulations, you have mastered an important concept of Statistics!
+Little known fact, the multiplication rule is celebrated on independence day!

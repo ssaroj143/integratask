@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="44px" viewBox="0 0 16 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>12635129-3E61-4E45-A835-4CC3424E913F</title>
+    <g id="v4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="assets" transform="translate(-264.000000, -408.000000)">
+            <g id="arrow" transform="translate(264.000000, 408.000000)">
+                <circle id="Path" fill="#FFDF93" cx="8" cy="7" r="7"></circle>
+                <line x1="8" y1="7" x2="8" y2="36" id="Path" stroke="#BF8607" stroke-width="2" stroke-linejoin="round"></line>
+                <path d="M15.2602827,35.8321819 L8.37370466,43.5795823 C8.19024565,43.7859736 7.87420946,43.804564 7.66781808,43.621105 C7.65317565,43.6080895 7.63931083,43.5942247 7.62629534,43.5795823 L0.739717262,35.8321819 C0.556258253,35.6257905 0.574848617,35.3097543 0.781240002,35.1262953 C0.872765565,35.0449393 0.99096484,35 1.11342192,35 L14.8865781,35 C15.1627205,35 15.3865781,35.2238576 15.3865781,35.5 C15.3865781,35.6224571 15.3416388,35.7406564 15.2602827,35.8321819 Z" id="Path" fill="#DE9707"></path>
+                <circle id="Path" stroke="#DE9707" stroke-width="1.5" fill="#FFFFFF" cx="8" cy="7" r="3.25"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

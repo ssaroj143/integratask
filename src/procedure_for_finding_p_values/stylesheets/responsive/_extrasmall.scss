@@ -1,0 +1,36 @@
+&.extraSmall {
+  &.landscape{
+    @media screen and (-ms-high-contrast: active),
+    screen and (-ms-high-contrast: none) {
+      .#{$app-namespace}-activity-container {
+        .#{$app-namespace}-activity {
+          .left-section {
+            .chart-container {
+              .right-tailed-child {
+                .arrow {
+                  top: 2px ;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+      .#{$app-namespace}-activity-container {
+        .#{$app-namespace}-activity {
+          .flow-chart-container {
+            .left-section { 
+              .chart-container{
+                .main-screen-text {
+                  bottom: 50px
+                }  
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+

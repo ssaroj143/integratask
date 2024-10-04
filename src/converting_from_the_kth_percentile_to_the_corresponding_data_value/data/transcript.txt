@@ -1,0 +1,42 @@
+Percentiles are now in common use, and they are used in several different situations throughout your textbook.
+In this activity, we will learn how to use the flowchart to determine the value of different percentiles, such as the 25th percentile or the 40th percentile.
+You should know that this flowchart describes one simple procedure but there are other more complicated procedures that might yield different results. Also, different technologies use different procedures, so results from technologies might not exactly agree with results obtained by using the flowchart.
+The accompanying table lists wait times (in minutes) for the Space Mountain ride in Disney World.
+These wait times were recorded at 10 o’clock in the morning.
+We will illustrate the flowchart using two different examples. 
+The first example results in L = 37.5, which is not a whole number, and the second example results in L = 45, which is a whole number.
+Note the two different approaches used, depending on whether the locator L is a whole number.
+Now, it is time to test your knowledge.
+First, we will use the flowchart and the table to find the value of the 75th percentile.
+To calculate the value of the 75th percentile, we first need to sort the data by arranging the values in order from lowest to highest.
+Note that the values in the table are already arranged in order by rows.
+Next, we compute L, the LOCATOR  that gives the position in the list of a value corresponding to a percentile.
+The locator, L, equals K divided by 100 multiplied by n.
+k is the percentile in question and N is the number of values in the list.
+In this case, k equals 75 because we want the 75th percentile.
+n equals 50 because there are 50 values in our table.
+So L equals 75 divided by 100 multiplied by 50, which equals 37.5.
+Remember L is the POSITION of the percentile that we are trying to find.
+The next step depends on whether L, which we just calculated, is a whole number or not.
+In this example, L = 37.5, which is NOT a whole number.
+Now, it is time to test your knowledge.
+Since L is not a whole number, we round L up to the next larger whole number.
+We round 37.5 up to the next larger whole number, which is 38.
+Because L is the position of the percentile we are trying to find, the value of the 75th percentile is the value at the 38th position in the list, which is 50.
+The 75th percentile is 50 minutes.
+Let's try another example.
+This time, we will find the value of the 90th percentile.
+Note that the values in the table are already sorted from low to high.
+The value of k in this example is 90, because we want the 90th percentile; and n, the number of values in the table, is still equal to 50.
+We find that L equals 90 divided by 100 times 50, which equals 45.
+In this case, because L equals 45, which is a whole number, we find the value of the 90th percentile by locating the wait time at the 45th position in the list and also the wait time at the next value in the list.
+In this table, the 45th value is 60 and the next value in the list is 75.
+The value of the 90th percentile is midway between 60 and 75, so we can add 60 and 75, then divide by 2 to get our result of 67.5 minutes.
+The 90th percentile is 67.5 minutes.
+The wait time of 67.5 minutes is midway between the 45th value in the list and the 46th value in the list.
+Now, it is time to test your knowledge.
+In this flowchart, we reviewed the procedure for converting a percentile to its corresponding data value.
+Remember, this flowchart describes one simple procedure and there are other more complicated procedures that might yield different results.
+Also, different technologies use different procedures, so results from technologies might not exactly agree with results obtained by using this flowchart.
+Congratulations, you have mastered an important concept of Statistics! 
+Take a break! For a great vacation destination I recommend the percent isles.

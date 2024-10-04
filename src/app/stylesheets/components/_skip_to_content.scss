@@ -1,0 +1,27 @@
+.skip-to-content {
+  // top: 60px;
+  top: 0;
+  top: 58px;
+  left: 4px;
+  opacity: 0;
+  height: 30px;
+  color: blue;
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  position: absolute;
+  font-family: inherit;
+  pointer-events: none;
+
+  &:link,
+  &:active,
+  &:visited {
+    color: blue;
+  }
+
+  &:focus {
+    opacity: 1 !important;
+    color: blue;
+    pointer-events: auto;
+  }
+}

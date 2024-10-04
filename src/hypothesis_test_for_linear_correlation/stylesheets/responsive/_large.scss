@@ -1,0 +1,33 @@
+&.large {
+  &.landscape {
+    .#{$app-namespace}-activity {
+      .flow-chart-container {
+        .left-section {
+          .chart-container {
+            .node {
+              &#condition1 {
+                .child-node {
+                  .node-container {
+                    .text {
+                      &.condition-node {
+                        &.last-child {
+                          &::after {
+                            content: "";
+                            // left: calc(100% - 219px);
+                          }
+                          .heading {
+                            left: 171px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
