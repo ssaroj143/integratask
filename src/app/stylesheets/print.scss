@@ -311,6 +311,13 @@ svg {
   .pehtmlflowcharts audio+button {
     opacity: 1 !important;
     border: 1px solid #fff !important;
+    filter: brightness(2) contrast(0.9);
+  }
+
+  .pehtmlflowcharts .pehtmlflowcharts-footer .restart-audio-container button {
+
+    border: 1px solid #fff !important;
+    filter: brightness(2) contrast(0.9);
   }
 
   .pehtmlflowcharts .pehtmlflowcharts-header .toc-container .tocfield .toc-list .toc-list-header .header-icon-left {
@@ -323,6 +330,7 @@ svg {
 
   .pehtmlflowcharts .right-section .container .body .button-group button {
     border: 1px solid #fff !important;
+    filter: brightness(2) contrast(0.9);
   }
 
   .pehtmlflowcharts .pehtmlflowcharts-header .pdf-info-section .info-btn .info-btn-text {
@@ -333,11 +341,13 @@ svg {
   .pehtmlflowcharts .question-container .question-wrapper .question-footer .button-submit {
     opacity: 1 !important;
     border: 1px solid #fff;
+    filter: brightness(2) contrast(0.9);
   }
 
   .pehtmlflowcharts .question-container .question-wrapper .question-footer .button-continue {
     opacity: 1 !important;
     border: 1px solid #fff;
+    filter: brightness(2) contrast(0.9);
   }
 
   .pehtmlflowcharts .pehtmlflowcharts-footer .timerdiv .volume-icon.unmute {
