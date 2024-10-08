@@ -193,14 +193,14 @@ title {
 /* adding new css for accssibility dark mode*/
 :root {
   --svg-filter-normal: none;
-  --svg-filter-dark: brightness(4);
+  --svg-filter-dark: brightness(5);
 }
 
 /* Apply filters based on theme */
 @media (prefers-color-scheme: dark) {
   :root {
     --svg-filter-normal: none;
-    --svg-filter-dark: brightness(4);
+    --svg-filter-dark: brightness(5);
   }
 }
 
@@ -338,5 +338,9 @@ svg {
   .pehtmlflowcharts .question-container .question-wrapper .question-footer .button-continue {
     opacity: 1 !important;
     border: 1px solid #fff;
+  }
+
+  .pehtmlflowcharts .pehtmlflowcharts-footer .timerdiv .volume-icon.unmute {
+    filter: var(--svg-filter-dark);
   }
 }
