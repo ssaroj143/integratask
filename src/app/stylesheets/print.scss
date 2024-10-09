@@ -217,7 +217,7 @@ title {
   filter: var(--svg-filter-normal);
 }
 
-svg {
+.pehtmlflowcharts .pehtmlflowcharts-footer .play-controls svg {
   filter: var(--svg-filter-normal);
 }
 
@@ -271,7 +271,7 @@ svg {
     filter: var(--svg-filter-dark);
   }
 
-  svg {
+  .pehtmlflowcharts .pehtmlflowcharts-footer .play-controls svg {
     filter: var(--svg-filter-dark);
   }
 
@@ -315,7 +315,6 @@ svg {
   }
 
   .pehtmlflowcharts .pehtmlflowcharts-footer .restart-audio-container button {
-
     border: 1px solid #fff !important;
     filter: brightness(2) contrast(0.9);
   }
@@ -353,4 +352,5 @@ svg {
   .pehtmlflowcharts .pehtmlflowcharts-footer .timerdiv .volume-icon.unmute {
     filter: var(--svg-filter-dark);
   }
+
 }
