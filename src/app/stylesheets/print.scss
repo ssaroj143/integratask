@@ -193,14 +193,14 @@ title {
 /* adding new css for accssibility dark mode*/
 :root {
   --svg-filter-normal: none;
-  --svg-filter-dark: brightness(5);
+  --svg-filter-dark: brightness(8);
 }
 
 /* Apply filters based on theme */
 @media (prefers-color-scheme: dark) {
   :root {
     --svg-filter-normal: none;
-    --svg-filter-dark: brightness(5);
+    --svg-filter-dark: brightness(8);
   }
 }
 
@@ -288,7 +288,7 @@ title {
   }
 
   .pehtmlflowcharts .pehtmlflowcharts-seekbar {
-    filter: var(--svg-filter-dark);
+    filter: brightness(4);
   }
 
   .pehtmlflowcharts .question-container .question-wrapper .question-options .options .option-wrapper .option input[type=radio]+div>span::after {
