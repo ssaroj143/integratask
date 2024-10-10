@@ -118,6 +118,7 @@ title {
     .print-container {
       display: block;
     }
+
     .flow-chart-container {
       .right-section {
         display: none !important;
@@ -145,15 +146,19 @@ title {
     display: block;
     -webkit-print-color-adjust: exact;
   }
+
   .pehtmlflowcharts {
     header.pehtmlflowcharts-header {
       display: none;
     }
+
     .flow-chart-container {
       -webkit-print-color-adjust: exact;
+
       .right-section {
         display: none;
       }
+
       .left-section {
         .pehtmlflowcharts-scalable-wrapper-container {
           .scalable-wrapper-inner {
@@ -163,6 +168,7 @@ title {
             transform-origin: unset !important;
           }
         }
+
         // &.nonprintable-flowchart {
         //   display: none;
         // }
@@ -172,11 +178,179 @@ title {
         // }
       }
     }
+
     .question-marker-seekbar {
       display: none;
     }
+
     footer.pehtmlflowcharts-footer {
       display: none;
     }
   }
+}
+
+
+/* adding new css for accssibility dark mode*/
+:root {
+  --svg-filter-normal: none;
+  --svg-filter-dark: brightness(8);
+}
+
+/* Apply filters based on theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --svg-filter-normal: none;
+    --svg-filter-dark: brightness(8);
+  }
+}
+
+
+.pehtmlflowcharts .pehtmlflowcharts-footer .restart-audio-container .icon {
+  filter: var(--svg-filter-normal);
+}
+
+.pehtmlflowcharts .pehtmlflowcharts-footer input[type=range] {
+  filter: var(--svg-filter-normal);
+}
+
+.pehtmlflowcharts .pehtmlflowcharts-footer .timerdiv .volume-icon.mute {
+  filter: var(--svg-filter-normal);
+}
+
+.pehtmlflowcharts .pehtmlflowcharts-footer .play-controls svg {
+  filter: var(--svg-filter-normal);
+}
+
+.caption {
+  filter: var(--svg-filter-normal);
+}
+
+.pehtmlflowcharts .pehtmlflowcharts-footer .timerdiv .transcript-btn {
+  filter: var(--svg-filter-normal);
+}
+
+.pehtmlflowcharts .question-container .question-wrapper .question-options .options .option-wrapper .option input[type=radio]+div>span::after {
+  filter: var(--svg-filter-normal);
+}
+
+.pehtmlflowcharts .pehtmlflowcharts-seekbar div {
+  filter: var(--svg-filter-normal);
+}
+
+.pehtmlflowcharts .pehtmlflowcharts-header .toc-container .tocfield {
+  filter: var(--svg-filter-normal);
+}
+
+.pehtmlflowcharts .pehtmlflowcharts-header .toc-container .tocfield .toc-dropdown .left-section .list-icon {
+  filter: var(--svg-filter-normal);
+}
+
+.pehtmlflowcharts .pehtmlflowcharts-header .toc-container .tocfield .toc-dropdown .dropdown-icon {
+  filter: var(--svg-filter-normal);
+}
+
+.pehtmlflowcharts audio+button {
+  filter: var(--svg-filter-normal);
+}
+
+.info-btn {
+  filter: var(--svg-filter-normal);
+}
+
+/*css for dark mode theme Accessibility*/
+@media (prefers-color-scheme: dark) {
+  .pehtmlflowcharts .pehtmlflowcharts-footer .restart-audio-container .icon {
+    filter: var(--svg-filter-dark);
+  }
+
+  .pehtmlflowcharts .pehtmlflowcharts-footer input[type=range] {
+    filter: var(--svg-filter-dark);
+  }
+
+  .pehtmlflowcharts .pehtmlflowcharts-footer .timerdiv .volume-icon.mute {
+    filter: var(--svg-filter-dark);
+  }
+
+  .pehtmlflowcharts .pehtmlflowcharts-footer .play-controls svg {
+    filter: var(--svg-filter-dark);
+  }
+
+  .caption {
+    filter: var(--svg-filter-dark);
+  }
+
+  .pehtmlflowcharts .pehtmlflowcharts-seekbar div {
+    filter: var(--svg-filter-dark);
+  }
+
+  .pehtmlflowcharts .pehtmlflowcharts-footer .timerdiv .transcript-btn {
+    filter: var(--svg-filter-dark);
+  }
+
+  .pehtmlflowcharts .pehtmlflowcharts-seekbar {
+    filter: brightness(4);
+  }
+
+  .pehtmlflowcharts .question-container .question-wrapper .question-options .options .option-wrapper .option input[type=radio]+div>span::after {
+    filter: var(--svg-filter-dark);
+  }
+
+  .pehtmlflowcharts .pehtmlflowcharts-header .toc-container .tocfield {
+    opacity: 1 !important;
+    border: 1px solid #fff !important;
+  }
+
+  .pehtmlflowcharts .pehtmlflowcharts-header .toc-container .tocfield .toc-dropdown .left-section .list-icon {
+    filter: var(--svg-filter-dark);
+  }
+
+  .pehtmlflowcharts .pehtmlflowcharts-header .toc-container .tocfield .toc-dropdown .dropdown-icon {
+    filter: var(--svg-filter-dark);
+  }
+
+  .pehtmlflowcharts audio+button {
+    opacity: 1 !important;
+    border: 1px solid #fff !important;
+    filter: brightness(2) contrast(0.9);
+  }
+
+  .pehtmlflowcharts .pehtmlflowcharts-footer .restart-audio-container button {
+    border: 1px solid #fff !important;
+    filter: brightness(2) contrast(0.9);
+  }
+
+  .pehtmlflowcharts .pehtmlflowcharts-header .toc-container .tocfield .toc-list .toc-list-header .header-icon-left {
+    filter: var(--svg-filter-dark);
+  }
+
+  .pehtmlflowcharts .pehtmlflowcharts-header .toc-container .tocfield .toc-list .tocdetail {
+    border: 1px solid #fff;
+  }
+
+  .pehtmlflowcharts .right-section .container .body .button-group button {
+    border: 1px solid #fff !important;
+    filter: brightness(2) contrast(0.9);
+  }
+
+  .pehtmlflowcharts .pehtmlflowcharts-header .pdf-info-section .info-btn .info-btn-text {
+    filter: var(--svg-filter-dark);
+    display: none;
+  }
+
+  .pehtmlflowcharts .question-container .question-wrapper .question-footer .button-submit {
+    opacity: 1 !important;
+    border: 1px solid #fff;
+    filter: brightness(2) contrast(0.9);
+  }
+
+  .pehtmlflowcharts .question-container .question-wrapper .question-footer .button-continue {
+    opacity: 1 !important;
+    border: 1px solid #fff;
+    filter: brightness(2) contrast(0.9);
+  }
+
+  .pehtmlflowcharts .pehtmlflowcharts-footer .timerdiv .volume-icon.unmute {
+    filter: var(--svg-filter-dark);
+  }
+
 }
