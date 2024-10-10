@@ -193,14 +193,14 @@ title {
 /* adding new css for accssibility dark mode*/
 :root {
   --svg-filter-normal: none;
-  --svg-filter-dark: brightness(5);
+  --svg-filter-dark: brightness(8);
 }
 
 /* Apply filters based on theme */
 @media (prefers-color-scheme: dark) {
   :root {
     --svg-filter-normal: none;
-    --svg-filter-dark: brightness(5);
+    --svg-filter-dark: brightness(8);
   }
 }
 
@@ -217,7 +217,7 @@ title {
   filter: var(--svg-filter-normal);
 }
 
-svg {
+.pehtmlflowcharts .pehtmlflowcharts-footer .play-controls svg {
   filter: var(--svg-filter-normal);
 }
 
@@ -271,7 +271,7 @@ svg {
     filter: var(--svg-filter-dark);
   }
 
-  svg {
+  .pehtmlflowcharts .pehtmlflowcharts-footer .play-controls svg {
     filter: var(--svg-filter-dark);
   }
 
@@ -288,7 +288,7 @@ svg {
   }
 
   .pehtmlflowcharts .pehtmlflowcharts-seekbar {
-    filter: var(--svg-filter-dark);
+    filter: brightness(4);
   }
 
   .pehtmlflowcharts .question-container .question-wrapper .question-options .options .option-wrapper .option input[type=radio]+div>span::after {
@@ -315,7 +315,6 @@ svg {
   }
 
   .pehtmlflowcharts .pehtmlflowcharts-footer .restart-audio-container button {
-
     border: 1px solid #fff !important;
     filter: brightness(2) contrast(0.9);
   }
@@ -353,4 +352,5 @@ svg {
   .pehtmlflowcharts .pehtmlflowcharts-footer .timerdiv .volume-icon.unmute {
     filter: var(--svg-filter-dark);
   }
+
 }
