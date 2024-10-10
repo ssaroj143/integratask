@@ -143,7 +143,7 @@ const OverlayScreen = (props) => {
               aria-hidden="true" ></div>
           </div>
           <div className={`volume-section`}>
-            <span aria-hidden="true" aria-label="Volume Control" tabIndex="-1">Volume Control</span>
+            <span aria-hidden="true" aria-label="Volume Control" tabIndex="0">Volume Control</span>
             <div
               role="img"
               dangerouslySetInnerHTML={{ __html: svgImages.volumeControlArrow }}
